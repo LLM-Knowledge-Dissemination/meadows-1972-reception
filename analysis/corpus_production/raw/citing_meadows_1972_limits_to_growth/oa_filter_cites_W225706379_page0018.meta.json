@@ -1,0 +1,6 @@
+{
+  "url": "https://api.openalex.org/works?filter=cites%3AW225706379&select=id%2Cdoi%2Cids%2Ctitle%2Cdisplay_name%2Cpublication_year%2Ctype%2Ctype_crossref%2Ccited_by_count%2Cis_retracted%2Cprimary_topic%2Cbest_oa_location%2Cprimary_location%2Clanguage&per-page=200&cursor=IlsnLUluZmluaXR5JywgMTUxLCAnaHR0cHM6Ly9vcGVuYWxleC5vcmcvVzIxNTczOTgxNzAnXSI%3D&mailto=gchism94%40gmail.com",
+  "retrieved_at_utc": "2026-06-24T23:07:13+00:00",
+  "http_status": 200,
+  "user_agent": "meadows-1972-bibliometrics-corpus/2026.06 (mailto:gchism@arizona.edu)"
+}

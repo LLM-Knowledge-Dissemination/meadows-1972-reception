@@ -1,0 +1,66 @@
+decade,oa_status,type_collapsed,n_attempts,k_yielders,yield_rate,yield_rate_wilson95_lo,yield_rate_wilson95_hi,census_N,census_share
+1970s,OA,article,18,13,0.7222,0.4913,0.8750,41,0.0031
+1970s,OA,book_chapter,1,1,1.0000,0.2065,1.0000,1,0.0001
+1970s,OA,other_serial_or_non_article,3,0,0.0000,0.0000,0.5615,7,0.0005
+1970s,non-OA,article,0,0,,,,498,0.0381
+1970s,non-OA,book,0,0,,,,2,0.0002
+1970s,non-OA,book_chapter,0,0,,,,78,0.0060
+1970s,non-OA,other_serial_or_non_article,0,0,,,,12,0.0009
+1980s,OA,article,16,7,0.4375,0.2310,0.6682,39,0.0030
+1980s,OA,book,1,0,0.0000,0.0000,0.7935,1,0.0001
+1980s,OA,book_chapter,1,0,0.0000,0.0000,0.7935,2,0.0002
+1980s,OA,other_serial_or_non_article,3,0,0.0000,0.0000,0.5615,5,0.0004
+1980s,non-OA,article,0,0,,,,410,0.0314
+1980s,non-OA,book,0,0,,,,1,0.0001
+1980s,non-OA,book_chapter,0,0,,,,84,0.0064
+1980s,non-OA,other_serial_or_non_article,0,0,,,,13,0.0010
+1990s,OA,article,24,5,0.2083,0.0924,0.4047,88,0.0067
+1990s,OA,book,0,0,,,,1,0.0001
+1990s,OA,book_chapter,3,0,0.0000,0.0000,0.5615,3,0.0002
+1990s,OA,other_serial_or_non_article,9,5,0.5556,0.2667,0.8112,27,0.0021
+1990s,non-OA,article,0,0,,,,634,0.0486
+1990s,non-OA,book,0,0,,,,16,0.0012
+1990s,non-OA,book_chapter,0,0,,,,138,0.0106
+1990s,non-OA,other_serial_or_non_article,0,0,,,,23,0.0018
+2000s,OA,article,23,10,0.4348,0.2563,0.6319,417,0.0319
+2000s,OA,book,3,0,0.0000,0.0000,0.5615,24,0.0018
+2000s,OA,book_chapter,0,0,,,,19,0.0015
+2000s,OA,other_serial_or_non_article,19,2,0.1053,0.0294,0.3139,181,0.0139
+2000s,non-OA,article,0,0,,,,1199,0.0918
+2000s,non-OA,book,0,0,,,,70,0.0054
+2000s,non-OA,book_chapter,0,0,,,,409,0.0313
+2000s,non-OA,other_serial_or_non_article,0,0,,,,98,0.0075
+2010s,OA,article,139,34,0.2446,0.1806,0.3223,1657,0.1269
+2010s,OA,book,3,0,0.0000,0.0000,0.5615,55,0.0042
+2010s,OA,book_chapter,10,1,0.1000,0.0179,0.4042,130,0.0100
+2010s,OA,other_serial_or_non_article,32,1,0.0312,0.0055,0.1574,358,0.0274
+2010s,non-OA,article,118,1,0.0085,0.0015,0.0464,1794,0.1374
+2010s,non-OA,book,7,0,0.0000,0.0000,0.3543,77,0.0059
+2010s,non-OA,book_chapter,61,0,0.0000,0.0000,0.0592,1049,0.0804
+2010s,non-OA,other_serial_or_non_article,13,0,0.0000,0.0000,0.2281,221,0.0169
+2020s,OA,article,162,48,0.2963,0.2314,0.3707,1397,0.1070
+2020s,OA,book,7,1,0.1429,0.0257,0.5131,85,0.0065
+2020s,OA,book_chapter,25,2,0.0800,0.0222,0.2497,229,0.0175
+2020s,OA,other_serial_or_non_article,32,9,0.2812,0.1556,0.4537,216,0.0165
+2020s,non-OA,article,54,0,0.0000,0.0000,0.0664,373,0.0286
+2020s,non-OA,book,4,0,0.0000,0.0000,0.4899,20,0.0015
+2020s,non-OA,book_chapter,84,1,0.0119,0.0021,0.0644,784,0.0601
+2020s,non-OA,other_serial_or_non_article,10,0,0.0000,0.0000,0.2775,59,0.0045
+unknown,OA,article,0,0,,,,2,0.0002
+unknown,OA,other_serial_or_non_article,0,0,,,,1,0.0001
+unknown,non-OA,article,0,0,,,,4,0.0003
+unknown,non-OA,book_chapter,0,0,,,,1,0.0001
+unknown,non-OA,other_serial_or_non_article,0,0,,,,1,0.0001
+
+"--- adjusted logistic (IRLS, ridge l2=1e-4) ---"
+term,beta_log_odds,se,wald95_lo,wald95_hi,odds_ratio,odds_ratio_wald95_lo,odds_ratio_wald95_hi,reference_levels_dropped,l2_ridge
+(Intercept),-4.9151,0.7250,-6.3361,-3.4941,0.0073,0.0018,0.0304,"decade=2010s, oa_status=non-OA, type_collapsed=article",1e-4
+decade=1970s,+1.9695,0.4876,+1.0138,+2.9251,7.1671,2.7562,18.6369,"decade=2010s, oa_status=non-OA, type_collapsed=article",1e-4
+decade=1980s,+0.7508,0.5069,-0.2428,+1.7443,2.1186,0.7844,5.7219,"decade=2010s, oa_status=non-OA, type_collapsed=article",1e-4
+decade=1990s,+0.5349,0.4220,-0.2922,+1.3619,1.7072,0.7466,3.9035,"decade=2010s, oa_status=non-OA, type_collapsed=article",1e-4
+decade=2000s,+0.6092,0.3984,-0.1716,+1.3899,1.8389,0.8423,4.0146,"decade=2010s, oa_status=non-OA, type_collapsed=article",1e-4
+decade=2020s,+0.4597,0.2396,-0.0100,+0.9294,1.5836,0.9900,2.5329,"decade=2010s, oa_status=non-OA, type_collapsed=article",1e-4
+oa_status=OA,+3.6785,0.7246,+2.2582,+5.0988,39.5876,9.5661,163.8254,"decade=2010s, oa_status=non-OA, type_collapsed=article",1e-4
+type_collapsed=book_chapter,-1.2457,0.4956,-2.2170,-0.2744,0.2877,0.1089,0.7601,"decade=2010s, oa_status=non-OA, type_collapsed=article",1e-4
+type_collapsed=book,-1.7821,1.0470,-3.8342,+0.2701,0.1683,0.0216,1.3101,"decade=2010s, oa_status=non-OA, type_collapsed=article",1e-4
+type_collapsed=other_serial_or_non_article,-0.7766,0.2991,-1.3628,-0.1904,0.4600,0.2559,0.8266,"decade=2010s, oa_status=non-OA, type_collapsed=article",1e-4

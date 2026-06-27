@@ -1,0 +1,8 @@
+scope,description,total,non_yielders,OA,non_OA,non_OA_non_yielders
+commoner_pre1990,Commoner 1971: 1970s + 1980s citing works,213,209,23,190,190
+schumacher_pre1990,Schumacher 1974: 1970s + 1980s citing works,81,78,12,69,69
+meadows_pre1990_for_context,Meadows 1972: 1970s + 1980s citing works (for context),900,886,61,839,839
+books_chapters_dissertations_reports_all_seeds,"All seeds: book, book-chapter, book-section, dissertation, report",3891,3882,1018,2873,2872
+booklike_meadows,Meadows: book + book-chapter + book-section + dissertation + report,3166,3162,815,2351,2351
+booklike_commoner,Commoner: book + book-chapter + book-section + dissertation + report,250,247,55,195,195
+booklike_schumacher,Schumacher: book + book-chapter + book-section + dissertation + report,475,473,148,327,326

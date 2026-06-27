@@ -1,0 +1,608 @@
+{
+  "id": "https://openalex.org/W2054104432",
+  "doi": null,
+  "title": "Small is Beautiful: A Study of Economics as if People Mattered",
+  "display_name": "Small is Beautiful: A Study of Economics as if People Mattered",
+  "publication_year": 1974,
+  "publication_date": "1974-01-01",
+  "ids": {
+    "openalex": "https://openalex.org/W2054104432",
+    "mag": "2054104432"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "pmh:oai:aleph.bib-bvb.de:BVB01-032513018",
+    "is_oa": false,
+    "landing_page_url": "http://bvbr.bib-bvb.de:8991/F?func=service&amp;doc_library=BVB01&amp;local_base=BVB01&amp;doc_number=032513018&amp;sequence=000001&amp;line_number=0001&amp;func_code=DB_RECORDS&amp;service_type=MEDIA",
+    "pdf_url": null,
+    "source": null,
+    "license": null,
+    "license_id": null,
+    "version": "submittedVersion",
+    "is_accepted": false,
+    "is_published": false,
+    "raw_source_name": "",
+    "raw_type": "text"
+  },
+  "type": "book",
+  "indexed_in": [],
+  "open_access": {
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null,
+    "any_repository_has_fulltext": false
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5113374347",
+        "display_name": "E. F. Schumacher",
+        "orcid": null
+      },
+      "institutions": [],
+      "countries": [],
+      "is_corresponding": true,
+      "raw_author_name": "E. F. Schumacher",
+      "raw_affiliation_strings": [],
+      "raw_orcid": null,
+      "affiliations": []
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 0,
+  "institutions_distinct_count": 1,
+  "corresponding_author_ids": [
+    "https://openalex.org/A5113374347"
+  ],
+  "corresponding_institution_ids": [],
+  "apc_list": null,
+  "apc_paid": null,
+  "fwci": 22.5553,
+  "has_fulltext": false,
+  "cited_by_count": 1458,
+  "citation_normalized_percentile": {
+    "value": 0.99509323,
+    "is_in_top_1_percent": true,
+    "is_in_top_10_percent": true
+  },
+  "cited_by_percentile_year": {
+    "min": 99,
+    "max": 100
+  },
+  "biblio": {
+    "volume": null,
+    "issue": null,
+    "first_page": null,
+    "last_page": null
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T10785",
+    "display_name": "Economic Theory and Institutions",
+    "score": 0.05999999865889549,
+    "subfield": {
+      "id": "https://openalex.org/subfields/2002",
+      "display_name": "Economics and Econometrics"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/20",
+      "display_name": "Economics, Econometrics and Finance"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/2",
+      "display_name": "Social Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T10785",
+      "display_name": "Economic Theory and Institutions",
+      "score": 0.05999999865889549,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2002",
+        "display_name": "Economics and Econometrics"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/20",
+        "display_name": "Economics, Econometrics and Finance"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/2",
+        "display_name": "Social Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11742",
+      "display_name": "Economic Theory and Policy",
+      "score": 0.04500000178813934,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2000",
+        "display_name": "General Economics, Econometrics and Finance"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/20",
+        "display_name": "Economics, Econometrics and Finance"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/2",
+        "display_name": "Social Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/economic-thought",
+      "display_name": "Economic Thought",
+      "score": 0.495263010263443
+    },
+    {
+      "id": "https://openalex.org/keywords/positive-economics",
+      "display_name": "Positive economics",
+      "score": 0.4557360112667084
+    },
+    {
+      "id": "https://openalex.org/keywords/neoclassical-economics",
+      "display_name": "Neoclassical economics",
+      "score": 0.3754933178424835
+    },
+    {
+      "id": "https://openalex.org/keywords/history",
+      "display_name": "History",
+      "score": 0.36275601387023926
+    },
+    {
+      "id": "https://openalex.org/keywords/sociology",
+      "display_name": "Sociology",
+      "score": 0.3495015501976013
+    },
+    {
+      "id": "https://openalex.org/keywords/aesthetics",
+      "display_name": "Aesthetics",
+      "score": 0.34682148694992065
+    },
+    {
+      "id": "https://openalex.org/keywords/economics",
+      "display_name": "Economics",
+      "score": 0.34238147735595703
+    },
+    {
+      "id": "https://openalex.org/keywords/environmental-ethics",
+      "display_name": "Environmental ethics",
+      "score": 0.34052202105522156
+    },
+    {
+      "id": "https://openalex.org/keywords/political-science",
+      "display_name": "Political science",
+      "score": 0.33057186007499695
+    },
+    {
+      "id": "https://openalex.org/keywords/philosophy",
+      "display_name": "Philosophy",
+      "score": 0.25780361890792847
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C2780171783",
+      "wikidata": "https://www.wikidata.org/wiki/Q28446771",
+      "display_name": "Economic Thought",
+      "level": 2,
+      "score": 0.495263010263443
+    },
+    {
+      "id": "https://openalex.org/C118084267",
+      "wikidata": "https://www.wikidata.org/wiki/Q26110",
+      "display_name": "Positive economics",
+      "level": 1,
+      "score": 0.4557360112667084
+    },
+    {
+      "id": "https://openalex.org/C133425853",
+      "wikidata": "https://www.wikidata.org/wiki/Q60571",
+      "display_name": "Neoclassical economics",
+      "level": 1,
+      "score": 0.3754933178424835
+    },
+    {
+      "id": "https://openalex.org/C95457728",
+      "wikidata": "https://www.wikidata.org/wiki/Q309",
+      "display_name": "History",
+      "level": 0,
+      "score": 0.36275601387023926
+    },
+    {
+      "id": "https://openalex.org/C144024400",
+      "wikidata": "https://www.wikidata.org/wiki/Q21201",
+      "display_name": "Sociology",
+      "level": 0,
+      "score": 0.3495015501976013
+    },
+    {
+      "id": "https://openalex.org/C107038049",
+      "wikidata": "https://www.wikidata.org/wiki/Q35986",
+      "display_name": "Aesthetics",
+      "level": 1,
+      "score": 0.34682148694992065
+    },
+    {
+      "id": "https://openalex.org/C162324750",
+      "wikidata": "https://www.wikidata.org/wiki/Q8134",
+      "display_name": "Economics",
+      "level": 0,
+      "score": 0.34238147735595703
+    },
+    {
+      "id": "https://openalex.org/C95124753",
+      "wikidata": "https://www.wikidata.org/wiki/Q875686",
+      "display_name": "Environmental ethics",
+      "level": 1,
+      "score": 0.34052202105522156
+    },
+    {
+      "id": "https://openalex.org/C17744445",
+      "wikidata": "https://www.wikidata.org/wiki/Q36442",
+      "display_name": "Political science",
+      "level": 0,
+      "score": 0.33057186007499695
+    },
+    {
+      "id": "https://openalex.org/C138885662",
+      "wikidata": "https://www.wikidata.org/wiki/Q5891",
+      "display_name": "Philosophy",
+      "level": 0,
+      "score": 0.25780361890792847
+    }
+  ],
+  "mesh": [],
+  "locations_count": 3,
+  "locations": [
+    {
+      "id": "pmh:oai:aleph.bib-bvb.de:BVB01-032513018",
+      "is_oa": false,
+      "landing_page_url": "http://bvbr.bib-bvb.de:8991/F?func=service&amp;doc_library=BVB01&amp;local_base=BVB01&amp;doc_number=032513018&amp;sequence=000001&amp;line_number=0001&amp;func_code=DB_RECORDS&amp;service_type=MEDIA",
+      "pdf_url": null,
+      "source": null,
+      "license": null,
+      "license_id": null,
+      "version": "submittedVersion",
+      "is_accepted": false,
+      "is_published": false,
+      "raw_source_name": "",
+      "raw_type": "text"
+    },
+    {
+      "id": "pmh:oai:americanae.aecid.es:3673770",
+      "is_oa": false,
+      "landing_page_url": "http://ota.ahds.ac.uk/texts/0399.html",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S4306400786",
+        "display_name": "Americanae (AECID Library)",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": false,
+        "host_organization": null,
+        "host_organization_name": null,
+        "host_organization_lineage": [],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": null,
+      "license_id": null,
+      "version": "submittedVersion",
+      "is_accepted": false,
+      "is_published": false,
+      "raw_source_name": "",
+      "raw_type": "Electronic text"
+    },
+    {
+      "id": "mag:2054104432",
+      "is_oa": false,
+      "landing_page_url": "https://ci.nii.ac.jp/ncid/BA0430000X",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S4210197683",
+        "display_name": "Medical Entomology and Zoology",
+        "issn_l": "0424-7086",
+        "issn": [
+          "0424-7086",
+          "2185-5609"
+        ],
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": true,
+        "host_organization": "https://openalex.org/P4310319750",
+        "host_organization_name": "Japan Society of Medical Entomology and Zoology",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310319750"
+        ],
+        "host_organization_lineage_names": [
+          "Japan Society of Medical Entomology and Zoology"
+        ],
+        "type": "journal"
+      },
+      "license": null,
+      "license_id": null,
+      "version": null,
+      "is_accepted": false,
+      "is_published": null,
+      "raw_source_name": null,
+      "raw_type": null
+    }
+  ],
+  "best_oa_location": null,
+  "sustainable_development_goals": [
+    {
+      "display_name": "Decent work and economic growth",
+      "score": 0.6200000047683716,
+      "id": "https://metadata.un.org/sdg/8"
+    }
+  ],
+  "awards": [],
+  "funders": [],
+  "has_content": {
+    "grobid_xml": false,
+    "pdf": false
+  },
+  "content_urls": null,
+  "referenced_works_count": 0,
+  "referenced_works": [],
+  "related_works": [
+    "https://openalex.org/W49479346",
+    "https://openalex.org/W2753533763",
+    "https://openalex.org/W225706379",
+    "https://openalex.org/W2057931959",
+    "https://openalex.org/W1535803599",
+    "https://openalex.org/W1551322995",
+    "https://openalex.org/W1527311855",
+    "https://openalex.org/W3145345180",
+    "https://openalex.org/W1495278944",
+    "https://openalex.org/W2021883551",
+    "https://openalex.org/W1601736244",
+    "https://openalex.org/W2062675355",
+    "https://openalex.org/W2010189956",
+    "https://openalex.org/W2175723801",
+    "https://openalex.org/W2061916247",
+    "https://openalex.org/W2040610080",
+    "https://openalex.org/W2323781633",
+    "https://openalex.org/W2323266160",
+    "https://openalex.org/W1589572802",
+    "https://openalex.org/W249670088"
+  ],
+  "abstract_inverted_index": {
+    "Small": [
+      0
+    ],
+    "is": [
+      1,
+      3
+    ],
+    "Beautiful": [
+      2
+    ],
+    "E.": [
+      4
+    ],
+    "F.": [
+      5
+    ],
+    "Schumacher's": [
+      6
+    ],
+    "stimulating": [
+      7
+    ],
+    "and": [
+      8,
+      13,
+      29,
+      52
+    ],
+    "controversial": [
+      9
+    ],
+    "study": [
+      10
+    ],
+    "of": [
+      11,
+      27
+    ],
+    "economics": [
+      12
+    ],
+    "its": [
+      14,
+      25
+    ],
+    "purpose.": [
+      15
+    ],
+    "This": [
+      16
+    ],
+    "remarkable": [
+      17
+    ],
+    "book": [
+      18
+    ],
+    "examines": [
+      19
+    ],
+    "our": [
+      20
+    ],
+    "modern": [
+      21
+    ],
+    "economic": [
+      22
+    ],
+    "system": [
+      23
+    ],
+    "-": [
+      24,
+      35
+    ],
+    "use": [
+      26
+    ],
+    "resources": [
+      28
+    ],
+    "impact": [
+      30
+    ],
+    "on": [
+      31
+    ],
+    "how": [
+      32
+    ],
+    "we": [
+      33,
+      41
+    ],
+    "live": [
+      34
+    ],
+    "questioning": [
+      36
+    ],
+    "whether": [
+      37
+    ],
+    "they": [
+      38,
+      57
+    ],
+    "reflect": [
+      39
+    ],
+    "what": [
+      40
+    ],
+    "truly": [
+      42
+    ],
+    "care": [
+      43
+    ],
+    "about.": [
+      44
+    ],
+    "The": [
+      45
+    ],
+    "revolutionary": [
+      46
+    ],
+    "ideas": [
+      47
+    ],
+    "are": [
+      48
+    ],
+    "as": [
+      49,
+      55
+    ],
+    "pertinent,": [
+      50
+    ],
+    "inspirational": [
+      51
+    ],
+    "thought-provoking": [
+      53
+    ],
+    "today": [
+      54
+    ],
+    "when": [
+      56
+    ],
+    "were": [
+      58
+    ],
+    "first": [
+      59
+    ],
+    "published": [
+      60
+    ],
+    "in": [
+      61
+    ],
+    "1973.": [
+      62
+    ]
+  },
+  "counts_by_year": [
+    {
+      "year": 2025,
+      "cited_by_count": 28
+    },
+    {
+      "year": 2024,
+      "cited_by_count": 21
+    },
+    {
+      "year": 2023,
+      "cited_by_count": 40
+    },
+    {
+      "year": 2022,
+      "cited_by_count": 28
+    },
+    {
+      "year": 2021,
+      "cited_by_count": 71
+    },
+    {
+      "year": 2020,
+      "cited_by_count": 56
+    },
+    {
+      "year": 2019,
+      "cited_by_count": 75
+    },
+    {
+      "year": 2018,
+      "cited_by_count": 55
+    },
+    {
+      "year": 2017,
+      "cited_by_count": 64
+    },
+    {
+      "year": 2016,
+      "cited_by_count": 94
+    },
+    {
+      "year": 2015,
+      "cited_by_count": 71
+    },
+    {
+      "year": 2014,
+      "cited_by_count": 69
+    },
+    {
+      "year": 2013,
+      "cited_by_count": 63
+    },
+    {
+      "year": 2012,
+      "cited_by_count": 81
+    }
+  ],
+  "updated_date": "2026-06-23T13:55:30.953635",
+  "created_date": "2025-10-10T00:00:00"
+}

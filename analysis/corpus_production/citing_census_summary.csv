@@ -1,0 +1,70 @@
+dimension,meadows_1972_limits_to_growth_n,commoner_1971_closing_circle_n,schumacher_1974_small_is_beautiful_n,meadows_1972_limits_to_growth_oa_n,commoner_1971_closing_circle_oa_n,schumacher_1974_small_is_beautiful_oa_n
+decade=1970s,500,112,27,31,13,5
+decade=1980s,400,101,54,30,10,7
+decade=1990s,699,134,97,89,13,17
+decade=2000s,1848,226,343,480,52,109
+decade=2010s,4224,423,694,1768,155,277
+decade=2020s,2799,120,244,1730,62,135
+decade=unknown,8,0,1,2,0,1
+decade=TOTAL,10478,1116,1460,4130,305,551
+
+type,meadows_1972_limits_to_growth_n,commoner_1971_closing_circle_n,schumacher_1974_small_is_beautiful_n
+type=article,6779,836,938
+type=book,280,26,46
+type=book-chapter,2447,175,303
+type=book-section,2,0,0
+type=dataset,2,0,0
+type=dissertation,417,49,124
+type=editorial,23,0,5
+type=erratum,1,0,0
+type=letter,2,1,1
+type=other,118,6,1
+type=paratext,12,2,5
+type=peer-review,1,0,0
+type=preprint,193,6,20
+type=reference-entry,3,0,1
+type=report,20,0,2
+type=review,178,15,14
+
+top_fields_per_seed
+seed=meadows_1972_limits_to_growth,field,n
+,Environmental Science,2910
+,Social Sciences,2249
+,"Economics, Econometrics and Finance",1224
+,"Business, Management and Accounting",822
+,Engineering,689
+,Decision Sciences,634
+,Energy,587
+,Arts and Humanities,309
+,Agricultural and Biological Sciences,302
+,Psychology,127
+
+seed=commoner_1971_closing_circle,field,n
+,Environmental Science,371
+,Social Sciences,268
+,"Economics, Econometrics and Finance",95
+,"Business, Management and Accounting",82
+,Arts and Humanities,60
+,Agricultural and Biological Sciences,42
+,Energy,41
+,Engineering,41
+,Decision Sciences,18
+,Earth and Planetary Sciences,16
+
+seed=schumacher_1974_small_is_beautiful,field,n
+,Social Sciences,447
+,Environmental Science,219
+,"Business, Management and Accounting",208
+,"Economics, Econometrics and Finance",140
+,Engineering,90
+,Arts and Humanities,86
+,Agricultural and Biological Sciences,65
+,Computer Science,45
+,Psychology,42
+,Decision Sciences,34
+
+census_stats_per_seed
+seed_id,canonical_id,alt_edition_ids,raw_sum_across_targets,unioned_unique_citing_works,overlap_dropped_by_union
+meadows_1972_limits_to_growth,W2079238586,W225706379;W3145345180,11915,10478,1437
+commoner_1971_closing_circle,W2799049480,W2014540969;W569826341,1161,1116,45
+schumacher_1974_small_is_beautiful,W2054104432,,1460,1460,0

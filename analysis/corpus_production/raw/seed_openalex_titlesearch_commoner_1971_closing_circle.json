@@ -1,0 +1,476 @@
+{
+  "meta": {
+    "count": 9,
+    "db_response_time_ms": 65,
+    "page": 1,
+    "per_page": 25,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where title has (The Closing Circle) and year >= 1971 and year <= 1972",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "display_name.search",
+            "value": "The Closing Circle",
+            "operator": "has"
+          },
+          {
+            "column_id": "publication_year",
+            "value": 1971,
+            "operator": ">="
+          },
+          {
+            "column_id": "publication_year",
+            "value": 1972,
+            "operator": "<="
+          }
+        ],
+        "select": [
+          "id",
+          "doi",
+          "ids",
+          "title",
+          "display_name",
+          "publication_year",
+          "type",
+          "cited_by_count",
+          "authorships",
+          "primary_topic"
+        ],
+        "per_page": 25
+      },
+      "url": "/works?filter=display_name.search:The Closing Circle,publication_year:1971-1972&select=id,doi,ids,title,display_name,publication_year,type,cited_by_count,authorships,primary_topic&per_page=25"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W2406450447",
+      "doi": "https://doi.org/10.1080/21548331.1972.11706151",
+      "ids": {
+        "openalex": "https://openalex.org/W2406450447",
+        "doi": "https://doi.org/10.1080/21548331.1972.11706151",
+        "mag": "2406450447"
+      },
+      "title": "The Closing Circle: Nature, Man and Technology",
+      "display_name": "The Closing Circle: Nature, Man and Technology",
+      "publication_year": 1972,
+      "type": "article",
+      "cited_by_count": 742,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5041099224",
+            "display_name": "Robert Claiborne",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": true,
+          "raw_author_name": "Robert Claiborne",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        }
+      ],
+      "primary_topic": {
+        "id": "https://openalex.org/T11590",
+        "display_name": "Primary Care and Health Outcomes",
+        "score": 0.10999999940395355,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3600",
+          "display_name": "General Health Professions"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/36",
+          "display_name": "Health Professions"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/4",
+          "display_name": "Health Sciences"
+        }
+      }
+    },
+    {
+      "id": "https://openalex.org/W2799049480",
+      "doi": null,
+      "ids": {
+        "openalex": "https://openalex.org/W2799049480",
+        "mag": "2799049480"
+      },
+      "title": "The Closing Circle",
+      "display_name": "The Closing Circle",
+      "publication_year": 1971,
+      "type": "book",
+      "cited_by_count": 470,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5111374580",
+            "display_name": "Barry Commoner",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": true,
+          "raw_author_name": "Barry Commoner",
+          "raw_affiliation_strings": [],
+          "affiliations": []
+        }
+      ],
+      "primary_topic": {
+        "id": "https://openalex.org/T13884",
+        "display_name": "Educational Leadership and Practices",
+        "score": 0.004800000227987766,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3304",
+          "display_name": "Education"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/33",
+          "display_name": "Social Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      }
+    },
+    {
+      "id": "https://openalex.org/W569826341",
+      "doi": null,
+      "ids": {
+        "openalex": "https://openalex.org/W569826341",
+        "mag": "569826341"
+      },
+      "title": "The closing circle: Confronting the environmental crisis",
+      "display_name": "The closing circle: Confronting the environmental crisis",
+      "publication_year": 1972,
+      "type": "book",
+      "cited_by_count": 110,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5111374580",
+            "display_name": "Barry Commoner",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": true,
+          "raw_author_name": "Barry Commoner",
+          "raw_affiliation_strings": [],
+          "affiliations": []
+        }
+      ],
+      "primary_topic": {
+        "id": "https://openalex.org/T11244",
+        "display_name": "Climate Change and Health Impacts",
+        "score": 0.010599999688565731,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2307",
+          "display_name": "Health, Toxicology and Mutagenesis"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/23",
+          "display_name": "Environmental Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      }
+    },
+    {
+      "id": "https://openalex.org/W2315867036",
+      "doi": "https://doi.org/10.1021/cen-v049n045.p001",
+      "ids": {
+        "openalex": "https://openalex.org/W2315867036",
+        "doi": "https://doi.org/10.1021/cen-v049n045.p001",
+        "mag": "2315867036"
+      },
+      "title": "\"The Closing Circle\"",
+      "display_name": "\"The Closing Circle\"",
+      "publication_year": 1971,
+      "type": "article",
+      "cited_by_count": 0,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5087071803",
+            "display_name": "PATRICK P. MCCURDY",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": true,
+          "raw_author_name": "PATRICK P. MCCURDY",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        }
+      ],
+      "primary_topic": {
+        "id": "https://openalex.org/T13180",
+        "display_name": "Chemistry and Chemical Engineering",
+        "score": 0.17630000412464142,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2304",
+          "display_name": "Environmental Chemistry"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/23",
+          "display_name": "Environmental Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      }
+    },
+    {
+      "id": "https://openalex.org/W2099273838",
+      "doi": "https://doi.org/10.1016/0038-0121(72)90038-9",
+      "ids": {
+        "openalex": "https://openalex.org/W2099273838",
+        "doi": "https://doi.org/10.1016/0038-0121(72)90038-9",
+        "mag": "2099273838"
+      },
+      "title": "The closing circle: A review article",
+      "display_name": "The closing circle: A review article",
+      "publication_year": 1972,
+      "type": "review",
+      "cited_by_count": 0,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5027859459",
+            "display_name": "V. Kerry Smith",
+            "orcid": "https://orcid.org/0000-0002-3908-7241"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2801278523",
+              "display_name": "Resources For The Future",
+              "ror": "https://ror.org/04qpegs24",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I2801278523"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "V.Kerry Smith",
+          "raw_affiliation_strings": [
+            "Resources for the Future, Inc., 1755 Massachusetts Avenue, N.W., Washington, D.C. 20036 USA"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Resources for the Future, Inc., 1755 Massachusetts Avenue, N.W., Washington, D.C. 20036 USA",
+              "institution_ids": [
+                "https://openalex.org/I2801278523"
+              ]
+            }
+          ]
+        }
+      ],
+      "primary_topic": {
+        "id": "https://openalex.org/T12414",
+        "display_name": "Coastal and Marine Management",
+        "score": 0.7074999809265137,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2308",
+          "display_name": "Management, Monitoring, Policy and Law"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/23",
+          "display_name": "Environmental Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      }
+    },
+    {
+      "id": "https://openalex.org/W1554375654",
+      "doi": null,
+      "ids": {
+        "openalex": "https://openalex.org/W1554375654",
+        "mag": "1554375654"
+      },
+      "title": "Closing Circle on Environmental Economics.",
+      "display_name": "Closing Circle on Environmental Economics.",
+      "publication_year": 1972,
+      "type": "article",
+      "cited_by_count": 0,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5051253074",
+            "display_name": "Thomas T. Bradshaw",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": true,
+          "raw_author_name": "Thomas T. Bradshaw",
+          "raw_affiliation_strings": [],
+          "affiliations": []
+        }
+      ],
+      "primary_topic": {
+        "id": "https://openalex.org/T12013",
+        "display_name": "Sustainable Development and Environmental Policy",
+        "score": 0.2565000057220459,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2308",
+          "display_name": "Management, Monitoring, Policy and Law"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/23",
+          "display_name": "Environmental Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      }
+    },
+    {
+      "id": "https://openalex.org/W4252832774",
+      "doi": "https://doi.org/10.1017/s0084255900015072",
+      "ids": {
+        "openalex": "https://openalex.org/W4252832774",
+        "doi": "https://doi.org/10.1017/s0084255900015072"
+      },
+      "title": "The Closing Circle by Barry Commoner (Knopf; 326 pp.; $6.95)",
+      "display_name": "The Closing Circle by Barry Commoner (Knopf; 326 pp.; $6.95)",
+      "publication_year": 1972,
+      "type": "article",
+      "cited_by_count": 0,
+      "authorships": [],
+      "primary_topic": {
+        "id": "https://openalex.org/T14092",
+        "display_name": "Ethics, Aesthetics, and Art",
+        "score": 0.009700000286102295,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1211",
+          "display_name": "Philosophy"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/12",
+          "display_name": "Arts and Humanities"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      }
+    },
+    {
+      "id": "https://openalex.org/W7113272876",
+      "doi": null,
+      "ids": {
+        "openalex": "https://openalex.org/W7113272876"
+      },
+      "title": "Wachstumswahn und Umweltkrise (The closing circle, dt.) Einf. v. Klaus Mehnert",
+      "display_name": "Wachstumswahn und Umweltkrise (The closing circle, dt.) Einf. v. Klaus Mehnert",
+      "publication_year": 1971,
+      "type": "article",
+      "cited_by_count": 0,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": null,
+            "display_name": "Commoner, Barry 1917-2012",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Commoner, Barry 1917-2012",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": null,
+            "display_name": "Schöfer, Elena",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Schöfer, Elena",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        }
+      ],
+      "primary_topic": {
+        "id": "https://openalex.org/T13360",
+        "display_name": "Economic and Social Issues",
+        "score": 0.08919999748468399,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3312",
+          "display_name": "Sociology and Political Science"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/33",
+          "display_name": "Social Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      }
+    },
+    {
+      "id": "https://openalex.org/W4243163054",
+      "doi": "https://doi.org/10.1080/00139157.1971.9930621",
+      "ids": {
+        "openalex": "https://openalex.org/W4243163054",
+        "doi": "https://doi.org/10.1080/00139157.1971.9930621"
+      },
+      "title": "Closing the Circle",
+      "display_name": "Closing the Circle",
+      "publication_year": 1971,
+      "type": "article",
+      "cited_by_count": 0,
+      "authorships": [],
+      "primary_topic": {
+        "id": "https://openalex.org/T13884",
+        "display_name": "Educational Leadership and Practices",
+        "score": 0.006300000008195639,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3304",
+          "display_name": "Education"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/33",
+          "display_name": "Social Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      }
+    }
+  ],
+  "group_by": []
+}

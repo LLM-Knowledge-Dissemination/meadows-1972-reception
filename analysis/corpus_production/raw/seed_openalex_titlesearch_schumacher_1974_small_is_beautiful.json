@@ -1,0 +1,306 @@
+{
+  "meta": {
+    "count": 5,
+    "db_response_time_ms": 43,
+    "page": 1,
+    "per_page": 25,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where title has (Small is Beautiful) and year >= 1973 and year <= 1975",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "display_name.search",
+            "value": "Small is Beautiful",
+            "operator": "has"
+          },
+          {
+            "column_id": "publication_year",
+            "value": 1973,
+            "operator": ">="
+          },
+          {
+            "column_id": "publication_year",
+            "value": 1975,
+            "operator": "<="
+          }
+        ],
+        "select": [
+          "id",
+          "doi",
+          "ids",
+          "title",
+          "display_name",
+          "publication_year",
+          "type",
+          "cited_by_count",
+          "authorships",
+          "primary_topic"
+        ],
+        "per_page": 25
+      },
+      "url": "/works?filter=display_name.search:Small is Beautiful,publication_year:1973-1975&select=id,doi,ids,title,display_name,publication_year,type,cited_by_count,authorships,primary_topic&per_page=25"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W2054104432",
+      "doi": null,
+      "ids": {
+        "openalex": "https://openalex.org/W2054104432",
+        "mag": "2054104432"
+      },
+      "title": "Small is Beautiful: A Study of Economics as if People Mattered",
+      "display_name": "Small is Beautiful: A Study of Economics as if People Mattered",
+      "publication_year": 1974,
+      "type": "book",
+      "cited_by_count": 1458,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5113374347",
+            "display_name": "E. F. Schumacher",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": true,
+          "raw_author_name": "E. F. Schumacher",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        }
+      ],
+      "primary_topic": {
+        "id": "https://openalex.org/T10785",
+        "display_name": "Economic Theory and Institutions",
+        "score": 0.05999999865889549,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2002",
+          "display_name": "Economics and Econometrics"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/20",
+          "display_name": "Economics, Econometrics and Finance"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      }
+    },
+    {
+      "id": "https://openalex.org/W2605733548",
+      "doi": "https://doi.org/10.2307/2615239",
+      "ids": {
+        "openalex": "https://openalex.org/W2605733548",
+        "doi": "https://doi.org/10.2307/2615239",
+        "mag": "2605733548"
+      },
+      "title": "Small is Beautiful: A Study of Economics as if People Mattered",
+      "display_name": "Small is Beautiful: A Study of Economics as if People Mattered",
+      "publication_year": 1974,
+      "type": "article",
+      "cited_by_count": 1345,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5066282406",
+            "display_name": "Susan Strange",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": true,
+          "raw_author_name": "Susan Strange",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        }
+      ],
+      "primary_topic": {
+        "id": "https://openalex.org/T11042",
+        "display_name": "Corruption and Economic Development",
+        "score": 0.18639999628067017,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3312",
+          "display_name": "Sociology and Political Science"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/33",
+          "display_name": "Social Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      }
+    },
+    {
+      "id": "https://openalex.org/W1990420531",
+      "doi": "https://doi.org/10.1111/j.1759-5436.1975.mp7001008.x",
+      "ids": {
+        "openalex": "https://openalex.org/W1990420531",
+        "doi": "https://doi.org/10.1111/j.1759-5436.1975.mp7001008.x",
+        "mag": "1990420531"
+      },
+      "title": "E. F. Schumacher, Small is Beautiful: a study of economics as if people mattered",
+      "display_name": "E. F. Schumacher, Small is Beautiful: a study of economics as if people mattered",
+      "publication_year": 1975,
+      "type": "article",
+      "cited_by_count": 7,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5104351927",
+            "display_name": "Ruth Pearson",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": true,
+          "raw_author_name": "Ruth Pearson",
+          "raw_affiliation_strings": [],
+          "affiliations": []
+        }
+      ],
+      "primary_topic": {
+        "id": "https://openalex.org/T10446",
+        "display_name": "Income, Poverty, and Inequality",
+        "score": 0.13210000097751617,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3312",
+          "display_name": "Sociology and Political Science"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/33",
+          "display_name": "Social Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      }
+    },
+    {
+      "id": "https://openalex.org/W7111851369",
+      "doi": null,
+      "ids": {
+        "openalex": "https://openalex.org/W7111851369"
+      },
+      "title": "Small is beautiful",
+      "display_name": "Small is beautiful",
+      "publication_year": 1974,
+      "type": "article",
+      "cited_by_count": 0,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": null,
+            "display_name": "Schumacher, Ernest Friedrich",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": true,
+          "raw_author_name": "Schumacher, Ernest Friedrich",
+          "raw_affiliation_strings": [],
+          "affiliations": []
+        }
+      ],
+      "primary_topic": {
+        "id": "https://openalex.org/T13600",
+        "display_name": "Science Education and Perceptions",
+        "score": 0.008299999870359898,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3204",
+          "display_name": "Developmental and Educational Psychology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/32",
+          "display_name": "Psychology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      }
+    },
+    {
+      "id": "https://openalex.org/W2331650494",
+      "doi": "https://doi.org/10.2307/1955319",
+      "ids": {
+        "openalex": "https://openalex.org/W2331650494",
+        "doi": "https://doi.org/10.2307/1955319",
+        "mag": "2331650494"
+      },
+      "title": "Environmental Issues: Population, Pollution, and Economics. By L. G. Hines. (New York: W. W. Norton &amp; Co., 1973. Pp. ix, 339. $9.75, cloth; $3.25, paper.) - Small is Beautiful: Economics as if People Mattered. By E. F. Schumacher. (New York: Harper &amp; Row, 1973. Pp. 290. $3.75, paper.)",
+      "display_name": "Environmental Issues: Population, Pollution, and Economics. By L. G. Hines. (New York: W. W. Norton &amp; Co., 1973. Pp. ix, 339. $9.75, cloth; $3.25, paper.) - Small is Beautiful: Economics as if People Mattered. By E. F. Schumacher. (New York: Harper &amp; Row, 1973. Pp. 290. $3.75, paper.)",
+      "publication_year": 1975,
+      "type": "article",
+      "cited_by_count": 0,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5111552189",
+            "display_name": "Harold Sprout",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I20089843",
+              "display_name": "Princeton University",
+              "ror": "https://ror.org/00hx57361",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I20089843"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Harold Sprout",
+          "raw_affiliation_strings": [
+            "Princeton University"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Princeton University",
+              "institution_ids": [
+                "https://openalex.org/I20089843"
+              ]
+            }
+          ]
+        }
+      ],
+      "primary_topic": {
+        "id": "https://openalex.org/T12013",
+        "display_name": "Sustainable Development and Environmental Policy",
+        "score": 0.06790000200271606,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2308",
+          "display_name": "Management, Monitoring, Policy and Law"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/23",
+          "display_name": "Environmental Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      }
+    }
+  ],
+  "group_by": []
+}

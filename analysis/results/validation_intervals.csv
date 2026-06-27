@@ -1,0 +1,6 @@
+validation_area,metric_type,k,n,p_hat,ci_lower,ci_upper,ci_method
+Historical/Foundation,agreement,15,28,0.5357142857142857,0.35812689234467915,0.7046843001720462,Wilson score (1927) two-sided 95%
+Modeling,agreement,8,11,0.7272727272727273,0.434354698823871,0.9025394070997511,Wilson score (1927) two-sided 95%
+Router-Safe Batch A,agreement,18,24,0.75,0.55100555994846,0.8800063377140499,Wilson score (1927) two-sided 95%
+Bibliography Audit,precision,16,20,0.8,0.5839825677481065,0.9193423374202019,Wilson score (1927) two-sided 95%
+Extraction Recovery,helpfulness,10,11,0.9090909090909091,0.6226415635484046,0.9837678271141153,Wilson score (1927) two-sided 95%

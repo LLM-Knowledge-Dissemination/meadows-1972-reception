@@ -1,0 +1,32 @@
+project:
+  name: "meadows-1972-bibliometrics"
+
+data:
+  raw: "analysis/data/raw"
+  legacy_raw: "analysis/data/rawData"
+  interim: "analysis/data/interim"
+  processed: "analysis/data/processed"
+  derived: "analysis/data/derived"
+  external: "analysis/data/external"
+  manual: "analysis/data/manual"
+  llm_input: "analysis/data/llm_input"
+  llm_output: "analysis/data/llm_output"
+  pdf: "analysis/data/pdf"
+  pdf_text: "analysis/data/pdf_text"
+  pdf_hits: "analysis/data/pdf_hits"
+  doi_meta: "analysis/data/doi_meta"
+  hathi_meta: "analysis/data/hathi_meta"
+  validation: "analysis/validation"
+
+outputs:
+  figures: "analysis/figures"
+  tables: "analysis/tables"
+  reports: "analysis/reports"
+  logs: "analysis/logs"
+  audit: "analysis/audit"
+
+scripts:
+  helpers: "scripts/helpers"
+  R: "scripts/R"
+  pipeline: "scripts/pipeline"
+  python: "scripts/python"

@@ -1,0 +1,303 @@
+{
+  "id": "https://openalex.org/W2799049480",
+  "doi": null,
+  "title": "The Closing Circle",
+  "display_name": "The Closing Circle",
+  "publication_year": 1971,
+  "publication_date": "1971-01-01",
+  "ids": {
+    "openalex": "https://openalex.org/W2799049480",
+    "mag": "2799049480"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "mag:2799049480",
+    "is_oa": false,
+    "landing_page_url": "https://openlibrary.org/books/OL24203588M/The_closing_circle",
+    "pdf_url": null,
+    "source": null,
+    "license": null,
+    "license_id": null,
+    "version": null,
+    "is_accepted": false,
+    "is_published": false,
+    "raw_source_name": null,
+    "raw_type": null
+  },
+  "type": "book",
+  "indexed_in": [],
+  "open_access": {
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null,
+    "any_repository_has_fulltext": false
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5111374580",
+        "display_name": "Barry Commoner",
+        "orcid": null
+      },
+      "institutions": [],
+      "countries": [],
+      "is_corresponding": true,
+      "raw_author_name": "Barry Commoner",
+      "raw_affiliation_strings": [],
+      "affiliations": []
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 0,
+  "institutions_distinct_count": 1,
+  "corresponding_author_ids": [
+    "https://openalex.org/A5111374580"
+  ],
+  "corresponding_institution_ids": [],
+  "apc_list": null,
+  "apc_paid": null,
+  "fwci": 39.8788,
+  "has_fulltext": false,
+  "cited_by_count": 470,
+  "citation_normalized_percentile": {
+    "value": 0.99771863,
+    "is_in_top_1_percent": true,
+    "is_in_top_10_percent": true
+  },
+  "cited_by_percentile_year": {
+    "min": 89,
+    "max": 100
+  },
+  "biblio": {
+    "volume": null,
+    "issue": null,
+    "first_page": null,
+    "last_page": null
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T13884",
+    "display_name": "Educational Leadership and Practices",
+    "score": 0.004800000227987766,
+    "subfield": {
+      "id": "https://openalex.org/subfields/3304",
+      "display_name": "Education"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/33",
+      "display_name": "Social Sciences"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/2",
+      "display_name": "Social Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T13884",
+      "display_name": "Educational Leadership and Practices",
+      "score": 0.004800000227987766,
+      "subfield": {
+        "id": "https://openalex.org/subfields/3304",
+        "display_name": "Education"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/33",
+        "display_name": "Social Sciences"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/2",
+        "display_name": "Social Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T14176",
+      "display_name": "Interdisciplinary Cultural and Social Studies",
+      "score": 0.003100000089034438,
+      "subfield": {
+        "id": "https://openalex.org/subfields/3312",
+        "display_name": "Sociology and Political Science"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/33",
+        "display_name": "Social Sciences"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/2",
+        "display_name": "Social Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T12953",
+      "display_name": "Critical Realism in Sociology",
+      "score": 0.003000000026077032,
+      "subfield": {
+        "id": "https://openalex.org/subfields/3312",
+        "display_name": "Sociology and Political Science"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/33",
+        "display_name": "Social Sciences"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/2",
+        "display_name": "Social Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/closing",
+      "display_name": "Closing (real estate)",
+      "score": 0.7248154878616333
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-science",
+      "display_name": "Computer science",
+      "score": 0.328321635723114
+    },
+    {
+      "id": "https://openalex.org/keywords/political-science",
+      "display_name": "Political science",
+      "score": 0.22813299298286438
+    },
+    {
+      "id": "https://openalex.org/keywords/law",
+      "display_name": "Law",
+      "score": 0.059733837842941284
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C2778775528",
+      "wikidata": "https://www.wikidata.org/wiki/Q5135432",
+      "display_name": "Closing (real estate)",
+      "level": 2,
+      "score": 0.7248154878616333
+    },
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 0.328321635723114
+    },
+    {
+      "id": "https://openalex.org/C17744445",
+      "wikidata": "https://www.wikidata.org/wiki/Q36442",
+      "display_name": "Political science",
+      "level": 0,
+      "score": 0.22813299298286438
+    },
+    {
+      "id": "https://openalex.org/C199539241",
+      "wikidata": "https://www.wikidata.org/wiki/Q7748",
+      "display_name": "Law",
+      "level": 1,
+      "score": 0.059733837842941284
+    }
+  ],
+  "mesh": [],
+  "locations_count": 1,
+  "locations": [
+    {
+      "id": "mag:2799049480",
+      "is_oa": false,
+      "landing_page_url": "https://openlibrary.org/books/OL24203588M/The_closing_circle",
+      "pdf_url": null,
+      "source": null,
+      "license": null,
+      "license_id": null,
+      "version": null,
+      "is_accepted": false,
+      "is_published": null,
+      "raw_source_name": null,
+      "raw_type": null
+    }
+  ],
+  "best_oa_location": null,
+  "sustainable_development_goals": [],
+  "awards": [],
+  "funders": [],
+  "has_content": {
+    "pdf": false,
+    "grobid_xml": false
+  },
+  "content_urls": null,
+  "referenced_works_count": 0,
+  "referenced_works": [],
+  "related_works": [
+    "https://openalex.org/W225706379",
+    "https://openalex.org/W1489934507",
+    "https://openalex.org/W1997466867",
+    "https://openalex.org/W1600853026",
+    "https://openalex.org/W2028514556",
+    "https://openalex.org/W2014540969",
+    "https://openalex.org/W2226396244",
+    "https://openalex.org/W49479346",
+    "https://openalex.org/W2057931959",
+    "https://openalex.org/W1572762085",
+    "https://openalex.org/W1996199418",
+    "https://openalex.org/W1598758268",
+    "https://openalex.org/W1552113627",
+    "https://openalex.org/W3145345180",
+    "https://openalex.org/W3122477235",
+    "https://openalex.org/W2753533763",
+    "https://openalex.org/W1982690502",
+    "https://openalex.org/W2115768128",
+    "https://openalex.org/W1551322995",
+    "https://openalex.org/W1508369527"
+  ],
+  "abstract_inverted_index": null,
+  "counts_by_year": [
+    {
+      "year": 2022,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2021,
+      "cited_by_count": 7
+    },
+    {
+      "year": 2020,
+      "cited_by_count": 5
+    },
+    {
+      "year": 2019,
+      "cited_by_count": 9
+    },
+    {
+      "year": 2018,
+      "cited_by_count": 10
+    },
+    {
+      "year": 2017,
+      "cited_by_count": 16
+    },
+    {
+      "year": 2016,
+      "cited_by_count": 10
+    },
+    {
+      "year": 2015,
+      "cited_by_count": 15
+    },
+    {
+      "year": 2014,
+      "cited_by_count": 12
+    },
+    {
+      "year": 2013,
+      "cited_by_count": 12
+    },
+    {
+      "year": 2012,
+      "cited_by_count": 15
+    }
+  ],
+  "updated_date": "2026-03-24T08:02:53.985720",
+  "created_date": "2018-05-07T00:00:00"
+}

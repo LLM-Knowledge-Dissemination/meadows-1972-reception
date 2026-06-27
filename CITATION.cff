@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: "Evidence-Bounded Contextual Bibliometrics: Task-Specific Validation, Automation Boundaries, and Claims Governance in a Meadows 1972 Stress Test"
+version: "v2.0-paper1-freeze"
+date-released: "2026-06-09"
+authors:
+  - family-names: "Chism"
+    given-names: "Greg"
+repository-code: "PENDING"
+doi: "PENDING"
+message: "If you use this repository, please cite the archived release. DOI and repository URL are pending."
+license: "MIT"
+keywords:
+  - contextual bibliometrics
+  - scientometrics
+  - validation
+  - automation boundaries
+  - claims governance
+  - reproducibility

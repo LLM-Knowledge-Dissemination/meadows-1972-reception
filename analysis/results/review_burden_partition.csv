@@ -1,0 +1,17 @@
+partition_class,definition,expected,found,match,notes
+corpus_total,All contextual corpus rows (meadows_context_classification.csv),1590,1590,TRUE,NA
+substantive_review,"needs_human_review OR human_review_status in {human_reviewed, unresolved_or_rejected}",949,949,TRUE,NA
+audit_review,"NOT substantive AND (citation_function == bibliographic_only OR human_review_status in {router_safe_not_human_reviewed, hybrid_accepted_not_human_reviewed})",641,641,TRUE,NA
+no_review_required,NOT substantive AND NOT audit (residual under current policy split),0,0,TRUE,NA
+substantive_decomp_needs_review,subset of substantive: needs_human_review == TRUE,870,870,TRUE,Surface the manuscript tension: substantive_review (949) exceeds needs_human_review (870) because substantive_review is the union of needs-review + already-reviewed (65) + unresolved_or_rejected-not-otherwise-flagged (14). 870 + 65 + 14 = 949.
+substantive_decomp_already_reviewed,subset of substantive: human_reviewed AND NOT needs_human_review,NA,65,NA,No manuscript expected value; this is a definitional component disclosed for transparency.
+substantive_decomp_unresolved,subset of substantive: unresolved_or_rejected AND NOT needs_human_review,NA,14,NA,No manuscript expected value; this is a definitional component disclosed for transparency.
+review_flag_needs_review,needs_human_review == TRUE,870,870,TRUE,NA
+review_flag_no_flag,needs_human_review == FALSE,720,720,TRUE,NA
+evidence_level_1_traditional,evidence_level == 'Level 1: traditional bibliometric evidence',1395,1395,TRUE,NA
+evidence_level_2_human_reviewed,evidence_level == 'Level 2: human-reviewed contextual evidence',65,65,TRUE,NA
+evidence_level_3_validated_router,evidence_level == 'Level 3: validated deterministic-router evidence',36,36,TRUE,NA
+evidence_level_4_hybrid_accepted,evidence_level == 'Level 4: hybrid accepted but not human-reviewed',24,24,TRUE,NA
+evidence_level_5_unresolved,evidence_level == 'Level 5: unresolved gray-zone / not usable',70,70,TRUE,NA
+bibliography_only_rows,citation_function == 'bibliographic_only',662,662,TRUE,NA
+usable_for_substantive_rows,usable_for_substantive_analysis == TRUE,95,95,TRUE,NA

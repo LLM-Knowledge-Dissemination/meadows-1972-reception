@@ -1,0 +1,53 @@
+{
+  "started_at_utc": "2026-06-24T23:07:46+00:00",
+  "active_seeds": [
+    "meadows_1972_limits_to_growth",
+    "commoner_1971_closing_circle",
+    "schumacher_1974_small_is_beautiful"
+  ],
+  "per_seed_stats": [
+    {
+      "seed_id": "meadows_1972_limits_to_growth",
+      "canonical_id": "W2079238586",
+      "alt_edition_ids": [
+        "W225706379",
+        "W3145345180"
+      ],
+      "per_target_counts": {
+        "W2079238586": 4097,
+        "W225706379": 4730,
+        "W3145345180": 3088
+      },
+      "raw_sum_across_targets": 11915,
+      "unioned_unique_citing_works": 10478,
+      "overlap_dropped_by_union": 1437
+    },
+    {
+      "seed_id": "commoner_1971_closing_circle",
+      "canonical_id": "W2799049480",
+      "alt_edition_ids": [
+        "W2014540969",
+        "W569826341"
+      ],
+      "per_target_counts": {
+        "W2799049480": 470,
+        "W2014540969": 581,
+        "W569826341": 110
+      },
+      "raw_sum_across_targets": 1161,
+      "unioned_unique_citing_works": 1116,
+      "overlap_dropped_by_union": 45
+    },
+    {
+      "seed_id": "schumacher_1974_small_is_beautiful",
+      "canonical_id": "W2054104432",
+      "alt_edition_ids": [],
+      "per_target_counts": {
+        "W2054104432": 1460
+      },
+      "raw_sum_across_targets": 1460,
+      "unioned_unique_citing_works": 1460,
+      "overlap_dropped_by_union": 0
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+item_id,function_A,function_B,stance_A,stance_B,depth_A,depth_B,flag_A,flag_B,notes_A,notes_B,function_disagree,stance_disagree,depth_disagree,adjudicated_function,adjudicated_stance,adjudicated_depth,adjudication_notes
+FIX_002,Background,Motivation,Neutral,Neutral,Perfunctory,Perfunctory,NA,NA,NA,disagreement_on_function,TRUE,FALSE,FALSE,,,,
+FIX_004,CompareContrast,CompareContrast,Negative,Neutral,Substantive,Substantive,NA,NA,NA,disagreement_on_stance,FALSE,TRUE,FALSE,,,,
+FIX_006,CompareContrast,Uses,Neutral,Positive,Substantive,Substantive,NA,NA,NA,disagreement_on_function_and_stance,TRUE,TRUE,FALSE,,,,
+FIX_010,Background,Background,Neutral,Neutral,Perfunctory,Substantive,NA,NA,NA,disagreement_on_depth,FALSE,FALSE,TRUE,,,,

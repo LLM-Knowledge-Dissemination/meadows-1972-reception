@@ -1,0 +1,45 @@
+number_label,code_value,code_source,manuscript_values,manuscript_line_locations,manuscript_occurrence_count,match
+corpus_total_rows,1590,review_burden_partition.csv: corpus_total,"1,590","200, 247, 316, 393, 405",5,TRUE
+evidence_level_1,1395,review_burden_partition.csv: evidence_level_1_traditional,"1,395","239, 241, 248, 393, 397",5,TRUE
+evidence_level_2,65,review_burden_partition.csv: evidence_level_2_human_reviewed,65,"239, 241, 249, 393, 397, 603, 611, 647, 653",9,TRUE
+evidence_level_3,36,review_burden_partition.csv: evidence_level_3_validated_router,36,"239, 241, 250, 277, 393, 397, 603",7,TRUE
+evidence_level_4,24,review_burden_partition.csv: evidence_level_4_hybrid_accepted,24,"239, 241, 251, 265, 275, 293, 300, 367, 381, 393, 397, 441, 554, 621, 647",15,TRUE
+evidence_level_5,70,review_burden_partition.csv: evidence_level_5_unresolved,70,"42, 81, 239, 241, 252, 253, 277, 393, 397, 443, 601",11,TRUE
+bibliography_only_rows,662,review_burden_partition.csv: bibliography_only_rows,NA,NA,0,FALSE
+needs_human_review_rows,870,review_burden_partition.csv: review_flag_needs_review,870,"241, 253, 397",3,TRUE
+no_review_flag_rows,720,review_burden_partition.csv: review_flag_no_flag,720,"241, 254, 397",3,TRUE
+usable_for_substantive_rows,95,review_burden_partition.csv: usable_for_substantive_rows,95,"239, 241, 248, 255, 269, 271, 342, 369, 393, 397, 407, 641",12,TRUE
+review_burden_substantive,949,review_burden_partition.csv: substantive_review,949,"316, 405",2,TRUE
+review_burden_audit,641,review_burden_partition.csv: audit_review,641,"316, 405, 637",3,TRUE
+review_burden_no_review,0,review_burden_partition.csv: no_review_required,0 contexts are assigned to no-review-required,405,1,TRUE
+extraction_recovery_helpful,10/11,validation_intervals.csv: Extraction Recovery k/n,10/11,"265, 273, 441, 553",4,TRUE
+bibliography_audit_precision,16/20,validation_intervals.csv: Bibliography Audit k/n,16/20,"265, 274, 299, 441, 554",5,TRUE
+router_safe_agreement,18/24,validation_intervals.csv: Router-Safe Batch A k/n,18/24,"265, 275, 293, 300, 441, 554",6,TRUE
+modeling_agreement,8/11,validation_intervals.csv: Modeling k/n,8/11,"265, 276, 293, 301, 441, 554",6,TRUE
+boundary_agreement,15/28,validation_intervals.csv: Historical/Foundation k/n,15/28,"265, 277, 293, 441, 554",5,TRUE
+boundary_rate_pct,53.6%,validation_intervals.csv: Historical/Foundation 100*p_hat,53.6%,304,1,TRUE
+ci_extraction_recovery,"[0.62, 0.98]","validation_intervals.csv: Extraction Recovery [ci_lower, ci_upper] @ 2dp","[0.62, 0.98]",273,1,TRUE
+ci_bibliography_audit,"[0.58, 0.92]","validation_intervals.csv: Bibliography Audit [ci_lower, ci_upper] @ 2dp","[0.58, 0.92]",274,1,TRUE
+ci_router_safe,"[0.55, 0.88]","validation_intervals.csv: Router-Safe Batch A [ci_lower, ci_upper] @ 2dp","[0.55, 0.88]",275,1,TRUE
+ci_modeling,"[0.43, 0.90]","validation_intervals.csv: Modeling [ci_lower, ci_upper] @ 2dp","[0.43, 0.90]",276,1,TRUE
+ci_boundary,"[0.36, 0.70]","validation_intervals.csv: Historical/Foundation [ci_lower, ci_upper] @ 2dp","[0.36, 0.70]",277,1,TRUE
+hours_manual_fast,26.5,fig6 source: estimated_manual_hours[Fast] @ 1dp,26.5,"324, 411",2,TRUE
+hours_manual_typical,39.8,fig6 source: estimated_manual_hours[Typical] @ 1dp,39.8,"325, 411",2,TRUE
+hours_manual_conservative,53.0,fig6 source: estimated_manual_hours[Conservative] @ 1dp,"53; 53.0, 53","304, 326, 411",3,TRUE
+hours_hybrid_fast,19.4,fig6 source: estimated_hybrid_hours[Fast] @ 1dp,19.4,"324, 411",2,TRUE
+hours_hybrid_typical,29.1,fig6 source: estimated_hybrid_hours[Typical] @ 1dp,29.1,"325, 411",2,TRUE
+hours_hybrid_conservative,39.6,fig6 source: estimated_hybrid_hours[Conservative] @ 1dp,39.6,"326, 411",2,TRUE
+reduction_pct_fast,26.9%,fig6 source: estimated_reduction_percent[Fast] @ 1dp,26.9% lower,"324, 325, 411",3,TRUE
+reduction_pct_typical,26.9%,fig6 source: estimated_reduction_percent[Typical] @ 1dp,26.9% lower,"324, 325, 411",3,TRUE
+reduction_pct_conservative,25.2%,fig6 source: estimated_reduction_percent[Conservative] @ 1dp,25.2% lower,"326, 411",2,TRUE
+seconds_substantive_fast,60,fig6 source: substantive_review_seconds[Fast] (policy input),60 seconds; | Fast | 60 |,"318, 324, 409",3,TRUE
+seconds_substantive_typical,90,fig6 source: substantive_review_seconds[Typical] (policy input),90 seconds; | Typical | 90 |,"318, 325, 409",3,TRUE
+seconds_substantive_conservative,120,fig6 source: substantive_review_seconds[Conservative] (policy input),120 seconds; | Conservative | 120 |,"318, 326, 409",3,TRUE
+seconds_audit_fast,20,fig6 source: audit_review_seconds[Fast] (policy input),60 seconds per substantive review and 20 seconds; | Fast | 60 | 20 |,"318, 324",2,TRUE
+seconds_audit_typical,30,fig6 source: audit_review_seconds[Typical] (policy input),90 seconds and 30 seconds; | Typical | 90 | 30 |,"318, 325, 409",3,TRUE
+seconds_audit_conservative,45,fig6 source: audit_review_seconds[Conservative] (policy input),120 seconds and 45 seconds; | Conservative | 120 | 45 |,"318, 326, 409",3,TRUE
+lineage_raw_records,4610,config/data_provenance.yml: total_record_count,"4,610",204,1,TRUE
+lineage_canonical_works,4537,analysis/data/processed/canonical_works.csv row count,"4,537",204,1,TRUE
+lineage_savedrecs_per_file_a,"1,000",config/data_provenance.yml: export_files[savedrecs.xls].record_count,"1,000 + 1,000 + 1,000",204,1,TRUE
+lineage_savedrecs_998,998,config/data_provenance.yml: export_files[savedrecs_3.xls].record_count,998,204,1,TRUE
+lineage_savedrecs_612,612,config/data_provenance.yml: export_files[savedrecs_4.xls].record_count,612,204,1,TRUE

@@ -1,0 +1,124 @@
+# Data provenance for the Paper 1 citing-work corpus.
+#
+# Captures what is machine-recoverable from the repository (file timestamps, embedded xls
+# metadata, per-file record counts derived from analysis/data/interim/metadata_raw.csv,
+# git remote, git tag) and explicitly marks every field that only the author can supply.
+#
+# Author-supply fields are written as `null` with a `TODO(author)` comment naming the
+# information needed and the manuscript/declarations location it must reach. Do not
+# fabricate values. See analysis/results/author_supply_checklist.md for the full punch list.
+
+source_database:
+  name: "Web of Science"
+  provider: "Clarivate"
+  access_route: "Save to Excel — full record export (.xls, CDFV2 Microsoft Excel)"
+
+# Per-file record counts derived from analysis/data/interim/metadata_raw.csv source_file
+# column (one row per WoS record after ingest by scripts/pipeline/01_ingest_raw_metadata.R).
+# Counts confirmed: 1000 + 1000 + 1000 + 998 + 612 = 4,610 records.
+export_files:
+  - filename: "savedrecs.xls"
+    path: "analysis/data/rawData/savedrecs.xls"
+    record_count: 1000
+    file_size_bytes: 2437120
+    filesystem_mtime: "2025-04-12T09:58:21-07:00"
+    xls_internal_last_saved: "2025-04-12T17:58:21"           # from CDFV2 metadata; tz not stamped in xls header
+    xls_internal_last_saved_by: "Chism, Greg Thomas - (gchism)"
+    xls_internal_creating_application: "Microsoft Macintosh Excel"
+  - filename: "savedrecs_1.xls"
+    path: "analysis/data/rawData/savedrecs_1.xls"
+    record_count: 1000
+    file_size_bytes: 2428416
+    filesystem_mtime: "2025-04-11T14:51:58-07:00"
+  - filename: "savedrecs_2.xls"
+    path: "analysis/data/rawData/savedrecs_2.xls"
+    record_count: 1000
+    file_size_bytes: 2178560
+    filesystem_mtime: "2025-04-11T14:52:23-07:00"
+  - filename: "savedrecs_3.xls"
+    path: "analysis/data/rawData/savedrecs_3.xls"
+    record_count: 998
+    file_size_bytes: 1921024
+    filesystem_mtime: "2025-04-11T14:52:40-07:00"
+  - filename: "savedrecs_4.xls"
+    path: "analysis/data/rawData/savedrecs_4.xls"
+    record_count: 612
+    file_size_bytes: 1186816
+    filesystem_mtime: "2025-04-11T14:53:15-07:00"
+total_record_count: 4610
+
+# Snapshot date — resolves the "11–12 April" vs "2025-04-12" tension from filesystem
+# and embedded-xls evidence:
+#   • savedrecs_1.xls … savedrecs_4.xls were written on 2025-04-11 within a 77-second
+#     window (14:51:58 → 14:53:15 PDT) — consistent with a single batched export session
+#     that produced 1000 + 1000 + 998 + 612 = 3,610 records.
+#   • savedrecs.xls (1000 records) was written on 2025-04-12 at 09:58 PDT; the embedded
+#     xls "Last Saved By" stamp (Chism, Greg Thomas) and creating application
+#     (Microsoft Macintosh Excel) confirm authorship on the same workstation.
+# The manuscript §2.1 wording "11–12 April 2025" is supported by this evidence and is
+# preferred over a single-day "2025-04-12" reading.
+snapshot_date:
+  range_start: "2025-04-11"
+  range_end:   "2025-04-12"
+  manuscript_wording: "11–12 April 2025"
+  evidence:
+    - "filesystem mtime of savedrecs_1.xls–savedrecs_4.xls: 2025-04-11"
+    - "filesystem mtime of savedrecs.xls: 2025-04-12"
+    - "savedrecs.xls embedded CDFV2 metadata: Last Saved Time/Date Sat Apr 12 17:58:21 2025; Last Saved By Chism, Greg Thomas - (gchism); Microsoft Macintosh Excel"
+  ambiguity_notes: >
+    The two-day range is the correct reading: four of the five exports were saved on
+    2025-04-11 and the fifth on 2025-04-12, as recorded by filesystem mtime and the
+    embedded CDFV2 "Last Saved" timestamp on savedrecs.xls.
+
+# Author-supply WoS search metadata — not logged at collection time. Marked author-supply
+# in manuscript §2.1: "_[Author to supply before submission: the exact Web of Science
+# search that produced these records …]_"
+wos_search:
+  query_string: null              # TODO(author): exact WoS query that produced these 4,610 records
+  search_type: null               # TODO(author): cited-reference search on Meadows et al. (1972), or topic search? state which
+  indexes_editions: null          # TODO(author): WoS Core Collection indexes/editions selected (e.g., SCI-EXPANDED, SSCI, A&HCI, ESCI, BKCI-S, BKCI-SSH, CPCI-S, CPCI-SSH; with years)
+  timespan: null                  # TODO(author): timespan window selected in WoS at search time
+  search_date: null               # TODO(author): the date the WoS search was executed; may differ from export date (2025-04-11/12)
+
+# Field-level provenance gap identified upstream and already noted in §2.1.
+record_field_notes:
+  cited_references_field:
+    present_in_export: false
+    consequence: "Source-database-native co-citation and bibliographic-coupling networks are not derivable from this export. The manuscript makes no co-citation or bibliographic-coupling claims."
+
+# Downstream-derived counts for traceability (committed CSVs are the source of truth).
+downstream_counts:
+  harmonized_records: 4610        # analysis/tables/pipeline_counts.csv
+  canonical_works: 4537           # post exact-DOI + within-year fuzzy-title dedup
+  citation_contexts: 1395         # analysis/tables/pipeline_counts.csv (Level-1 traditional bibliometric evidence; manuscript Table 1)
+  contextual_corpus_deployed: 1590  # analysis/data/final/contextual_corpus_final.csv row count; manuscript Methods §2.1 / Table 1
+  seed_citing_documents: 496
+  llm_or_fallback_classifications: 100
+
+repository:
+  url: "https://github.com/Gchism94/meadows-1972-bibliometrics"   # from `git remote get-url origin`
+  latest_release_tag: "v2.0-paper1-freeze"                        # from `git tag --sort=-v:refname`
+  latest_release_tag_commit: "7add9258431111502284421acf357de80f40b44a"
+  latest_release_tag_date: "2026-06-09T12:31:33-07:00"
+  latest_release_tag_message: "Paper 1 freeze release"
+  archive_doi: null               # TODO(author): mint and paste the Zenodo (or other archive) DOI for v2.0-paper1-freeze; currently "PENDING" in CITATION.cff, zenodo.json, manuscript Appendix A.2 / A.4 / Declarations Data & Code Availability
+
+# Polite-pool contact address used by the OpenAlex/S2 retrieval pipeline (recorded in
+# every raw API sidecar's user_agent string). Normalized to the institutional address
+# post-retrieval so the on-disk sidecars stay internally consistent.
+polite_pool_contact:
+  address: "gchism@arizona.edu"
+  note: "post-retrieval normalization of the polite-pool/user_agent contact email across all OpenAlex and S2 raw sidecars"
+
+# Pointers to evidence used to derive this file.
+provenance_of_this_file:
+  generated_from:
+    - "filesystem mtime via `stat -f` on analysis/data/rawData/savedrecs*.xls"
+    - "CDFV2 OLE-compound-document metadata via `file` on savedrecs.xls"
+    - "per-file record counts via `awk` on analysis/data/interim/metadata_raw.csv source_file column"
+    - "git remote get-url origin"
+    - "git tag --sort=-v:refname; git show v2.0-paper1-freeze --no-patch"
+  derivation_notes: >
+    No invented values. Every non-null field above is grounded in an artifact in the
+    repository at audit time (2026-06-21). Author-supply fields are explicitly null
+    with a TODO(author) comment naming the required information and its destination.

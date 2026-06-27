@@ -1,0 +1,61 @@
+seed_id,decade,route,census_pool_total,route_eligible_pool,nominal_target,realized_sampled,realized_sampled_fetched_ok,yielded_works,underfilled_flag,underfilled_reason
+commoner_1971_closing_circle,1970s,s2_graph_api,112,112,0,0,,0,DESIGN_EXCLUDED,decade excluded by design (S2 has ~0% yield pre-2010 per spike)
+commoner_1971_closing_circle,1970s,openalex_oa_fulltext,112,12,20,12,7,3,POOL_EXHAUSTED,OA URL pool smaller than nominal target
+commoner_1971_closing_circle,1970s,COMBINED_UNION,112,7,,7,,3,OK,
+commoner_1971_closing_circle,1980s,s2_graph_api,101,101,0,0,,0,DESIGN_EXCLUDED,decade excluded by design (S2 has ~0% yield pre-2010 per spike)
+commoner_1971_closing_circle,1980s,openalex_oa_fulltext,101,10,20,10,5,1,POOL_EXHAUSTED,OA URL pool smaller than nominal target
+commoner_1971_closing_circle,1980s,COMBINED_UNION,101,5,,5,,1,OK,
+commoner_1971_closing_circle,1990s,s2_graph_api,134,134,0,0,,0,DESIGN_EXCLUDED,decade excluded by design (S2 has ~0% yield pre-2010 per spike)
+commoner_1971_closing_circle,1990s,openalex_oa_fulltext,134,13,20,13,11,2,POOL_EXHAUSTED,OA URL pool smaller than nominal target
+commoner_1971_closing_circle,1990s,COMBINED_UNION,134,11,,11,,2,OK,
+commoner_1971_closing_circle,2000s,s2_graph_api,226,226,0,0,,0,DESIGN_EXCLUDED,decade excluded by design (S2 has ~0% yield pre-2010 per spike)
+commoner_1971_closing_circle,2000s,openalex_oa_fulltext,226,52,20,20,15,4,OK,
+commoner_1971_closing_circle,2000s,COMBINED_UNION,226,15,,15,,4,OK,
+commoner_1971_closing_circle,2010s,s2_graph_api,423,423,120,120,,4,OK,
+commoner_1971_closing_circle,2010s,openalex_oa_fulltext,423,155,20,20,15,3,OK,
+commoner_1971_closing_circle,2010s,COMBINED_UNION,423,125,,125,,7,OK,
+commoner_1971_closing_circle,2020s,s2_graph_api,120,120,120,120,,13,OK,
+commoner_1971_closing_circle,2020s,openalex_oa_fulltext,120,62,20,20,15,10,OK,
+commoner_1971_closing_circle,2020s,COMBINED_UNION,120,120,,120,,21,OK,
+meadows_1972_limits_to_growth,1970s,s2_graph_api,500,500,0,0,,0,DESIGN_EXCLUDED,decade excluded by design (S2 has ~0% yield pre-2010 per spike)
+meadows_1972_limits_to_growth,1970s,openalex_oa_fulltext,500,31,20,20,12,9,OK,
+meadows_1972_limits_to_growth,1970s,COMBINED_UNION,500,12,,12,,9,OK,
+meadows_1972_limits_to_growth,1980s,s2_graph_api,400,400,0,0,,0,DESIGN_EXCLUDED,decade excluded by design (S2 has ~0% yield pre-2010 per spike)
+meadows_1972_limits_to_growth,1980s,openalex_oa_fulltext,400,30,20,20,11,5,OK,
+meadows_1972_limits_to_growth,1980s,COMBINED_UNION,400,11,,11,,5,OK,
+meadows_1972_limits_to_growth,1990s,s2_graph_api,699,699,0,0,,0,DESIGN_EXCLUDED,decade excluded by design (S2 has ~0% yield pre-2010 per spike)
+meadows_1972_limits_to_growth,1990s,openalex_oa_fulltext,699,88,20,20,12,2,OK,
+meadows_1972_limits_to_growth,1990s,COMBINED_UNION,699,12,,12,,2,OK,
+meadows_1972_limits_to_growth,2000s,s2_graph_api,1848,1848,0,0,,0,DESIGN_EXCLUDED,decade excluded by design (S2 has ~0% yield pre-2010 per spike)
+meadows_1972_limits_to_growth,2000s,openalex_oa_fulltext,1848,468,20,20,16,6,OK,
+meadows_1972_limits_to_growth,2000s,COMBINED_UNION,1848,16,,16,,6,OK,
+meadows_1972_limits_to_growth,2010s,s2_graph_api,4224,4223,120,120,,8,OK,
+meadows_1972_limits_to_growth,2010s,openalex_oa_fulltext,4224,1740,20,20,10,5,OK,
+meadows_1972_limits_to_growth,2010s,COMBINED_UNION,4224,130,,130,,13,OK,
+meadows_1972_limits_to_growth,2020s,s2_graph_api,2799,2799,120,120,,8,OK,
+meadows_1972_limits_to_growth,2020s,openalex_oa_fulltext,2799,1721,20,20,13,10,OK,
+meadows_1972_limits_to_growth,2020s,COMBINED_UNION,2799,131,,131,,18,OK,
+meadows_1972_limits_to_growth,unknown,s2_graph_api,8,8,0,0,,0,DESIGN_EXCLUDED,decade excluded by design (S2 has ~0% yield pre-2010 per spike)
+meadows_1972_limits_to_growth,unknown,openalex_oa_fulltext,8,2,0,0,0,0,DESIGN_EXCLUDED,
+meadows_1972_limits_to_growth,unknown,COMBINED_UNION,8,0,,0,,0,OK,
+schumacher_1974_small_is_beautiful,1970s,s2_graph_api,27,27,0,0,,0,DESIGN_EXCLUDED,decade excluded by design (S2 has ~0% yield pre-2010 per spike)
+schumacher_1974_small_is_beautiful,1970s,openalex_oa_fulltext,27,5,20,5,3,2,POOL_EXHAUSTED,OA URL pool smaller than nominal target
+schumacher_1974_small_is_beautiful,1970s,COMBINED_UNION,27,3,,3,,2,OK,
+schumacher_1974_small_is_beautiful,1980s,s2_graph_api,54,54,0,0,,0,DESIGN_EXCLUDED,decade excluded by design (S2 has ~0% yield pre-2010 per spike)
+schumacher_1974_small_is_beautiful,1980s,openalex_oa_fulltext,54,7,20,7,5,1,POOL_EXHAUSTED,OA URL pool smaller than nominal target
+schumacher_1974_small_is_beautiful,1980s,COMBINED_UNION,54,5,,5,,1,OK,
+schumacher_1974_small_is_beautiful,1990s,s2_graph_api,97,97,0,0,,0,DESIGN_EXCLUDED,decade excluded by design (S2 has ~0% yield pre-2010 per spike)
+schumacher_1974_small_is_beautiful,1990s,openalex_oa_fulltext,97,17,20,17,13,6,POOL_EXHAUSTED,OA URL pool smaller than nominal target
+schumacher_1974_small_is_beautiful,1990s,COMBINED_UNION,97,13,,13,,6,OK,
+schumacher_1974_small_is_beautiful,2000s,s2_graph_api,343,343,0,0,,0,DESIGN_EXCLUDED,decade excluded by design (S2 has ~0% yield pre-2010 per spike)
+schumacher_1974_small_is_beautiful,2000s,openalex_oa_fulltext,343,107,20,20,14,2,OK,
+schumacher_1974_small_is_beautiful,2000s,COMBINED_UNION,343,14,,14,,2,OK,
+schumacher_1974_small_is_beautiful,2010s,s2_graph_api,694,694,120,120,,10,OK,
+schumacher_1974_small_is_beautiful,2010s,openalex_oa_fulltext,694,272,20,20,12,8,OK,
+schumacher_1974_small_is_beautiful,2010s,COMBINED_UNION,694,128,,128,,17,OK,
+schumacher_1974_small_is_beautiful,2020s,s2_graph_api,244,244,120,120,,15,OK,
+schumacher_1974_small_is_beautiful,2020s,openalex_oa_fulltext,244,134,20,20,15,8,OK,
+schumacher_1974_small_is_beautiful,2020s,COMBINED_UNION,244,127,,127,,22,OK,
+schumacher_1974_small_is_beautiful,unknown,s2_graph_api,1,1,0,0,,0,DESIGN_EXCLUDED,decade excluded by design (S2 has ~0% yield pre-2010 per spike)
+schumacher_1974_small_is_beautiful,unknown,openalex_oa_fulltext,1,1,0,0,0,0,DESIGN_EXCLUDED,
+schumacher_1974_small_is_beautiful,unknown,COMBINED_UNION,1,0,,0,,0,OK,

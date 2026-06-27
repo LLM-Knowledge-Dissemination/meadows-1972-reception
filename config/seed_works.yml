@@ -1,0 +1,24 @@
+meadows_1972:
+  work_id: "seed_meadows_1972_limits_to_growth"
+  canonical_title: "The Limits to Growth"
+  publication_year: 1972
+  authors:
+    - "Donella H. Meadows"
+    - "Dennis L. Meadows"
+    - "Jorgen Randers"
+    - "William W. Behrens III"
+  organizations:
+    - "Club of Rome"
+  known_publishers:
+    - "Universe Books"
+    - "Potomac Associates"
+  title_patterns:
+    - "limits\\s+to\\s+growth"
+  author_year_patterns:
+    - "\\bmeadows\\b\\s*(et\\s+al\\.?)*\\s*,?\\s*(19)?72\\b"
+    - "\\(\\s*meadows\\s*(et\\s+al\\.?)*\\s*,?\\s*(19)?72\\s*\\)"
+  concept_patterns:
+    - "club\\s+of\\s+rome"
+    - "world\\s*3"
+    - "world\\s+model"
+    - "system\\s+dynamics"

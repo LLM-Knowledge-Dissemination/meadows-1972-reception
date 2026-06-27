@@ -1,0 +1,13 @@
+seed_id,band,pool_size,pool_non_article,pool_article,target,realized_n,realized_non_article,realized_article,flag
+meadows_1972_limits_to_growth,pre2000,38,11,27,11,11,11,0,OK
+meadows_1972_limits_to_growth,2000s,23,1,22,11,11,1,10,OK
+meadows_1972_limits_to_growth,2010onward,78,14,64,11,11,11,0,OK
+meadows_1972_limits_to_growth,TOTAL,139,26,113,33,33,23,10,OK
+commoner_1971_closing_circle,pre2000,11,0,11,11,11,0,11,POOL_EXHAUSTED
+commoner_1971_closing_circle,2000s,9,0,9,9,9,0,9,POOL_EXHAUSTED
+commoner_1971_closing_circle,2010onward,43,9,34,13,13,9,4,OK
+commoner_1971_closing_circle,TOTAL,63,9,54,33,33,9,24,OK
+schumacher_1974_small_is_beautiful,pre2000,22,6,16,15,15,6,9,OK
+schumacher_1974_small_is_beautiful,2000s,4,2,2,4,4,2,2,POOL_EXHAUSTED
+schumacher_1974_small_is_beautiful,2010onward,56,4,52,14,14,4,10,OK
+schumacher_1974_small_is_beautiful,TOTAL,82,12,70,33,33,12,21,OK

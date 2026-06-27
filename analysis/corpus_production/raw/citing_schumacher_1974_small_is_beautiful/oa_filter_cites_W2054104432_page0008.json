@@ -1,0 +1,4298 @@
+{
+  "meta": {
+    "count": 1460,
+    "db_response_time_ms": 26,
+    "page": null,
+    "per_page": 200,
+    "next_cursor": null,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where references is W2054104432",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "referenced_works",
+            "value": "W2054104432"
+          }
+        ],
+        "select": [
+          "id",
+          "doi",
+          "ids",
+          "title",
+          "display_name",
+          "publication_year",
+          "type",
+          "type_crossref",
+          "cited_by_count",
+          "is_retracted",
+          "primary_topic",
+          "best_oa_location",
+          "primary_location",
+          "language"
+        ],
+        "per_page": 200,
+        "cursor": "IlsnLUluZmluaXR5JywgMCwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1c0MzY1Nzk0ODg2J10i"
+      },
+      "url": "/works?filter=referenced_works:W2054104432&select=id,doi,ids,title,display_name,publication_year,type,type_crossref,cited_by_count,is_retracted,primary_topic,best_oa_location,primary_location,language&per_page=200&cursor=IlsnLUluZmluaXR5JywgMCwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1c0MzY1Nzk0ODg2J10i"
+    },
+    "cost_usd": 0.0001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W4382283024",
+      "doi": "https://doi.org/10.51415/10321/4838",
+      "ids": {
+        "openalex": "https://openalex.org/W4382283024",
+        "doi": "https://doi.org/10.51415/10321/4838"
+      },
+      "title": "A synthetic approach to regional spatial planning in less developed contexts",
+      "display_name": "A synthetic approach to regional spatial planning in less developed contexts",
+      "publication_year": 2023,
+      "type": "dissertation",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T14219",
+        "display_name": "Local Economic Development and Planning",
+        "score": 0.9898999929428101,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3320",
+          "display_name": "Political Science and International Relations"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/33",
+          "display_name": "Social Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": {
+        "id": "doi:10.51415/10321/4838",
+        "is_oa": true,
+        "landing_page_url": "http://dx.doi.org/10.51415/10321/4838",
+        "pdf_url": "https://openscholar.dut.ac.za/bitstreams/55a33539-9d17-4409-aa7a-2aae26af4457/download",
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Durban University of Technology",
+        "raw_type": "dissertation"
+      },
+      "primary_location": {
+        "id": "doi:10.51415/10321/4838",
+        "is_oa": true,
+        "landing_page_url": "http://dx.doi.org/10.51415/10321/4838",
+        "pdf_url": "https://openscholar.dut.ac.za/bitstreams/55a33539-9d17-4409-aa7a-2aae26af4457/download",
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Durban University of Technology",
+        "raw_type": "dissertation"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4382619312",
+      "doi": "https://doi.org/10.4000/angles.6836",
+      "ids": {
+        "openalex": "https://openalex.org/W4382619312",
+        "doi": "https://doi.org/10.4000/angles.6836"
+      },
+      "title": "Restoring the ‘Georgian House’: Architecture, Politics, and Identity in 1970s Edinburgh",
+      "display_name": "Restoring the ‘Georgian House’: Architecture, Politics, and Identity in 1970s Edinburgh",
+      "publication_year": 2023,
+      "type": "article",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T14109",
+        "display_name": "Scottish History and National Identity",
+        "score": 0.9330999851226807,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1202",
+          "display_name": "History"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/12",
+          "display_name": "Arts and Humanities"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": {
+        "id": "doi:10.4000/angles.6836",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.4000/angles.6836",
+        "pdf_url": "https://journals.openedition.org/angles/pdf/6836",
+        "source": {
+          "id": "https://openalex.org/S4386621734",
+          "display_name": "Angles",
+          "issn_l": "2274-2042",
+          "issn": [
+            "2274-2042"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310321159",
+          "host_organization_name": "OpenEdition Journals",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310321159"
+          ],
+          "host_organization_lineage_names": [
+            "OpenEdition Journals"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Angles",
+        "raw_type": "journal-article"
+      },
+      "primary_location": {
+        "id": "doi:10.4000/angles.6836",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.4000/angles.6836",
+        "pdf_url": "https://journals.openedition.org/angles/pdf/6836",
+        "source": {
+          "id": "https://openalex.org/S4386621734",
+          "display_name": "Angles",
+          "issn_l": "2274-2042",
+          "issn": [
+            "2274-2042"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310321159",
+          "host_organization_name": "OpenEdition Journals",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310321159"
+          ],
+          "host_organization_lineage_names": [
+            "OpenEdition Journals"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Angles",
+        "raw_type": "journal-article"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4385195958",
+      "doi": "https://doi.org/10.1007/978-3-031-31399-8_15",
+      "ids": {
+        "openalex": "https://openalex.org/W4385195958",
+        "doi": "https://doi.org/10.1007/978-3-031-31399-8_15"
+      },
+      "title": "Debates on Urban Environmental Issues and Trends of Urban Forestry in Kolkata Municipal Corporation: A Quantitative Approach",
+      "display_name": "Debates on Urban Environmental Issues and Trends of Urban Forestry in Kolkata Municipal Corporation: A Quantitative Approach",
+      "publication_year": 2023,
+      "type": "book-chapter",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10692",
+        "display_name": "Urban Green Space and Health",
+        "score": 0.9940000176429749,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2307",
+          "display_name": "Health, Toxicology and Mutagenesis"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/23",
+          "display_name": "Environmental Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "doi:10.1007/978-3-031-31399-8_15",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1007/978-3-031-31399-8_15",
+        "pdf_url": null,
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Environmental Management and Sustainability in India",
+        "raw_type": "book-chapter"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4385559859",
+      "doi": "https://doi.org/10.1007/978-981-99-3493-5_1",
+      "ids": {
+        "openalex": "https://openalex.org/W4385559859",
+        "doi": "https://doi.org/10.1007/978-981-99-3493-5_1"
+      },
+      "title": "Money Makes Us Happy or It Doesn’t",
+      "display_name": "Money Makes Us Happy or It Doesn’t",
+      "publication_year": 2023,
+      "type": "book-chapter",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10475",
+        "display_name": "Psychological Well-being and Life Satisfaction",
+        "score": 0.9876000285148621,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3207",
+          "display_name": "Social Psychology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/32",
+          "display_name": "Psychology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "doi:10.1007/978-981-99-3493-5_1",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1007/978-981-99-3493-5_1",
+        "pdf_url": null,
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Understanding Happiness",
+        "raw_type": "book-chapter"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4385883743",
+      "doi": "https://doi.org/10.1007/978-3-031-23073-8_11",
+      "ids": {
+        "openalex": "https://openalex.org/W4385883743",
+        "doi": "https://doi.org/10.1007/978-3-031-23073-8_11"
+      },
+      "title": "Könige und Indikatoren: Optionen für ein Regieren ohne Zahlen",
+      "display_name": "Könige und Indikatoren: Optionen für ein Regieren ohne Zahlen",
+      "publication_year": 2023,
+      "type": "book-chapter",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T13002",
+        "display_name": "Southeast Asian Sociopolitical Studies",
+        "score": 0.998199999332428,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3320",
+          "display_name": "Political Science and International Relations"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/33",
+          "display_name": "Social Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "doi:10.1007/978-3-031-23073-8_11",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1007/978-3-031-23073-8_11",
+        "pdf_url": null,
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Wissenschaft, Zahlen und Politik",
+        "raw_type": "book-chapter"
+      },
+      "language": "de"
+    },
+    {
+      "id": "https://openalex.org/W4386382311",
+      "doi": "https://doi.org/10.1007/978-3-031-37853-9_7",
+      "ids": {
+        "openalex": "https://openalex.org/W4386382311",
+        "doi": "https://doi.org/10.1007/978-3-031-37853-9_7"
+      },
+      "title": "The Way Out Is Also in: Educators Committed to Transformative Learning and Care Ethics as a Means of Resisting Neoliberal Policies (Hautes-Alpes, France)",
+      "display_name": "The Way Out Is Also in: Educators Committed to Transformative Learning and Care Ethics as a Means of Resisting Neoliberal Policies (Hautes-Alpes, France)",
+      "publication_year": 2023,
+      "type": "book-chapter",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T12345",
+        "display_name": "Adult and Continuing Education Topics",
+        "score": 0.9926000237464905,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3304",
+          "display_name": "Education"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/33",
+          "display_name": "Social Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "doi:10.1007/978-3-031-37853-9_7",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1007/978-3-031-37853-9_7",
+        "pdf_url": null,
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Geographies of Globalized Education Privatization",
+        "raw_type": "book-chapter"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4387236723",
+      "doi": "https://doi.org/10.19053/01203053.v42.n76.2023.15883",
+      "ids": {
+        "openalex": "https://openalex.org/W4387236723",
+        "doi": "https://doi.org/10.19053/01203053.v42.n76.2023.15883"
+      },
+      "title": "Apogeo de la deuda y decrecimiento económico: el colapso de la civilización",
+      "display_name": "Apogeo de la deuda y decrecimiento económico: el colapso de la civilización",
+      "publication_year": 2023,
+      "type": "article",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11742",
+        "display_name": "Economic Theory and Policy",
+        "score": 0.9668999910354614,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2000",
+          "display_name": "General Economics, Econometrics and Finance"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/20",
+          "display_name": "Economics, Econometrics and Finance"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": {
+        "id": "doi:10.19053/01203053.v42.n76.2023.15883",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.19053/01203053.v42.n76.2023.15883",
+        "pdf_url": "https://revistas.uptc.edu.co/index.php/cenes/article/download/15883/13467",
+        "source": {
+          "id": "https://openalex.org/S2737009078",
+          "display_name": "APUNTES DEL CENES",
+          "issn_l": "0120-3053",
+          "issn": [
+            "0120-3053",
+            "2256-5779"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310318871",
+          "host_organization_name": "Pedagogical and Technological University of Colombia",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310318871"
+          ],
+          "host_organization_lineage_names": [
+            "Pedagogical and Technological University of Colombia"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-sa",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Apuntes del Cenes",
+        "raw_type": "journal-article"
+      },
+      "primary_location": {
+        "id": "doi:10.19053/01203053.v42.n76.2023.15883",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.19053/01203053.v42.n76.2023.15883",
+        "pdf_url": "https://revistas.uptc.edu.co/index.php/cenes/article/download/15883/13467",
+        "source": {
+          "id": "https://openalex.org/S2737009078",
+          "display_name": "APUNTES DEL CENES",
+          "issn_l": "0120-3053",
+          "issn": [
+            "0120-3053",
+            "2256-5779"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310318871",
+          "host_organization_name": "Pedagogical and Technological University of Colombia",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310318871"
+          ],
+          "host_organization_lineage_names": [
+            "Pedagogical and Technological University of Colombia"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-sa",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Apuntes del Cenes",
+        "raw_type": "journal-article"
+      },
+      "language": "es"
+    },
+    {
+      "id": "https://openalex.org/W4387387256",
+      "doi": "https://doi.org/10.21606/iasdr.2023.254",
+      "ids": {
+        "openalex": "https://openalex.org/W4387387256",
+        "doi": "https://doi.org/10.21606/iasdr.2023.254"
+      },
+      "title": "Towards a framework for innovation in craft-design practices.",
+      "display_name": "Towards a framework for innovation in craft-design practices.",
+      "publication_year": 2023,
+      "type": "article",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T13316",
+        "display_name": "Crafts, Textile, and Design",
+        "score": 0.9958999752998352,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1209",
+          "display_name": "Museology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/12",
+          "display_name": "Arts and Humanities"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": {
+        "id": "doi:10.21606/iasdr.2023.254",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.21606/iasdr.2023.254",
+        "pdf_url": "https://dl.designresearchsociety.org/cgi/viewcontent.cgi?article=1274&context=iasdr",
+        "source": null,
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "IASDR 2023: Life-Changing Design",
+        "raw_type": "proceedings-article"
+      },
+      "primary_location": {
+        "id": "doi:10.21606/iasdr.2023.254",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.21606/iasdr.2023.254",
+        "pdf_url": "https://dl.designresearchsociety.org/cgi/viewcontent.cgi?article=1274&context=iasdr",
+        "source": null,
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "IASDR 2023: Life-Changing Design",
+        "raw_type": "proceedings-article"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4387546788",
+      "doi": "https://doi.org/10.1007/978-3-031-37768-6_13",
+      "ids": {
+        "openalex": "https://openalex.org/W4387546788",
+        "doi": "https://doi.org/10.1007/978-3-031-37768-6_13"
+      },
+      "title": "Alternatives to Gesell’s Solution?",
+      "display_name": "Alternatives to Gesell’s Solution?",
+      "publication_year": 2023,
+      "type": "book-chapter",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11742",
+        "display_name": "Economic Theory and Policy",
+        "score": 0.9836999773979187,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2000",
+          "display_name": "General Economics, Econometrics and Finance"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/20",
+          "display_name": "Economics, Econometrics and Finance"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "doi:10.1007/978-3-031-37768-6_13",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1007/978-3-031-37768-6_13",
+        "pdf_url": null,
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "How to Fulfil the UN Sustainability Goals",
+        "raw_type": "book-chapter"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4387546948",
+      "doi": "https://doi.org/10.1007/978-3-031-37768-6_15",
+      "ids": {
+        "openalex": "https://openalex.org/W4387546948",
+        "doi": "https://doi.org/10.1007/978-3-031-37768-6_15"
+      },
+      "title": "Towards Development at Human Scale",
+      "display_name": "Towards Development at Human Scale",
+      "publication_year": 2023,
+      "type": "book-chapter",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11742",
+        "display_name": "Economic Theory and Policy",
+        "score": 0.9668999910354614,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2000",
+          "display_name": "General Economics, Econometrics and Finance"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/20",
+          "display_name": "Economics, Econometrics and Finance"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "doi:10.1007/978-3-031-37768-6_15",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1007/978-3-031-37768-6_15",
+        "pdf_url": null,
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "How to Fulfil the UN Sustainability Goals",
+        "raw_type": "book-chapter"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4388227465",
+      "doi": "https://doi.org/10.1007/978-3-031-43961-2_6",
+      "ids": {
+        "openalex": "https://openalex.org/W4388227465",
+        "doi": "https://doi.org/10.1007/978-3-031-43961-2_6"
+      },
+      "title": "Climate Change and the Spectre of Collapse",
+      "display_name": "Climate Change and the Spectre of Collapse",
+      "publication_year": 2023,
+      "type": "book-chapter",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T13377",
+        "display_name": "Ecosystem dynamics and resilience",
+        "score": 0.9961000084877014,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2306",
+          "display_name": "Global and Planetary Change"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/23",
+          "display_name": "Environmental Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "doi:10.1007/978-3-031-43961-2_6",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1007/978-3-031-43961-2_6",
+        "pdf_url": null,
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Climate Change as Societal Risk",
+        "raw_type": "book-chapter"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4388662612",
+      "doi": "https://doi.org/10.23963/cnp.2023.8.1.6",
+      "ids": {
+        "openalex": "https://openalex.org/W4388662612",
+        "doi": "https://doi.org/10.23963/cnp.2023.8.1.6"
+      },
+      "title": "Hoffen und Bangen",
+      "display_name": "Hoffen und Bangen",
+      "publication_year": 2023,
+      "type": "article",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T13394",
+        "display_name": "Ecology, Conservation, and Geographical Studies",
+        "score": 0.8515999913215637,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2309",
+          "display_name": "Nature and Landscape Conservation"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/23",
+          "display_name": "Environmental Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "best_oa_location": {
+        "id": "doi:10.23963/cnp.2023.8.1.6",
+        "is_oa": true,
+        "landing_page_url": "http://dx.doi.org/10.23963/cnp.2023.8.1.6",
+        "pdf_url": "https://colloquium.aau.at/index.php/Colloquium/article/download/191/178",
+        "source": {
+          "id": "https://openalex.org/S4210222361",
+          "display_name": "Colloquium New Philologies",
+          "issn_l": "2520-3355",
+          "issn": [
+            "2520-3355"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310317860",
+          "host_organization_name": "University of Klagenfurt",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310317860"
+          ],
+          "host_organization_lineage_names": [
+            "University of Klagenfurt"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Colloquium: New Philologies",
+        "raw_type": "journal-article"
+      },
+      "primary_location": {
+        "id": "doi:10.23963/cnp.2023.8.1.6",
+        "is_oa": true,
+        "landing_page_url": "http://dx.doi.org/10.23963/cnp.2023.8.1.6",
+        "pdf_url": "https://colloquium.aau.at/index.php/Colloquium/article/download/191/178",
+        "source": {
+          "id": "https://openalex.org/S4210222361",
+          "display_name": "Colloquium New Philologies",
+          "issn_l": "2520-3355",
+          "issn": [
+            "2520-3355"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310317860",
+          "host_organization_name": "University of Klagenfurt",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310317860"
+          ],
+          "host_organization_lineage_names": [
+            "University of Klagenfurt"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Colloquium: New Philologies",
+        "raw_type": "journal-article"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4388867703",
+      "doi": "https://doi.org/10.47749/t/unicamp.2019.1162173",
+      "ids": {
+        "openalex": "https://openalex.org/W4388867703",
+        "doi": "https://doi.org/10.47749/t/unicamp.2019.1162173"
+      },
+      "title": "O artista contemporâneo enquanto artesão",
+      "display_name": "O artista contemporâneo enquanto artesão",
+      "publication_year": 2019,
+      "type": "dissertation",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T13316",
+        "display_name": "Crafts, Textile, and Design",
+        "score": 0.9919999837875366,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1209",
+          "display_name": "Museology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/12",
+          "display_name": "Arts and Humanities"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": {
+        "id": "doi:10.47749/t/unicamp.2019.1162173",
+        "is_oa": true,
+        "landing_page_url": "http://doi.org/10.47749/t/unicamp.2019.1162173",
+        "pdf_url": "https://doi.org/10.47749/t/unicamp.2019.1162173",
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Universidade Estadual de Campinas",
+        "raw_type": "dissertation"
+      },
+      "primary_location": {
+        "id": "doi:10.47749/t/unicamp.2019.1162173",
+        "is_oa": true,
+        "landing_page_url": "http://doi.org/10.47749/t/unicamp.2019.1162173",
+        "pdf_url": "https://doi.org/10.47749/t/unicamp.2019.1162173",
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Universidade Estadual de Campinas",
+        "raw_type": "dissertation"
+      },
+      "language": "pt"
+    },
+    {
+      "id": "https://openalex.org/W4388890161",
+      "doi": "https://doi.org/10.1007/978-3-031-25984-5_696",
+      "ids": {
+        "openalex": "https://openalex.org/W4388890161",
+        "doi": "https://doi.org/10.1007/978-3-031-25984-5_696"
+      },
+      "title": "Strategy in a Circular Economy: Discussion of Opportunities and Limitations",
+      "display_name": "Strategy in a Circular Economy: Discussion of Opportunities and Limitations",
+      "publication_year": 2023,
+      "type": "book-chapter",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10539",
+        "display_name": "Sustainable Supply Chain Management",
+        "score": 0.9987999796867371,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1408",
+          "display_name": "Strategy and Management"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/14",
+          "display_name": "Business, Management and Accounting"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "doi:10.1007/978-3-031-25984-5_696",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1007/978-3-031-25984-5_696",
+        "pdf_url": null,
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Encyclopedia of Sustainable Management",
+        "raw_type": "book-chapter"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4389254840",
+      "doi": "https://doi.org/10.1007/978-3-031-46522-2_1",
+      "ids": {
+        "openalex": "https://openalex.org/W4389254840",
+        "doi": "https://doi.org/10.1007/978-3-031-46522-2_1"
+      },
+      "title": "Urbanization and Sustainability",
+      "display_name": "Urbanization and Sustainability",
+      "publication_year": 2023,
+      "type": "book-chapter",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10692",
+        "display_name": "Urban Green Space and Health",
+        "score": 0.9979000091552734,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2307",
+          "display_name": "Health, Toxicology and Mutagenesis"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/23",
+          "display_name": "Environmental Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "doi:10.1007/978-3-031-46522-2_1",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1007/978-3-031-46522-2_1",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210181953",
+          "display_name": "Sustainable development goals series",
+          "issn_l": "2523-3084",
+          "issn": [
+            "2523-3084",
+            "2523-3092"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319972",
+          "host_organization_name": "Springer International Publishing",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319972",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Springer International Publishing",
+            "Springer Nature"
+          ],
+          "type": "book series"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Sustainable Development Goals Series",
+        "raw_type": "book-chapter"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4389379878",
+      "doi": "https://doi.org/10.26530/9789401496476-031",
+      "ids": {
+        "openalex": "https://openalex.org/W4389379878",
+        "doi": "https://doi.org/10.26530/9789401496476-031"
+      },
+      "title": "Future fashion: new and ancient systems at the intersection of anthropology, ecology and innovation",
+      "display_name": "Future fashion: new and ancient systems at the intersection of anthropology, ecology and innovation",
+      "publication_year": 2023,
+      "type": "book-chapter",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T14143",
+        "display_name": "Economic and Technological Innovation",
+        "score": 0.09390000253915787,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2002",
+          "display_name": "Economics and Econometrics"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/20",
+          "display_name": "Economics, Econometrics and Finance"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": {
+        "id": "doi:10.26530/9789401496476-031",
+        "is_oa": true,
+        "landing_page_url": "http://dx.doi.org/10.26530/9789401496476-031",
+        "pdf_url": "https://library.oapen.org/bitstream/20.500.12657/85824/1/031.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306464711",
+          "display_name": "Academia Press eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310319955",
+          "host_organization_name": "Academic Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319955",
+            "https://openalex.org/P4310320990"
+          ],
+          "host_organization_lineage_names": [
+            "Academic Press",
+            "Elsevier BV"
+          ],
+          "type": "ebook platform"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Connectivity and creativity in times of conflict",
+        "raw_type": "book-chapter"
+      },
+      "primary_location": {
+        "id": "doi:10.26530/9789401496476-031",
+        "is_oa": true,
+        "landing_page_url": "http://dx.doi.org/10.26530/9789401496476-031",
+        "pdf_url": "https://library.oapen.org/bitstream/20.500.12657/85824/1/031.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306464711",
+          "display_name": "Academia Press eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310319955",
+          "host_organization_name": "Academic Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319955",
+            "https://openalex.org/P4310320990"
+          ],
+          "host_organization_lineage_names": [
+            "Academic Press",
+            "Elsevier BV"
+          ],
+          "type": "ebook platform"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Connectivity and creativity in times of conflict",
+        "raw_type": "book-chapter"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4389403752",
+      "doi": "https://doi.org/10.26530/9789401496476-007",
+      "ids": {
+        "openalex": "https://openalex.org/W4389403752",
+        "doi": "https://doi.org/10.26530/9789401496476-007"
+      },
+      "title": "Pulse approach: integral design project management to empower transformative processes",
+      "display_name": "Pulse approach: integral design project management to empower transformative processes",
+      "publication_year": 2023,
+      "type": "book-chapter",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10395",
+        "display_name": "Construction Project Management and Performance",
+        "score": 0.0966000035405159,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1803",
+          "display_name": "Management Science and Operations Research"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/18",
+          "display_name": "Decision Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": {
+        "id": "doi:10.26530/9789401496476-007",
+        "is_oa": true,
+        "landing_page_url": "http://dx.doi.org/10.26530/9789401496476-007",
+        "pdf_url": "https://library.oapen.org/bitstream/20.500.12657/85800/1/007.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306464711",
+          "display_name": "Academia Press eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310319955",
+          "host_organization_name": "Academic Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319955",
+            "https://openalex.org/P4310320990"
+          ],
+          "host_organization_lineage_names": [
+            "Academic Press",
+            "Elsevier BV"
+          ],
+          "type": "ebook platform"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Connectivity and creativity in times of conflict",
+        "raw_type": "book-chapter"
+      },
+      "primary_location": {
+        "id": "doi:10.26530/9789401496476-007",
+        "is_oa": true,
+        "landing_page_url": "http://dx.doi.org/10.26530/9789401496476-007",
+        "pdf_url": "https://library.oapen.org/bitstream/20.500.12657/85800/1/007.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306464711",
+          "display_name": "Academia Press eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310319955",
+          "host_organization_name": "Academic Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319955",
+            "https://openalex.org/P4310320990"
+          ],
+          "host_organization_lineage_names": [
+            "Academic Press",
+            "Elsevier BV"
+          ],
+          "type": "ebook platform"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Connectivity and creativity in times of conflict",
+        "raw_type": "book-chapter"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4391369707",
+      "doi": "https://doi.org/10.23963/cnp.2023.8.1-2",
+      "ids": {
+        "openalex": "https://openalex.org/W4391369707",
+        "doi": "https://doi.org/10.23963/cnp.2023.8.1-2"
+      },
+      "title": null,
+      "display_name": null,
+      "publication_year": 2023,
+      "type": "paratext",
+      "cited_by_count": 0,
+      "is_retracted": null,
+      "primary_topic": null,
+      "best_oa_location": {
+        "id": "doi:10.23963/cnp.2023.8.1-2",
+        "is_oa": true,
+        "landing_page_url": "http://dx.doi.org/10.23963/cnp.2023.8.1-2",
+        "pdf_url": "https://colloquium.aau.at/index.php/Colloquium/issue/view/15/ColloquiumVol8Issue1-2.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210222361",
+          "display_name": "Colloquium New Philologies",
+          "issn_l": "2520-3355",
+          "issn": [
+            "2520-3355"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310317860",
+          "host_organization_name": "University of Klagenfurt",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310317860"
+          ],
+          "host_organization_lineage_names": [
+            "University of Klagenfurt"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Colloquium: New Philologies",
+        "raw_type": "journal-issue"
+      },
+      "primary_location": {
+        "id": "doi:10.23963/cnp.2023.8.1-2",
+        "is_oa": true,
+        "landing_page_url": "http://dx.doi.org/10.23963/cnp.2023.8.1-2",
+        "pdf_url": "https://colloquium.aau.at/index.php/Colloquium/issue/view/15/ColloquiumVol8Issue1-2.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210222361",
+          "display_name": "Colloquium New Philologies",
+          "issn_l": "2520-3355",
+          "issn": [
+            "2520-3355"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310317860",
+          "host_organization_name": "University of Klagenfurt",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310317860"
+          ],
+          "host_organization_lineage_names": [
+            "University of Klagenfurt"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Colloquium: New Philologies",
+        "raw_type": "journal-issue"
+      },
+      "language": null
+    },
+    {
+      "id": "https://openalex.org/W4392776701",
+      "doi": "https://doi.org/10.15239/ycjcb.01.01.06",
+      "ids": {
+        "openalex": "https://openalex.org/W4392776701",
+        "doi": "https://doi.org/10.15239/ycjcb.01.01.06"
+      },
+      "title": "Exploring the Future of Buddhism Through a Historical Perspective",
+      "display_name": "Exploring the Future of Buddhism Through a Historical Perspective",
+      "publication_year": 2024,
+      "type": "article",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10893",
+        "display_name": "Chinese history and philosophy",
+        "score": 0.9855999946594238,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3312",
+          "display_name": "Sociology and Political Science"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/33",
+          "display_name": "Social Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": {
+        "id": "doi:10.15239/ycjcb.01.01.06",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.15239/ycjcb.01.01.06",
+        "pdf_url": "https://journal.yincheng.org/en/article/download/Exploring-Future-of-Buddhism-Through-a-Historical-Perspectve/8",
+        "source": {
+          "id": "https://openalex.org/S5407042583",
+          "display_name": "Yin-Cheng Journal of Contemporary Buddhism",
+          "issn_l": "2996-5640",
+          "issn": [
+            "2996-5640",
+            "2996-5659"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Yin-Cheng Journal of Contemporary Buddhism",
+        "raw_type": "journal-article"
+      },
+      "primary_location": {
+        "id": "doi:10.15239/ycjcb.01.01.06",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.15239/ycjcb.01.01.06",
+        "pdf_url": "https://journal.yincheng.org/en/article/download/Exploring-Future-of-Buddhism-Through-a-Historical-Perspectve/8",
+        "source": {
+          "id": "https://openalex.org/S5407042583",
+          "display_name": "Yin-Cheng Journal of Contemporary Buddhism",
+          "issn_l": "2996-5640",
+          "issn": [
+            "2996-5640",
+            "2996-5659"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Yin-Cheng Journal of Contemporary Buddhism",
+        "raw_type": "journal-article"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4394754934",
+      "doi": "https://doi.org/10.1007/978-3-031-47254-1_8",
+      "ids": {
+        "openalex": "https://openalex.org/W4394754934",
+        "doi": "https://doi.org/10.1007/978-3-031-47254-1_8"
+      },
+      "title": "Voices Off: Impact and Community in a Business School’s Backstage",
+      "display_name": "Voices Off: Impact and Community in a Business School’s Backstage",
+      "publication_year": 2024,
+      "type": "book-chapter",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10344",
+        "display_name": "Management and Organizational Studies",
+        "score": 0.9854999780654907,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1407",
+          "display_name": "Organizational Behavior and Human Resource Management"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/14",
+          "display_name": "Business, Management and Accounting"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "doi:10.1007/978-3-031-47254-1_8",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1007/978-3-031-47254-1_8",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210167768",
+          "display_name": "Humanism in business series",
+          "issn_l": "2662-124X",
+          "issn": [
+            "2662-124X",
+            "2662-1258"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319972",
+          "host_organization_name": "Springer International Publishing",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319972",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Springer International Publishing",
+            "Springer Nature"
+          ],
+          "type": "book series"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Humanism in Business Series",
+        "raw_type": "book-chapter"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4394772562",
+      "doi": "https://doi.org/10.1007/978-3-031-47254-1_1",
+      "ids": {
+        "openalex": "https://openalex.org/W4394772562",
+        "doi": "https://doi.org/10.1007/978-3-031-47254-1_1"
+      },
+      "title": "Communities and Impact of a Regional Business School: Locating the Discussion",
+      "display_name": "Communities and Impact of a Regional Business School: Locating the Discussion",
+      "publication_year": 2024,
+      "type": "book-chapter",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10344",
+        "display_name": "Management and Organizational Studies",
+        "score": 0.9872999787330627,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1407",
+          "display_name": "Organizational Behavior and Human Resource Management"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/14",
+          "display_name": "Business, Management and Accounting"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "doi:10.1007/978-3-031-47254-1_1",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1007/978-3-031-47254-1_1",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210167768",
+          "display_name": "Humanism in business series",
+          "issn_l": "2662-124X",
+          "issn": [
+            "2662-124X",
+            "2662-1258"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319972",
+          "host_organization_name": "Springer International Publishing",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319972",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Springer International Publishing",
+            "Springer Nature"
+          ],
+          "type": "book series"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Humanism in Business Series",
+        "raw_type": "book-chapter"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4395073443",
+      "doi": "https://doi.org/10.3126/njdrs.v20i01.64161",
+      "ids": {
+        "openalex": "https://openalex.org/W4395073443",
+        "doi": "https://doi.org/10.3126/njdrs.v20i01.64161"
+      },
+      "title": "Trends of Gender Gaps in Nepal: A Statistical Analysis",
+      "display_name": "Trends of Gender Gaps in Nepal: A Statistical Analysis",
+      "publication_year": 2023,
+      "type": "article",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T12781",
+        "display_name": "Global Health Care Issues",
+        "score": 0.7530999779701233,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3600",
+          "display_name": "General Health Professions"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/36",
+          "display_name": "Health Professions"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/4",
+          "display_name": "Health Sciences"
+        }
+      },
+      "best_oa_location": {
+        "id": "doi:10.3126/njdrs.v20i01.64161",
+        "is_oa": true,
+        "landing_page_url": "http://dx.doi.org/10.3126/njdrs.v20i01.64161",
+        "pdf_url": "https://www.nepjol.info/index.php/njdrs/article/download/64161/48624",
+        "source": {
+          "id": "https://openalex.org/S4210225579",
+          "display_name": "Nepalese Journal of Development and Rural Studies",
+          "issn_l": "2392-4403",
+          "issn": [
+            "2392-4403"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Nepalese Journal of Development and Rural Studies",
+        "raw_type": "journal-article"
+      },
+      "primary_location": {
+        "id": "doi:10.3126/njdrs.v20i01.64161",
+        "is_oa": true,
+        "landing_page_url": "http://dx.doi.org/10.3126/njdrs.v20i01.64161",
+        "pdf_url": "https://www.nepjol.info/index.php/njdrs/article/download/64161/48624",
+        "source": {
+          "id": "https://openalex.org/S4210225579",
+          "display_name": "Nepalese Journal of Development and Rural Studies",
+          "issn_l": "2392-4403",
+          "issn": [
+            "2392-4403"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Nepalese Journal of Development and Rural Studies",
+        "raw_type": "journal-article"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4396524146",
+      "doi": "https://doi.org/10.1007/978-3-658-44114-2_5",
+      "ids": {
+        "openalex": "https://openalex.org/W4396524146",
+        "doi": "https://doi.org/10.1007/978-3-658-44114-2_5"
+      },
+      "title": "Creative Flows",
+      "display_name": "Creative Flows",
+      "publication_year": 2024,
+      "type": "book-chapter",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11675",
+        "display_name": "Open Source Software Innovations",
+        "score": 0.9869999885559082,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1706",
+          "display_name": "Computer Science Applications"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "best_oa_location": {
+        "id": "doi:10.1007/978-3-658-44114-2_5",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1007/978-3-658-44114-2_5",
+        "pdf_url": "https://link.springer.com/content/pdf/10.1007/978-3-658-44114-2_5.pdf",
+        "source": {
+          "id": "https://openalex.org/S4393919376",
+          "display_name": "SDG - Forschung, Konzepte, Lösungsansätze zur Nachhaltigkeit",
+          "issn_l": "2731-8826",
+          "issn": [
+            "2731-8826",
+            "2731-8834"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "SDG - Forschung, Konzepte, Lösungsansätze zur Nachhaltigkeit",
+        "raw_type": "book-chapter"
+      },
+      "primary_location": {
+        "id": "doi:10.1007/978-3-658-44114-2_5",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1007/978-3-658-44114-2_5",
+        "pdf_url": "https://link.springer.com/content/pdf/10.1007/978-3-658-44114-2_5.pdf",
+        "source": {
+          "id": "https://openalex.org/S4393919376",
+          "display_name": "SDG - Forschung, Konzepte, Lösungsansätze zur Nachhaltigkeit",
+          "issn_l": "2731-8826",
+          "issn": [
+            "2731-8826",
+            "2731-8834"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "SDG - Forschung, Konzepte, Lösungsansätze zur Nachhaltigkeit",
+        "raw_type": "book-chapter"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4404318681",
+      "doi": "https://doi.org/10.1080/07352166.2024.2422731",
+      "ids": {
+        "openalex": "https://openalex.org/W4404318681",
+        "doi": "https://doi.org/10.1080/07352166.2024.2422731"
+      },
+      "title": "<i>Crossing great divides: City and country in environmental and political disorder</i> , by John D. Fairfield",
+      "display_name": "<i>Crossing great divides: City and country in environmental and political disorder</i> , by John D. Fairfield",
+      "publication_year": 2024,
+      "type": "article",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T14475",
+        "display_name": "History of Science and Medicine",
+        "score": 0.7797999978065491,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1207",
+          "display_name": "History and Philosophy of Science"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/12",
+          "display_name": "Arts and Humanities"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "doi:10.1080/07352166.2024.2422731",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1080/07352166.2024.2422731",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S158923391",
+          "display_name": "Journal of Urban Affairs",
+          "issn_l": "0735-2166",
+          "issn": [
+            "0735-2166",
+            "1467-9906"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320547",
+          "host_organization_name": "Taylor & Francis",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320547"
+          ],
+          "host_organization_lineage_names": [
+            "Taylor & Francis"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Journal of Urban Affairs",
+        "raw_type": "journal-article"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4404887703",
+      "doi": "https://doi.org/10.1007/978-981-97-8405-9_1",
+      "ids": {
+        "openalex": "https://openalex.org/W4404887703",
+        "doi": "https://doi.org/10.1007/978-981-97-8405-9_1"
+      },
+      "title": "Introducing Our Key Ideas and Perspectives",
+      "display_name": "Introducing Our Key Ideas and Perspectives",
+      "publication_year": 2024,
+      "type": "book-chapter",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11244",
+        "display_name": "Climate Change and Health Impacts",
+        "score": 0.9998999834060669,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2307",
+          "display_name": "Health, Toxicology and Mutagenesis"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/23",
+          "display_name": "Environmental Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "doi:10.1007/978-981-97-8405-9_1",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1007/978-981-97-8405-9_1",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210170315",
+          "display_name": "Springer briefs in education",
+          "issn_l": "2211-1921",
+          "issn": [
+            "2211-1921",
+            "2211-193X"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320108",
+          "host_organization_name": "Springer Nature (Netherlands)",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320108",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Springer Nature (Netherlands)",
+            "Springer Nature"
+          ],
+          "type": "book series"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "SpringerBriefs in Education",
+        "raw_type": "book-chapter"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4405652457",
+      "doi": "https://doi.org/10.1007/s41027-024-00535-z",
+      "ids": {
+        "openalex": "https://openalex.org/W4405652457",
+        "doi": "https://doi.org/10.1007/s41027-024-00535-z"
+      },
+      "title": "Digital Transformation and Labour: Locating Continuity and Change",
+      "display_name": "Digital Transformation and Labour: Locating Continuity and Change",
+      "publication_year": 2024,
+      "type": "article",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T12501",
+        "display_name": "Digital Economy and Work Transformation",
+        "score": 0.9987999796867371,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3312",
+          "display_name": "Sociology and Political Science"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/33",
+          "display_name": "Social Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "doi:10.1007/s41027-024-00535-z",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1007/s41027-024-00535-z",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S2764837506",
+          "display_name": "Indian Journal of Labour Economics",
+          "issn_l": "0019-5308",
+          "issn": [
+            "0019-5308",
+            "0971-7927"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319900",
+          "host_organization_name": "Springer Science+Business Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319900",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Springer Science+Business Media",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "The Indian Journal of Labour Economics",
+        "raw_type": "journal-article"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4406141439",
+      "doi": "https://doi.org/10.1007/s40617-024-01034-9",
+      "ids": {
+        "openalex": "https://openalex.org/W4406141439",
+        "doi": "https://doi.org/10.1007/s40617-024-01034-9",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/40092338"
+      },
+      "title": "Henry S. Pennypacker: It Is Not What You Call It, It’s What You Do that Makes the Difference",
+      "display_name": "Henry S. Pennypacker: It Is Not What You Call It, It’s What You Do that Makes the Difference",
+      "publication_year": 2025,
+      "type": "review",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T12430",
+        "display_name": "Academic and Historical Perspectives in Psychology",
+        "score": 0.7831000089645386,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3200",
+          "display_name": "General Psychology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/32",
+          "display_name": "Psychology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": {
+        "id": "pmh:oai:pubmedcentral.nih.gov:11903970",
+        "is_oa": true,
+        "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11903970/",
+        "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11903970/pdf/40617_2024_Article_1034.pdf",
+        "source": {
+          "id": "https://openalex.org/S2764455111",
+          "display_name": "PubMed Central",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I1299303238",
+          "host_organization_name": "National Institutes of Health",
+          "host_organization_lineage": [
+            "https://openalex.org/I1299303238"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "Behav Anal Pract",
+        "raw_type": "Text"
+      },
+      "primary_location": {
+        "id": "doi:10.1007/s40617-024-01034-9",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1007/s40617-024-01034-9",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S2764616832",
+          "display_name": "Behavior Analysis in Practice",
+          "issn_l": "1998-1929",
+          "issn": [
+            "1998-1929",
+            "2196-8934"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319900",
+          "host_organization_name": "Springer Science+Business Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319900",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Springer Science+Business Media",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Behavior Analysis in Practice",
+        "raw_type": "journal-article"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4408042509",
+      "doi": "https://doi.org/10.1177/22779760251317271",
+      "ids": {
+        "openalex": "https://openalex.org/W4408042509",
+        "doi": "https://doi.org/10.1177/22779760251317271"
+      },
+      "title": "Liberation, Ecology, and Industrialization in the Thought of Ismail-Sabri Abdallah",
+      "display_name": "Liberation, Ecology, and Industrialization in the Thought of Ismail-Sabri Abdallah",
+      "publication_year": 2025,
+      "type": "article",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11862",
+        "display_name": "Agriculture, Land Use, Rural Development",
+        "score": 0.9937000274658203,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1100",
+          "display_name": "General Agricultural and Biological Sciences"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/11",
+          "display_name": "Agricultural and Biological Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "best_oa_location": {
+        "id": "doi:10.1177/22779760251317271",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1177/22779760251317271",
+        "pdf_url": "https://journals.sagepub.com/doi/pdf/10.1177/22779760251317271",
+        "source": {
+          "id": "https://openalex.org/S4210205069",
+          "display_name": "Agrarian South Journal of Political Economy A triannual Journal of Agrarian South Network and CARES",
+          "issn_l": "2277-9760",
+          "issn": [
+            "2277-9760",
+            "2321-0281"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320017",
+          "host_organization_name": "SAGE Publishing",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320017"
+          ],
+          "host_organization_lineage_names": [
+            "SAGE Publishing"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Agrarian South: Journal of Political Economy",
+        "raw_type": "journal-article"
+      },
+      "primary_location": {
+        "id": "doi:10.1177/22779760251317271",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1177/22779760251317271",
+        "pdf_url": "https://journals.sagepub.com/doi/pdf/10.1177/22779760251317271",
+        "source": {
+          "id": "https://openalex.org/S4210205069",
+          "display_name": "Agrarian South Journal of Political Economy A triannual Journal of Agrarian South Network and CARES",
+          "issn_l": "2277-9760",
+          "issn": [
+            "2277-9760",
+            "2321-0281"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320017",
+          "host_organization_name": "SAGE Publishing",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320017"
+          ],
+          "host_organization_lineage_names": [
+            "SAGE Publishing"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Agrarian South: Journal of Political Economy",
+        "raw_type": "journal-article"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4408552329",
+      "doi": "https://doi.org/10.1007/s43508-025-00109-9",
+      "ids": {
+        "openalex": "https://openalex.org/W4408552329",
+        "doi": "https://doi.org/10.1007/s43508-025-00109-9"
+      },
+      "title": "Governing appropriate technology: policy strategies for smallholder empowerment and poverty alleviation",
+      "display_name": "Governing appropriate technology: policy strategies for smallholder empowerment and poverty alleviation",
+      "publication_year": 2025,
+      "type": "article",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T12786",
+        "display_name": "Innovation and Socioeconomic Development",
+        "score": 0.9988999962806702,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1403",
+          "display_name": "Business and International Management"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/14",
+          "display_name": "Business, Management and Accounting"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "doi:10.1007/s43508-025-00109-9",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1007/s43508-025-00109-9",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210169212",
+          "display_name": "Global Public Policy and Governance",
+          "issn_l": "2730-6291",
+          "issn": [
+            "2730-6291",
+            "2730-6305"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319965",
+          "host_organization_name": "Springer Nature",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Global Public Policy and Governance",
+        "raw_type": "journal-article"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4409271468",
+      "doi": "https://doi.org/10.1007/s42240-025-00210-6",
+      "ids": {
+        "openalex": "https://openalex.org/W4409271468",
+        "doi": "https://doi.org/10.1007/s42240-025-00210-6"
+      },
+      "title": "The Connotations of Wealth in Selected Texts from the Pāli Canon: Contextualizing Their Contemporary Relevance",
+      "display_name": "The Connotations of Wealth in Selected Texts from the Pāli Canon: Contextualizing Their Contemporary Relevance",
+      "publication_year": 2025,
+      "type": "article",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11563",
+        "display_name": "Indian and Buddhist Studies",
+        "score": 0.9955999851226807,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1212",
+          "display_name": "Religious studies"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/12",
+          "display_name": "Arts and Humanities"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "doi:10.1007/s42240-025-00210-6",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1007/s42240-025-00210-6",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210176630",
+          "display_name": "Journal of Dharma Studies",
+          "issn_l": "2522-0926",
+          "issn": [
+            "2522-0926",
+            "2522-0934"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310319900",
+          "host_organization_name": "Springer Science+Business Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319900",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Springer Science+Business Media",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Journal of Dharma Studies",
+        "raw_type": "journal-article"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4409625376",
+      "doi": "https://doi.org/10.52416/si.2025.1001",
+      "ids": {
+        "openalex": "https://openalex.org/W4409625376",
+        "doi": "https://doi.org/10.52416/si.2025.1001"
+      },
+      "title": "उततर परदश म मनव ससधन वकस (फरजबद जल क गरमण कषतर क वशष सदरभ म)",
+      "display_name": "उततर परदश म मनव ससधन वकस (फरजबद जल क गरमण कषतर क वशष सदरभ म)",
+      "publication_year": 2025,
+      "type": "article",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T14423",
+        "display_name": "Military Technology and Strategies",
+        "score": 0.018400000408291817,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2202",
+          "display_name": "Aerospace Engineering"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/22",
+          "display_name": "Engineering"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "best_oa_location": {
+        "id": "doi:10.52416/si.2025.1001",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.52416/si.2025.1001",
+        "pdf_url": "http://itr.eurekajournals.com/index.php/SI/article/download/309/332/",
+        "source": {
+          "id": "https://openalex.org/S5407009662",
+          "display_name": "Shodh International A Multidisciplinary International Journal",
+          "issn_l": "2581-3501",
+          "issn": [
+            "2581-3501"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Shodh International: A Multidisciplinary International Journal",
+        "raw_type": "journal-article"
+      },
+      "primary_location": {
+        "id": "doi:10.52416/si.2025.1001",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.52416/si.2025.1001",
+        "pdf_url": "http://itr.eurekajournals.com/index.php/SI/article/download/309/332/",
+        "source": {
+          "id": "https://openalex.org/S5407009662",
+          "display_name": "Shodh International A Multidisciplinary International Journal",
+          "issn_l": "2581-3501",
+          "issn": [
+            "2581-3501"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Shodh International: A Multidisciplinary International Journal",
+        "raw_type": "journal-article"
+      },
+      "language": "hi"
+    },
+    {
+      "id": "https://openalex.org/W4410065879",
+      "doi": "https://doi.org/10.1515/9781501780301-012",
+      "ids": {
+        "openalex": "https://openalex.org/W4410065879",
+        "doi": "https://doi.org/10.1515/9781501780301-012"
+      },
+      "title": "References",
+      "display_name": "References",
+      "publication_year": 2025,
+      "type": "book-chapter",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": null,
+      "best_oa_location": {
+        "id": "doi:10.1515/9781501780301-012",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1515/9781501780301-012",
+        "pdf_url": "https://www.degruyterbrill.com/document/doi/10.1515/9781501780301-012/pdf",
+        "source": {
+          "id": "https://openalex.org/S4306463067",
+          "display_name": "Cornell University Press eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "ebook platform"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Startup Capitalism",
+        "raw_type": "book-chapter"
+      },
+      "primary_location": {
+        "id": "doi:10.1515/9781501780301-012",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1515/9781501780301-012",
+        "pdf_url": "https://www.degruyterbrill.com/document/doi/10.1515/9781501780301-012/pdf",
+        "source": {
+          "id": "https://openalex.org/S4306463067",
+          "display_name": "Cornell University Press eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "ebook platform"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Startup Capitalism",
+        "raw_type": "book-chapter"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4410359617",
+      "doi": "https://doi.org/10.1080/02759527.2025.2504241",
+      "ids": {
+        "openalex": "https://openalex.org/W4410359617",
+        "doi": "https://doi.org/10.1080/02759527.2025.2504241"
+      },
+      "title": "Living-in-Place in Kavery Nambisan’s <i>The Scent of Pepper</i>",
+      "display_name": "Living-in-Place in Kavery Nambisan’s <i>The Scent of Pepper</i>",
+      "publication_year": 2025,
+      "type": "article",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11717",
+        "display_name": "Postcolonial and Cultural Literary Studies",
+        "score": 0.9944000244140625,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1208",
+          "display_name": "Literature and Literary Theory"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/12",
+          "display_name": "Arts and Humanities"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": {
+        "id": "doi:10.1080/02759527.2025.2504241",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1080/02759527.2025.2504241",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210211633",
+          "display_name": "South Asian Review",
+          "issn_l": "0275-9527",
+          "issn": [
+            "0275-9527",
+            "2573-9476"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320547",
+          "host_organization_name": "Taylor & Francis",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320547"
+          ],
+          "host_organization_lineage_names": [
+            "Taylor & Francis"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "South Asian Review",
+        "raw_type": "journal-article"
+      },
+      "primary_location": {
+        "id": "doi:10.1080/02759527.2025.2504241",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1080/02759527.2025.2504241",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210211633",
+          "display_name": "South Asian Review",
+          "issn_l": "0275-9527",
+          "issn": [
+            "0275-9527",
+            "2573-9476"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320547",
+          "host_organization_name": "Taylor & Francis",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320547"
+          ],
+          "host_organization_lineage_names": [
+            "Taylor & Francis"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "South Asian Review",
+        "raw_type": "journal-article"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4410578165",
+      "doi": "https://doi.org/10.1177/02761467251337646",
+      "ids": {
+        "openalex": "https://openalex.org/W4410578165",
+        "doi": "https://doi.org/10.1177/02761467251337646"
+      },
+      "title": "Using Imaginative Literature—Novels, Short Stories, and Science Fiction—in Macromarketing Classes <sup/>",
+      "display_name": "Using Imaginative Literature—Novels, Short Stories, and Science Fiction—in Macromarketing Classes <sup/>",
+      "publication_year": 2025,
+      "type": "article",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T12671",
+        "display_name": "Management and Marketing Education",
+        "score": 0.9962999820709229,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1405",
+          "display_name": "Management of Technology and Innovation"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/14",
+          "display_name": "Business, Management and Accounting"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "doi:10.1177/02761467251337646",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1177/02761467251337646",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S35298862",
+          "display_name": "Journal of Macromarketing",
+          "issn_l": "0276-1467",
+          "issn": [
+            "0276-1467",
+            "1552-6534"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320017",
+          "host_organization_name": "SAGE Publishing",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320017"
+          ],
+          "host_organization_lineage_names": [
+            "SAGE Publishing"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Journal of Macromarketing",
+        "raw_type": "journal-article"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4410921985",
+      "doi": "https://doi.org/10.1007/978-981-97-8047-1_1",
+      "ids": {
+        "openalex": "https://openalex.org/W4410921985",
+        "doi": "https://doi.org/10.1007/978-981-97-8047-1_1"
+      },
+      "title": "A Changing Development Geography Intertwined with Disasters, Housing, Recovery, and Resilience",
+      "display_name": "A Changing Development Geography Intertwined with Disasters, Housing, Recovery, and Resilience",
+      "publication_year": 2025,
+      "type": "book-chapter",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10747",
+        "display_name": "Disaster Management and Resilience",
+        "score": 0.9970999956130981,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3312",
+          "display_name": "Sociology and Political Science"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/33",
+          "display_name": "Social Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "doi:10.1007/978-981-97-8047-1_1",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1007/978-981-97-8047-1_1",
+        "pdf_url": null,
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Resilient Recovery from Disasters",
+        "raw_type": "book-chapter"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4410970589",
+      "doi": "https://doi.org/10.1007/978-3-031-82323-7_4",
+      "ids": {
+        "openalex": "https://openalex.org/W4410970589",
+        "doi": "https://doi.org/10.1007/978-3-031-82323-7_4"
+      },
+      "title": "A Solarpunk Vision of the City and Its Infrastructure",
+      "display_name": "A Solarpunk Vision of the City and Its Infrastructure",
+      "publication_year": 2025,
+      "type": "book-chapter",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T13518",
+        "display_name": "Architecture and Computational Design",
+        "score": 0.09120000153779984,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2216",
+          "display_name": "Architecture"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/22",
+          "display_name": "Engineering"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "best_oa_location": {
+        "id": "pmh:oai:re.public.polimi.it:11311/1288753",
+        "is_oa": true,
+        "landing_page_url": "https://hdl.handle.net/11311/1288753",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306400312",
+          "display_name": "Virtual Community of Pathological Anatomy (University of Castilla La Mancha)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I79189158",
+          "host_organization_name": "University of Castilla-La Mancha",
+          "host_organization_lineage": [
+            "https://openalex.org/I79189158"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "info:eu-repo/semantics/bookPart"
+      },
+      "primary_location": {
+        "id": "doi:10.1007/978-3-031-82323-7_4",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1007/978-3-031-82323-7_4",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210175586",
+          "display_name": "Innovative renewable energy",
+          "issn_l": "2522-8927",
+          "issn": [
+            "2522-8927",
+            "2522-8935"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319972",
+          "host_organization_name": "Springer International Publishing",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319972",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Springer International Publishing",
+            "Springer Nature"
+          ],
+          "type": "book series"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Innovative Renewable Energy",
+        "raw_type": "book-chapter"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4411178001",
+      "doi": "https://doi.org/10.1007/978-3-031-80572-1_13",
+      "ids": {
+        "openalex": "https://openalex.org/W4411178001",
+        "doi": "https://doi.org/10.1007/978-3-031-80572-1_13"
+      },
+      "title": "Alternativen zu Gesells Lösung?",
+      "display_name": "Alternativen zu Gesells Lösung?",
+      "publication_year": 2025,
+      "type": "book-chapter",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T13360",
+        "display_name": "Economic and Social Issues",
+        "score": 0.8587999939918518,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3312",
+          "display_name": "Sociology and Political Science"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/33",
+          "display_name": "Social Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "doi:10.1007/978-3-031-80572-1_13",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1007/978-3-031-80572-1_13",
+        "pdf_url": null,
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Wie man die UN-Nachhaltigkeitsziele erfüllt",
+        "raw_type": "book-chapter"
+      },
+      "language": "de"
+    },
+    {
+      "id": "https://openalex.org/W4411183722",
+      "doi": "https://doi.org/10.1007/978-3-031-80572-1_15",
+      "ids": {
+        "openalex": "https://openalex.org/W4411183722",
+        "doi": "https://doi.org/10.1007/978-3-031-80572-1_15"
+      },
+      "title": "Hin zu einer Entwicklung nach menschlichem Maß",
+      "display_name": "Hin zu einer Entwicklung nach menschlichem Maß",
+      "publication_year": 2025,
+      "type": "book-chapter",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T12864",
+        "display_name": "Psychoanalysis and Social Critique",
+        "score": 0.31690001487731934,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3316",
+          "display_name": "Cultural Studies"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/33",
+          "display_name": "Social Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "doi:10.1007/978-3-031-80572-1_15",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1007/978-3-031-80572-1_15",
+        "pdf_url": null,
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Wie man die UN-Nachhaltigkeitsziele erfüllt",
+        "raw_type": "book-chapter"
+      },
+      "language": "de"
+    },
+    {
+      "id": "https://openalex.org/W4411353984",
+      "doi": "https://doi.org/10.4324/9781003480426-9",
+      "ids": {
+        "openalex": "https://openalex.org/W4411353984",
+        "doi": "https://doi.org/10.4324/9781003480426-9"
+      },
+      "title": "Framing the Commons",
+      "display_name": "Framing the Commons",
+      "publication_year": 2025,
+      "type": "book-chapter",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T13035",
+        "display_name": "Human Rights and Development",
+        "score": 0.07590000331401825,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3312",
+          "display_name": "Sociology and Political Science"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/33",
+          "display_name": "Social Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": {
+        "id": "doi:10.4324/9781003480426-9",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.4324/9781003480426-9",
+        "pdf_url": "https://api.taylorfrancis.com/content/chapters/oa-edit/download?identifierName=doi&identifierValue=10.4324/9781003480426-9&type=chapterpdf",
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Architecture and Social Sustainability",
+        "raw_type": "book-chapter"
+      },
+      "primary_location": {
+        "id": "doi:10.4324/9781003480426-9",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.4324/9781003480426-9",
+        "pdf_url": "https://api.taylorfrancis.com/content/chapters/oa-edit/download?identifierName=doi&identifierValue=10.4324/9781003480426-9&type=chapterpdf",
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Architecture and Social Sustainability",
+        "raw_type": "book-chapter"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4411613661",
+      "doi": "https://doi.org/10.1080/23748834.2025.2508662",
+      "ids": {
+        "openalex": "https://openalex.org/W4411613661",
+        "doi": "https://doi.org/10.1080/23748834.2025.2508662"
+      },
+      "title": "Researcher reflections from an urban lab: best practices and barriers of walkable urbanism via a 15-minute neighbourhood lens in Warsaw",
+      "display_name": "Researcher reflections from an urban lab: best practices and barriers of walkable urbanism via a 15-minute neighbourhood lens in Warsaw",
+      "publication_year": 2025,
+      "type": "article",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T14147",
+        "display_name": "Innovative Approaches in Technology and Social Development",
+        "score": 0.9832000136375427,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1405",
+          "display_name": "Management of Technology and Innovation"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/14",
+          "display_name": "Business, Management and Accounting"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "doi:10.1080/23748834.2025.2508662",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1080/23748834.2025.2508662",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210220597",
+          "display_name": "Cities & Health",
+          "issn_l": "2374-8834",
+          "issn": [
+            "2374-8834",
+            "2374-8842"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320547",
+          "host_organization_name": "Taylor & Francis",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320547"
+          ],
+          "host_organization_lineage_names": [
+            "Taylor & Francis"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Cities &amp; Health",
+        "raw_type": "journal-article"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4413292221",
+      "doi": "https://doi.org/10.1007/978-3-031-91203-0_12",
+      "ids": {
+        "openalex": "https://openalex.org/W4413292221",
+        "doi": "https://doi.org/10.1007/978-3-031-91203-0_12"
+      },
+      "title": "Embedding Indian Spiritual Traditions in Business School Curriculum",
+      "display_name": "Embedding Indian Spiritual Traditions in Business School Curriculum",
+      "publication_year": 2025,
+      "type": "book-chapter",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T12393",
+        "display_name": "Workplace Spirituality and Leadership",
+        "score": 0.996999979019165,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3317",
+          "display_name": "Demography"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/33",
+          "display_name": "Social Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "doi:10.1007/978-3-031-91203-0_12",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1007/978-3-031-91203-0_12",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210234687",
+          "display_name": "Palgrave studies in sustainable business in association with Future Earth",
+          "issn_l": "2662-1320",
+          "issn": [
+            "2662-1320",
+            "2662-1339"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319972",
+          "host_organization_name": "Springer International Publishing",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319972",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Springer International Publishing",
+            "Springer Nature"
+          ],
+          "type": "book series"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Palgrave Studies in Sustainable Business In Association with Future Earth",
+        "raw_type": "book-chapter"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W4413456961",
+      "doi": "https://doi.org/10.1177/09716858251358454",
+      "ids": {
+        "openalex": "https://openalex.org/W4413456961",
+        "doi": "https://doi.org/10.1177/09716858251358454"
+      },
+      "title": "Towards an Indic Conceptual Framework of Sustainability: Yajña, Saha-astitva and the Jajmāni Paradigm",
+      "display_name": "Towards an Indic Conceptual Framework of Sustainability: Yajña, Saha-astitva and the Jajmāni Paradigm",
+      "publication_year": 2025,
+      "type": "article",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10708",
+        "display_name": "Mindfulness and Compassion Interventions",
+        "score": 0.9666000008583069,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3203",
+          "display_name": "Clinical Psychology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/32",
+          "display_name": "Psychology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "doi:10.1177/09716858251358454",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1177/09716858251358454",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S81103468",
+          "display_name": "Journal of Human Values",
+          "issn_l": "0971-6858",
+          "issn": [
+            "0971-6858",
+            "0973-0737"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320017",
+          "host_organization_name": "SAGE Publishing",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320017"
+          ],
+          "host_organization_lineage_names": [
+            "SAGE Publishing"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Journal of Human Values",
+        "raw_type": "journal-article"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W568033266",
+      "doi": null,
+      "ids": {
+        "openalex": "https://openalex.org/W568033266",
+        "mag": "568033266"
+      },
+      "title": "On the Shoulders of Giants: Happiness and the Good Economy in Catholic Social Teaching",
+      "display_name": "On the Shoulders of Giants: Happiness and the Good Economy in Catholic Social Teaching",
+      "publication_year": 2015,
+      "type": "article",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T14142",
+        "display_name": "Multicultural Socio-Legal Studies",
+        "score": 0.9283000230789185,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3312",
+          "display_name": "Sociology and Political Science"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/33",
+          "display_name": "Social Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": {
+        "id": "pmh:oai:aquila.usm.edu:honors_theses-1320",
+        "is_oa": true,
+        "landing_page_url": "https://aquila.usm.edu/honors_theses/285",
+        "pdf_url": "https://aquila.usm.edu/honors_theses/285",
+        "source": {
+          "id": "https://openalex.org/S4306402529",
+          "display_name": "Aquila Digital Community (University of Southern Mississippi)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I44854399",
+          "host_organization_name": "University of Southern Mississippi",
+          "host_organization_lineage": [
+            "https://openalex.org/I44854399"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "Honors Theses",
+        "raw_type": "text"
+      },
+      "primary_location": {
+        "id": "pmh:oai:aquila.usm.edu:honors_theses-1320",
+        "is_oa": true,
+        "landing_page_url": "https://aquila.usm.edu/honors_theses/285",
+        "pdf_url": "https://aquila.usm.edu/honors_theses/285",
+        "source": {
+          "id": "https://openalex.org/S4306402529",
+          "display_name": "Aquila Digital Community (University of Southern Mississippi)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I44854399",
+          "host_organization_name": "University of Southern Mississippi",
+          "host_organization_lineage": [
+            "https://openalex.org/I44854399"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "Honors Theses",
+        "raw_type": "text"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W598111366",
+      "doi": "https://doi.org/10.22004/ag.econ.311482",
+      "ids": {
+        "openalex": "https://openalex.org/W598111366",
+        "doi": "https://doi.org/10.22004/ag.econ.311482",
+        "mag": "598111366"
+      },
+      "title": "Urban transit: Myths of the present, realities of the future and the role of technology",
+      "display_name": "Urban transit: Myths of the present, realities of the future and the role of technology",
+      "publication_year": 1981,
+      "type": "article",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T12325",
+        "display_name": "Urban Design and Spatial Analysis",
+        "score": 0.5473999977111816,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2215",
+          "display_name": "Building and Construction"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/22",
+          "display_name": "Engineering"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "best_oa_location": {
+        "id": "pmh:oai:ageconsearch.umn.edu:311482",
+        "is_oa": true,
+        "landing_page_url": "http://ageconsearch.umn.edu/record/311482",
+        "pdf_url": "http://ageconsearch.umn.edu/record/311482",
+        "source": {
+          "id": "https://openalex.org/S4306401616",
+          "display_name": "AgEcon Search (University of Minnesota, USA)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I4210120349",
+          "host_organization_name": "University of Minnesota Rochester",
+          "host_organization_lineage": [
+            "https://openalex.org/I4210120349"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "http://ageconsearch.umn.edu/record/311482",
+        "raw_type": "Text"
+      },
+      "primary_location": {
+        "id": "pmh:oai:ageconsearch.umn.edu:311482",
+        "is_oa": true,
+        "landing_page_url": "http://ageconsearch.umn.edu/record/311482",
+        "pdf_url": "http://ageconsearch.umn.edu/record/311482",
+        "source": {
+          "id": "https://openalex.org/S4306401616",
+          "display_name": "AgEcon Search (University of Minnesota, USA)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I4210120349",
+          "host_organization_name": "University of Minnesota Rochester",
+          "host_organization_lineage": [
+            "https://openalex.org/I4210120349"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "http://ageconsearch.umn.edu/record/311482",
+        "raw_type": "Text"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W603758042",
+      "doi": "https://doi.org/10.1007/978-4-431-66927-2_10",
+      "ids": {
+        "openalex": "https://openalex.org/W603758042",
+        "doi": "https://doi.org/10.1007/978-4-431-66927-2_10",
+        "mag": "603758042"
+      },
+      "title": "The Case of Japan and a German Reference Scenario",
+      "display_name": "The Case of Japan and a German Reference Scenario",
+      "publication_year": 1992,
+      "type": "book-chapter",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10471",
+        "display_name": "Climate Change Policy and Economics",
+        "score": 0.6438999772071838,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2002",
+          "display_name": "Economics and Econometrics"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/20",
+          "display_name": "Economics, Econometrics and Finance"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "doi:10.1007/978-4-431-66927-2_10",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1007/978-4-431-66927-2_10",
+        "pdf_url": null,
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Energy Politics and Schumpeter Dynamics",
+        "raw_type": "book-chapter"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W647818924",
+      "doi": "https://doi.org/10.25439/rmt.27332649",
+      "ids": {
+        "openalex": "https://openalex.org/W647818924",
+        "doi": "https://doi.org/10.25439/rmt.27332649",
+        "mag": "647818924"
+      },
+      "title": "Situated empathy: constructed theoretical discourse addressing the empathetic motivations shared by fashion design for sustainability, and the potential of Socially Engaged Buddhist Ethics to inform design practice.",
+      "display_name": "Situated empathy: constructed theoretical discourse addressing the empathetic motivations shared by fashion design for sustainability, and the potential of Socially Engaged Buddhist Ethics to inform design practice.",
+      "publication_year": 2012,
+      "type": "dissertation",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T13477",
+        "display_name": "Sustainable Design and Development",
+        "score": 0.15680000185966492,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2215",
+          "display_name": "Building and Construction"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/22",
+          "display_name": "Engineering"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "best_oa_location": {
+        "id": "pmh:oai:figshare.com:article/27332649",
+        "is_oa": true,
+        "landing_page_url": null,
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4377196282",
+          "display_name": "Figshare",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I4210132348",
+          "host_organization_name": "Figshare (United Kingdom)",
+          "host_organization_lineage": [
+            "https://openalex.org/I4210132348"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "",
+        "raw_type": "Text"
+      },
+      "primary_location": {
+        "id": "pmh:oai:researchbank.rmit.edu.au:rmit:15885",
+        "is_oa": false,
+        "landing_page_url": "http://researchbank.rmit.edu.au/view/rmit:15885",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306402074",
+          "display_name": "RMIT Research Repository (RMIT University Library)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I82951845",
+          "host_organization_name": "RMIT University",
+          "host_organization_lineage": [
+            "https://openalex.org/I82951845"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "",
+        "raw_type": "Thesis"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W68380290",
+      "doi": null,
+      "ids": {
+        "openalex": "https://openalex.org/W68380290",
+        "mag": "68380290"
+      },
+      "title": "Ethics of Sustainability in Engineering",
+      "display_name": "Ethics of Sustainability in Engineering",
+      "publication_year": 2014,
+      "type": "article",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T13497",
+        "display_name": "Hermeneutics and Narrative Identity",
+        "score": 0.9879000186920166,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1211",
+          "display_name": "Philosophy"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/12",
+          "display_name": "Arts and Humanities"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "pmh:oai:CiteSeerX.psu:10.1.1.506.6402",
+        "is_oa": false,
+        "landing_page_url": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.506.6402",
+        "pdf_url": null,
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "http://www.inter-disciplinary.net/wp-content/uploads/2009/06/hasnapaper.pdf",
+        "raw_type": "text"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W70594900",
+      "doi": "https://doi.org/10.1007/978-3-322-91254-1_6",
+      "ids": {
+        "openalex": "https://openalex.org/W70594900",
+        "doi": "https://doi.org/10.1007/978-3-322-91254-1_6",
+        "mag": "70594900"
+      },
+      "title": "Der “Pfad des Erleuchteten” — Die Wirtschaftsauffassung des Buddhismus als ganzheitliche Stakeholder-Theorie",
+      "display_name": "Der “Pfad des Erleuchteten” — Die Wirtschaftsauffassung des Buddhismus als ganzheitliche Stakeholder-Theorie",
+      "publication_year": 2003,
+      "type": "book-chapter",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T13360",
+        "display_name": "Economic and Social Issues",
+        "score": 0.942300021648407,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3312",
+          "display_name": "Sociology and Political Science"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/33",
+          "display_name": "Social Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "doi:10.1007/978-3-322-91254-1_6",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1007/978-3-322-91254-1_6",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306463308",
+          "display_name": "Gabler Verlag eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "ebook platform"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Werte schaffen",
+        "raw_type": "book-chapter"
+      },
+      "language": "de"
+    },
+    {
+      "id": "https://openalex.org/W760656255",
+      "doi": null,
+      "ids": {
+        "openalex": "https://openalex.org/W760656255",
+        "mag": "760656255"
+      },
+      "title": "Climate champions and discourses of climate change : an analysis of the communication of climate change in large corporations",
+      "display_name": "Climate champions and discourses of climate change : an analysis of the communication of climate change in large corporations",
+      "publication_year": 2012,
+      "type": "dissertation",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11488",
+        "display_name": "Climate Change Communication and Perception",
+        "score": 0.9968000054359436,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3312",
+          "display_name": "Sociology and Political Science"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/33",
+          "display_name": "Social Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "mag:760656255",
+        "is_oa": false,
+        "landing_page_url": "https://theses.ncl.ac.uk/jspui/bitstream/10443/1690/1/Swaffield%2012.pdf",
+        "pdf_url": null,
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": null
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W763011615",
+      "doi": null,
+      "ids": {
+        "openalex": "https://openalex.org/W763011615",
+        "mag": "763011615"
+      },
+      "title": "Makroekonomiczna efektywność przedsięwzięć gospodarczych",
+      "display_name": "Makroekonomiczna efektywność przedsięwzięć gospodarczych",
+      "publication_year": 2003,
+      "type": "article",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T12052",
+        "display_name": "Polish socio-economic development",
+        "score": 0.8982999920845032,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2002",
+          "display_name": "Economics and Econometrics"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/20",
+          "display_name": "Economics, Econometrics and Finance"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "mag:763011615",
+        "is_oa": false,
+        "landing_page_url": "http://yadda.icm.edu.pl/yadda/element/bwmeta1.element.ekon-element-000000119149",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S167383514",
+          "display_name": "Ekonomista",
+          "issn_l": "0013-3205",
+          "issn": [
+            "0013-3205",
+            "2299-6184"
+          ],
+          "is_oa": false,
+          "is_in_doaj": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4376882012",
+          "host_organization_name": "Polish Economic Society",
+          "host_organization_lineage": [
+            "https://openalex.org/P4376882012"
+          ],
+          "host_organization_lineage_names": [
+            "Polish Economic Society"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "Ekonomista",
+        "raw_type": null
+      },
+      "language": "pl"
+    },
+    {
+      "id": "https://openalex.org/W768553407",
+      "doi": null,
+      "ids": {
+        "openalex": "https://openalex.org/W768553407",
+        "mag": "768553407"
+      },
+      "title": "Znaczenie modelu człowieka dla polityki zrównoważonego rozwoju",
+      "display_name": "Znaczenie modelu człowieka dla polityki zrównoważonego rozwoju",
+      "publication_year": 2012,
+      "type": "article",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T12883",
+        "display_name": "Sustainable Development and Environmental Management",
+        "score": 0.9950000047683716,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2308",
+          "display_name": "Management, Monitoring, Policy and Law"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/23",
+          "display_name": "Environmental Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "mag:768553407",
+        "is_oa": false,
+        "landing_page_url": "http://yadda.icm.edu.pl/yadda/element/bwmeta1.element.ekon-element-000171334547",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306511890",
+          "display_name": "Handel Wewnętrzny",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "Handel Wewnętrzny",
+        "raw_type": null
+      },
+      "language": "pl"
+    },
+    {
+      "id": "https://openalex.org/W803311960",
+      "doi": "https://doi.org/10.34626/rm47-eh91",
+      "ids": {
+        "openalex": "https://openalex.org/W803311960",
+        "doi": "https://doi.org/10.34626/rm47-eh91",
+        "mag": "803311960"
+      },
+      "title": "On Corporate Sustainability Reporting - Case of Electric Utilities",
+      "display_name": "On Corporate Sustainability Reporting - Case of Electric Utilities",
+      "publication_year": 2013,
+      "type": "article",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10880",
+        "display_name": "Environmental Sustainability in Business",
+        "score": 0.98580002784729,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1406",
+          "display_name": "Marketing"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/14",
+          "display_name": "Business, Management and Accounting"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": {
+        "id": "pmh:oai:repositorio-aberto.up.pt:10216/72315",
+        "is_oa": true,
+        "landing_page_url": "https://hdl.handle.net/10216/72315",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306402433",
+          "display_name": "Portuguese National Funding Agency for Science, Research and Technology (RCAAP Project by FCT)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "info:eu-repo/semantics/doctoralThesis"
+      },
+      "primary_location": {
+        "id": "pmh:oai:repositorio-aberto.up.pt:10216/72315",
+        "is_oa": true,
+        "landing_page_url": "https://hdl.handle.net/10216/72315",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306402433",
+          "display_name": "Portuguese National Funding Agency for Science, Research and Technology (RCAAP Project by FCT)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "info:eu-repo/semantics/doctoralThesis"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W83251087",
+      "doi": null,
+      "ids": {
+        "openalex": "https://openalex.org/W83251087",
+        "mag": "83251087"
+      },
+      "title": "Earthing common worship: an ecotheological critique of the Common Worship texts of the Church of England",
+      "display_name": "Earthing common worship: an ecotheological critique of the Common Worship texts of the Church of England",
+      "publication_year": 2011,
+      "type": "dissertation",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T12798",
+        "display_name": "Religious Tourism and Spaces",
+        "score": 0.9961000084877014,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3305",
+          "display_name": "Geography, Planning and Development"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/33",
+          "display_name": "Social Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": {
+        "id": "pmh:oai:etheses.bham.ac.uk:2838",
+        "is_oa": true,
+        "landing_page_url": "http://etheses.bham.ac.uk/2838/2/Clines_11_PhD_Appendix_1.csv",
+        "pdf_url": "http://etheses.bham.ac.uk/2838/6/Clines_11_PhD_Appendix_5.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306402357",
+          "display_name": "University of Birmingham Institutional Research Archive (University of Birmingham)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I79619799",
+          "host_organization_name": "University of Birmingham",
+          "host_organization_lineage": [
+            "https://openalex.org/I79619799"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "",
+        "raw_type": "Thesis"
+      },
+      "primary_location": {
+        "id": "pmh:oai:etheses.bham.ac.uk:2838",
+        "is_oa": true,
+        "landing_page_url": "http://etheses.bham.ac.uk/2838/2/Clines_11_PhD_Appendix_1.csv",
+        "pdf_url": "http://etheses.bham.ac.uk/2838/6/Clines_11_PhD_Appendix_5.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306402357",
+          "display_name": "University of Birmingham Institutional Research Archive (University of Birmingham)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I79619799",
+          "host_organization_name": "University of Birmingham",
+          "host_organization_lineage": [
+            "https://openalex.org/I79619799"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "",
+        "raw_type": "Thesis"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W83736397",
+      "doi": "https://doi.org/10.13140/rg.2.2.20829.77281",
+      "ids": {
+        "openalex": "https://openalex.org/W83736397",
+        "doi": "https://doi.org/10.13140/rg.2.2.20829.77281",
+        "mag": "83736397"
+      },
+      "title": "©2005. The Internationalisation of the Small and Medium-Sized Enterprise: The Aware Manager. PhD. Thesis, Sheffield University Management School, UK.",
+      "display_name": "©2005. The Internationalisation of the Small and Medium-Sized Enterprise: The Aware Manager. PhD. Thesis, Sheffield University Management School, UK.",
+      "publication_year": 2005,
+      "type": "article",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10415",
+        "display_name": "International Business and FDI",
+        "score": 0.998199999332428,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1408",
+          "display_name": "Strategy and Management"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/14",
+          "display_name": "Business, Management and Accounting"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": {
+        "id": "doi:10.13140/rg.2.2.20829.77281",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.13140/rg.2.2.20829.77281",
+        "pdf_url": null,
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "article-journal"
+      },
+      "primary_location": {
+        "id": "pmh:oai:zaloamati.azc.uam.mx:11191/335",
+        "is_oa": false,
+        "landing_page_url": "https://hdl.handle.net/11191/335",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306400062",
+          "display_name": "Repositorio Institucional Zaloamati (Universidad Autónoma Metropolitana)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I200362191",
+          "host_organization_name": "Universidad Autónoma Metropolitana",
+          "host_organization_lineage": [
+            "https://openalex.org/I200362191"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "Tesis de doctorado"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W839312118",
+      "doi": null,
+      "ids": {
+        "openalex": "https://openalex.org/W839312118",
+        "mag": "839312118"
+      },
+      "title": "Visitor perspectives of ecotourism in the Maldives",
+      "display_name": "Visitor perspectives of ecotourism in the Maldives",
+      "publication_year": 2008,
+      "type": "dissertation",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10055",
+        "display_name": "Diverse Aspects of Tourism Research",
+        "score": 0.9962000250816345,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3312",
+          "display_name": "Sociology and Political Science"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/33",
+          "display_name": "Social Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": {
+        "id": "pmh:oai:ourarchive.otago.ac.nz:10523/4068",
+        "is_oa": true,
+        "landing_page_url": "http://hdl.handle.net/10523/4068",
+        "pdf_url": "http://hdl.handle.net/10523/4068",
+        "source": {
+          "id": "https://openalex.org/S4306402093",
+          "display_name": "Otago University Research Archive (University of Otago)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I80281795",
+          "host_organization_name": "University of Otago",
+          "host_organization_lineage": [
+            "https://openalex.org/I80281795"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "",
+        "raw_type": "Thesis or Dissertation"
+      },
+      "primary_location": {
+        "id": "pmh:oai:ourarchive.otago.ac.nz:10523/4068",
+        "is_oa": true,
+        "landing_page_url": "http://hdl.handle.net/10523/4068",
+        "pdf_url": "http://hdl.handle.net/10523/4068",
+        "source": {
+          "id": "https://openalex.org/S4306402093",
+          "display_name": "Otago University Research Archive (University of Otago)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I80281795",
+          "host_organization_name": "University of Otago",
+          "host_organization_lineage": [
+            "https://openalex.org/I80281795"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "",
+        "raw_type": "Thesis or Dissertation"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W91363667",
+      "doi": "https://doi.org/10.1017/cbo9780511610097.003",
+      "ids": {
+        "openalex": "https://openalex.org/W91363667",
+        "doi": "https://doi.org/10.1017/cbo9780511610097.003",
+        "mag": "91363667"
+      },
+      "title": "Socialism, co-operation, Free Trade and fair trade: the politics of consumption in the nineteenth century",
+      "display_name": "Socialism, co-operation, Free Trade and fair trade: the politics of consumption in the nineteenth century",
+      "publication_year": 2003,
+      "type": "book-chapter",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T13158",
+        "display_name": "Political and Economic history of UK and US",
+        "score": 0.9944999814033508,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3320",
+          "display_name": "Political Science and International Relations"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/33",
+          "display_name": "Social Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "doi:10.1017/cbo9780511610097.003",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1017/cbo9780511610097.003",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306462995",
+          "display_name": "Cambridge University Press eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311721",
+          "host_organization_name": "Cambridge University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311721",
+            "https://openalex.org/P4310311702"
+          ],
+          "host_organization_lineage_names": [
+            "Cambridge University Press",
+            "University of Cambridge"
+          ],
+          "type": "ebook platform"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Consumerism in Twentieth-Century Britain",
+        "raw_type": "book-chapter"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W914890560",
+      "doi": "https://doi.org/10.1007/978-1-349-26643-2_9",
+      "ids": {
+        "openalex": "https://openalex.org/W914890560",
+        "doi": "https://doi.org/10.1007/978-1-349-26643-2_9",
+        "mag": "914890560"
+      },
+      "title": "The Promotion of Small Farms in Swaziland: A Sound Agrarian Policy, Friendly to the Environment",
+      "display_name": "The Promotion of Small Farms in Swaziland: A Sound Agrarian Policy, Friendly to the Environment",
+      "publication_year": 1998,
+      "type": "book-chapter",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10367",
+        "display_name": "Agricultural Innovations and Practices",
+        "score": 0.9872000217437744,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1100",
+          "display_name": "General Agricultural and Biological Sciences"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/11",
+          "display_name": "Agricultural and Biological Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "doi:10.1007/978-1-349-26643-2_9",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1007/978-1-349-26643-2_9",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306463716",
+          "display_name": "Palgrave Macmillan UK eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310319703",
+          "host_organization_name": "Palgrave Macmillan",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319703",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Palgrave Macmillan",
+            "Springer Nature"
+          ],
+          "type": "ebook platform"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Environment and Sustainable Development in Eastern and Southern Africa",
+        "raw_type": "book-chapter"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W942798393",
+      "doi": null,
+      "ids": {
+        "openalex": "https://openalex.org/W942798393",
+        "mag": "942798393"
+      },
+      "title": "Analysing the Development Implications of Technological Innovations from China to SSA economies: A Conceptual Framework",
+      "display_name": "Analysing the Development Implications of Technological Innovations from China to SSA economies: A Conceptual Framework",
+      "publication_year": 2015,
+      "type": "article",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T12786",
+        "display_name": "Innovation and Socioeconomic Development",
+        "score": 0.9980000257492065,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1403",
+          "display_name": "Business and International Management"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/14",
+          "display_name": "Business, Management and Accounting"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "pmh:oai:oro.open.ac.uk:43547",
+        "is_oa": false,
+        "landing_page_url": null,
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306401187",
+          "display_name": "Open Research Online (The Open University)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I204136569",
+          "host_organization_name": "The Open University",
+          "host_organization_lineage": [
+            "https://openalex.org/I204136569"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "acceptedVersion",
+        "is_accepted": true,
+        "is_published": false,
+        "raw_source_name": "",
+        "raw_type": "Other"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W944336040",
+      "doi": "https://doi.org/10.1017/cbo9780511490774.013",
+      "ids": {
+        "openalex": "https://openalex.org/W944336040",
+        "doi": "https://doi.org/10.1017/cbo9780511490774.013",
+        "mag": "944336040"
+      },
+      "title": "Johan Galtung – peace research moves beyond war",
+      "display_name": "Johan Galtung – peace research moves beyond war",
+      "publication_year": 2004,
+      "type": "book-chapter",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T13014",
+        "display_name": "Peace and Human Rights Education",
+        "score": 0.9988999962806702,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3312",
+          "display_name": "Sociology and Political Science"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/33",
+          "display_name": "Social Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "doi:10.1017/cbo9780511490774.013",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1017/cbo9780511490774.013",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306462995",
+          "display_name": "Cambridge University Press eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311721",
+          "host_organization_name": "Cambridge University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311721",
+            "https://openalex.org/P4310311702"
+          ],
+          "host_organization_lineage_names": [
+            "Cambridge University Press",
+            "University of Cambridge"
+          ],
+          "type": "ebook platform"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Gandhi as Disciple and Mentor",
+        "raw_type": "book-chapter"
+      },
+      "language": "en"
+    },
+    {
+      "id": "https://openalex.org/W992698182",
+      "doi": null,
+      "ids": {
+        "openalex": "https://openalex.org/W992698182",
+        "mag": "992698182"
+      },
+      "title": "Wizerunek małych firm w Polsce. Badanie sondażowe",
+      "display_name": "Wizerunek małych firm w Polsce. Badanie sondażowe",
+      "publication_year": 2014,
+      "type": "article",
+      "cited_by_count": 0,
+      "is_retracted": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T12738",
+        "display_name": "Corporate Identity and Reputation",
+        "score": 0.9998000264167786,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1408",
+          "display_name": "Strategy and Management"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/14",
+          "display_name": "Business, Management and Accounting"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "best_oa_location": null,
+      "primary_location": {
+        "id": "mag:992698182",
+        "is_oa": false,
+        "landing_page_url": "http://yadda.icm.edu.pl/yadda/element/bwmeta1.element.ekon-element-000171312963",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210236921",
+          "display_name": "Przedsiebiorczosc i Zarzadzanie",
+          "issn_l": "1733-2486",
+          "issn": [
+            "1733-2486",
+            "2543-8190"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310313990",
+          "host_organization_name": "De Gruyter",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310313990"
+          ],
+          "host_organization_lineage_names": [
+            "De Gruyter"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "Przedsiebiorczosc i Zarzadzanie",
+        "raw_type": null
+      },
+      "language": "pl"
+    }
+  ],
+  "group_by": []
+}

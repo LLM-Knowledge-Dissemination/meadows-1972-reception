@@ -1,0 +1,27 @@
+decade,oa_status,sample_n,yield_k,rate,rate_wilson95_lo,rate_wilson95_hi,census_N,projected_yielders,projected_yielders_lo,projected_yielders_hi,note
+1970s,OA,22,14,0.6364,0.4295,0.8027,49,31.2,21.0,39.3,
+1970s,non-OA,0,0,0.0057 (borrowed),0.0016,0.0205,590,3.4,0.9,12.1,BORROWED — non-OA cell empty in sample; rate borrowed from sample's overall non-OA rate
+1980s,OA,21,7,0.3333,0.1719,0.5463,47,15.7,8.1,25.7,
+1980s,non-OA,0,0,0.0057 (borrowed),0.0016,0.0205,508,2.9,0.8,10.4,BORROWED — non-OA cell empty in sample; rate borrowed from sample's overall non-OA rate
+1990s,OA,36,10,0.2778,0.1585,0.4399,119,33.1,18.9,52.4,
+1990s,non-OA,0,0,0.0057 (borrowed),0.0016,0.0205,811,4.6,1.3,16.7,BORROWED — non-OA cell empty in sample; rate borrowed from sample's overall non-OA rate
+2000s,OA,45,12,0.2667,0.1596,0.4104,641,170.9,102.3,263.1,
+2000s,non-OA,0,0,0.0057 (borrowed),0.0016,0.0205,1776,10.1,2.8,36.5,BORROWED — non-OA cell empty in sample; rate borrowed from sample's overall non-OA rate
+2010s,OA,184,36,0.1957,0.1448,0.2589,2200,430.4,318.6,569.7,
+2010s,non-OA,199,1,0.0050,0.0009,0.0279,3141,15.8,2.8,87.7,
+2020s,OA,226,60,0.2655,0.2122,0.3266,1927,511.6,408.9,629.4,
+2020s,non-OA,152,1,0.0066,0.0012,0.0363,1236,8.1,1.4,44.9,
+unknown,OA,0,0,,,,3,0.0,0.0,0.0,EMPTY — no sample
+unknown,non-OA,0,0,0.0057 (borrowed),0.0016,0.0205,6,0.0,0.0,0.1,BORROWED — non-OA cell empty in sample; rate borrowed from sample's overall non-OA rate
+
+headline,metric,point,ci_lo,ci_hi,units
+oa_honest,projected_yielding_works,1238,888,1788,citing works (decade x OA joint strata; non-OA pre-2010 borrowed from overall non-OA rate)
+oa_honest,contexts_per_yielder_mean,2.014,1.770,2.258,contexts per yielding work (n=141 yielders)
+oa_honest,projected_contexts,2493,1572,4038,extracted citing-context strings
+
+reconciliation_vs_prior_estimates
+estimator,projected_yielders_point,ci_lo,ci_hi,source
+naive_overall_rate,2080,1784,2414,"0.1593 * 13054 — single overall mean, flattens strata"
+decade_only_stratified,2628,1402,4332,yield_projection_stratified.csv — decade strata only
+oa_marginal_only,1344,1134,1657,rate by OA status applied to OA and non-OA census subsets
+oa_decade_joint_oa_honest,1238,888,1788,decade x OA joint strata; pre-2010 non-OA cells borrow overall non-OA rate

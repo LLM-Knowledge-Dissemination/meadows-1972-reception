@@ -1,0 +1,49 @@
+{
+  "meadows_1972_limits_to_growth": [
+    {
+      "id": "https://openalex.org/W225706379",
+      "year": 2012,
+      "type": "book",
+      "cited_by_count": 4724,
+      "doi": "https://doi.org/10.12987/9780300188479-012",
+      "title": "The Limits To Growth"
+    },
+    {
+      "id": "https://openalex.org/W3145345180",
+      "year": 1973,
+      "type": "article",
+      "cited_by_count": 3084,
+      "doi": "https://doi.org/10.2307/2060820",
+      "title": "The Limits to Growth: A Report for the Club of Rome's Project on the Predicament"
+    }
+  ],
+  "commoner_1971_closing_circle": [
+    {
+      "id": "https://openalex.org/W2014540969",
+      "year": 2020,
+      "type": "book",
+      "cited_by_count": 581,
+      "doi": null,
+      "title": "The Closing Circle: Nature, Man, and Technology"
+    },
+    {
+      "id": "https://openalex.org/W569826341",
+      "year": 1972,
+      "type": "book",
+      "cited_by_count": 110,
+      "doi": null,
+      "title": "The closing circle: Confronting the environmental crisis"
+    }
+  ],
+  "schumacher_1974_small_is_beautiful": [],
+  "goldsmith_1972_blueprint_for_survival": [
+    {
+      "id": "https://openalex.org/W3117732344",
+      "year": 1972,
+      "type": "article",
+      "cited_by_count": 1,
+      "doi": null,
+      "title": "Blueprint for survival. [Basic thesis that economic and population growth must b"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+# Provenance manifest for the annotation pipeline (pilot round).
+#
+# Records seed + input hash + strata params so re-running 01_sample.py with
+# the same seed reproduces the same sample, and re-running 02_make_sheets.py
+# reproduces the same per-annotator shuffle.
+#
+# QUARANTINE INVARIANT (restated): no LLM or model is invoked anywhere in
+# this pipeline; annotator sheets carry only blank label fields.
+
+pipeline:
+  branch: redesign
+  scope: pilot annotation round (~100 items)
+  checkpoint_commit: "244afc6"
+  scripts:
+    - scripts/annotation/01_sample.py
+    - scripts/annotation/02_make_sheets.py
+    - scripts/R/krippendorff.R                # written in step 2 commit
+    - scripts/annotation/03_reliability.R     # written in step 2 commit
+    - tests/testthat/test-krippendorff.R      # written in step 2 commit
+
+codebook:
+  path: docs/annotation/PILOT_CODEBOOK.md
+  axes:
+    function: ["Background", "Motivation", "Uses", "Extends", "CompareContrast", "Future"]
+    stance:   ["Negative", "Neutral", "Positive"]    # ordinal
+    depth:    ["Perfunctory", "Substantive"]         # nominal/binary
+  thresholds:
+    firm: 0.80
+    tentative: 0.667
+    redo_or_low_reliability_below: 0.667
+
+input:
+  contexts_combined_csv: analysis/corpus_production/contexts_combined.csv
+  input_hash_sha256_16: "e41a5450337b4d13"     # recorded 2026-06-25 from 01_sample.py
+  total_rows_in_input: 284
+
+sampler:
+  script: scripts/annotation/01_sample.py
+  env_vars_used:
+    ANNOT_N_TOTAL: "100"
+    ANNOT_PER_SEED: "33"
+    ANNOT_BANDS: "pre2000,2000s,2010onward"
+    ANNOT_SEED: "20260625"
+    ANNOT_OVERSAMPLE_NON_ARTICLE: "1"
+  reproducibility: >
+    Same ANNOT_SEED + same input file (same hash) reproduces the same
+    99-item sample. Per-stratum draws use a single random.Random(ANNOT_SEED)
+    in deterministic iteration order over (seeds, bands).
+  realized_total_items: 99
+  realized_per_seed:
+    meadows_1972_limits_to_growth: 33
+    commoner_1971_closing_circle: 33
+    schumacher_1974_small_is_beautiful: 33
+  realized_per_seed_band:
+    meadows_1972_limits_to_growth:
+      pre2000: 11
+      "2000s": 11
+      "2010onward": 11
+    commoner_1971_closing_circle:
+      pre2000: 11        # POOL_EXHAUSTED (pool=11)
+      "2000s": 9         # POOL_EXHAUSTED (pool=9)
+      "2010onward": 13
+    schumacher_1974_small_is_beautiful:
+      pre2000: 15
+      "2000s": 4         # POOL_EXHAUSTED (pool=4)
+      "2010onward": 14
+  pool_exhausted_cells:
+    - commoner_1971_closing_circle / pre2000  (took 11 of 11)
+    - commoner_1971_closing_circle / 2000s     (took 9 of 9)
+    - schumacher_1974_small_is_beautiful / 2000s  (took 4 of 4)
+  non_article_oversampling:
+    rule: "within each (seed, band) cell, take all non-article items first up to cell target, then fill remainder with articles"
+    realized_non_article_count: 44                  # of 99 total
+    realized_non_article_share_in_sample: 0.4444
+    non_article_share_in_input_pool: 0.1655        # 47 / 284 = 16.55%
+
+sheets:
+  script: scripts/annotation/02_make_sheets.py
+  annotators: ["A", "B"]
+  per_annotator_shuffle_seed_formula: "BASE_SEED XOR int(sha256(annotator_letter)[:8], 16)"
+  per_annotator_shuffle_seed_recorded:
+    A: 1420807617
+    B: 3729479668
+  internal_provenance_file: analysis/annotation/item_key.csv
+  annotator_visible_columns: ["item_id", "seed", "citing_year", "work_type", "context"]
+  annotator_blank_label_columns: ["function", "stance", "depth", "flag", "notes"]
+  header_lines: 4
+  quarantine_verified: true       # 02_make_sheets.py asserted 0 non-blank label cells per sheet
+  quarantine_invariant: >
+    No LLM is invoked. The label columns are written EMPTY for every row.
+    No "suggested" or pre-filled label is written under any circumstance.
+    The gold set stays LLM-uncontaminated.
+
+reproducibility_steps:
+  - "Set ANNOT_SEED=20260625 (default) in env"
+  - "Verify input hash: sha256(analysis/corpus_production/contexts_combined.csv) first 16 hex chars == e41a5450337b4d13"
+  - "Run: .venv/bin/python3 scripts/annotation/01_sample.py"
+  - "Run: .venv/bin/python3 scripts/annotation/02_make_sheets.py"
+  - "Compare resulting pilot_sample.csv and sheets/* against the committed copies"
+
+reliability_module:
+  status: tooling-built; runs after sheets return
+  script_r: scripts/R/krippendorff.R
+  script_runner: scripts/annotation/03_reliability.R
+  test: tests/testthat/test-krippendorff.R
+  test_fixture: Krippendorff (2011) "Computing Krippendorff's Alpha-Reliability" Table 1
+  known_value_nominal_alpha: 0.743         # to be checked against the package output to 1e-2
+  bootstrap_ci: implemented (n_boot=1000, seed recorded)

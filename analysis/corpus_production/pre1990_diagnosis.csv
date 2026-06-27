@@ -1,0 +1,10 @@
+seed_id,decade,raw_works,sampled_works,extracted_works,extraction_rate,extraction_rate_wilson95_lo,extraction_rate_wilson95_hi,projected_extracted_works,projected_extracted_wilson95_lo,projected_extracted_wilson95_hi,diagnosis,author_framing_flag
+commoner_1971_closing_circle,1970s,112,7,3,0.4286,0.1582,0.7495,48.0,17.7,83.9,EXTRACTION_OK_NOT_AN_ISSUE,EXTRACTION_OK — no recovery needed
+commoner_1971_closing_circle,1980s,101,5,1,0.2000,0.0362,0.6245,20.2,3.7,63.1,MIXED_ARTIFACT_AND_TROUGH,MIXED — likely both artifact and trough; author to decide split
+commoner_1971_closing_circle,1990s,134,11,2,0.1818,0.0514,0.4770,24.4,6.9,63.9,MIXED_ARTIFACT_AND_TROUGH,MIXED — likely both artifact and trough; author to decide split
+meadows_1972_limits_to_growth,1970s,500,12,9,0.7500,0.4677,0.9111,375.0,233.8,455.5,EXTRACTION_OK_NOT_AN_ISSUE,EXTRACTION_OK — no recovery needed
+meadows_1972_limits_to_growth,1980s,400,11,5,0.4545,0.2127,0.7199,181.8,85.1,288.0,EXTRACTION_OK_NOT_AN_ISSUE,EXTRACTION_OK — no recovery needed
+meadows_1972_limits_to_growth,1990s,699,12,2,0.1667,0.0470,0.4480,116.5,32.8,313.2,MIXED_ARTIFACT_AND_TROUGH,MIXED — likely both artifact and trough; author to decide split
+schumacher_1974_small_is_beautiful,1970s,27,3,2,0.6667,0.2077,0.9385,18.0,5.6,25.3,EXTRACTION_OK_NOT_AN_ISSUE,EXTRACTION_OK — no recovery needed
+schumacher_1974_small_is_beautiful,1980s,54,5,1,0.2000,0.0362,0.6245,10.8,2.0,33.7,MIXED_ARTIFACT_AND_TROUGH,MIXED — likely both artifact and trough; author to decide split
+schumacher_1974_small_is_beautiful,1990s,97,13,6,0.4615,0.2321,0.7086,44.8,22.5,68.7,EXTRACTION_OK_NOT_AN_ISSUE,EXTRACTION_OK — no recovery needed

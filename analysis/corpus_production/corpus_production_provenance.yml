@@ -1,0 +1,294 @@
+# Provenance manifest for the production corpus build.
+#
+# Records every API query verbatim, retrieval timestamps, snapshot/version
+# notes, per-source totals (available vs retrieved), and pointers to the raw
+# payloads under raw/.
+
+build:
+  branch: redesign
+  scope: production corpus v1 — ready for annotation design; NO labels, NO LLM
+  checkpoint_commit: "0a56a83"
+  scripts:
+    - scripts/corpus/lib_corpus.py
+    - scripts/corpus/01_resolve_seeds.py
+    - scripts/corpus/02_citing_census.py
+    - scripts/corpus/03_extract_s2_contexts.py
+    - scripts/corpus/04_extract_oa_pdf_contexts.py
+    - scripts/corpus/05_dedup_combine.py
+    - scripts/corpus/06_pre1990_diagnosis.py
+
+environment:
+  python:
+    interpreter: ".venv/bin/python3"
+    version: "Python 3.14.5"
+    requests_version: "2.34.2"
+    pyyaml_version: "6.0.3"
+    pypdf_version: "6.14.2"   # installed during this build for Route B PDF parsing
+  openalex:
+    polite_pool: true
+    mailto: "gchism@arizona.edu"           # OPENALEX_EMAIL env var
+    user_agent: "meadows-1972-bibliometrics-corpus/2026.06 (mailto:gchism@arizona.edu)"
+    api_base: "https://api.openalex.org"
+    snapshot_note: >
+      OpenAlex is updated continuously; the live numbers pinned in this build
+      are dated by the retrieved_at_utc fields in raw/*.meta.json. The
+      OpenAlex per-record API response does not carry a single dataset
+      version, so reproducibility is timestamp-pinned, not version-pinned.
+  semantic_scholar:
+    api_base: "https://api.semanticscholar.org/graph/v1"
+    api_version: "graph/v1"
+    api_key_used: false                    # SEMANTIC_SCHOLAR_API_KEY / S2_API_KEY absent in env
+    rate_limit_note: >
+      Public anonymous rate limit applied; exponential backoff in lib_corpus.s2_get
+      handles 429s. paper/search endpoint is unusable for anon traffic; we used
+      direct ID lookups (paper/DOI:, paper/MAG:) and paper/search/bulk for seed
+      resolution, and paper/{id}/references for citing-context retrieval.
+    user_agent: "meadows-1972-bibliometrics-corpus/2026.06 (mailto:gchism@arizona.edu)"
+
+step1_seed_resolution:
+  output: analysis/corpus_production/seed_resolution.csv
+  side_output: analysis/corpus_production/seed_alt_editions_detail.json
+  seeds_resolved:
+    - seed_id: meadows_1972_limits_to_growth
+      role: active_anchor
+      openalex_id: W2079238586
+      openalex_doi: "10.1349/ddlp.1"
+      openalex_mag: "2079238586"
+      openalex_type: book
+      openalex_year: 1972
+      openalex_cited_by_count: 4100
+      openalex_method: doi_lookup
+      openalex_alt_editions:
+        - {id: W225706379,  year: 2012, cited_by_count: 4724}
+        - {id: W3145345180, year: 1973, cited_by_count: 3084}
+      s2_paperId: null
+      s2_canonical_record_for_book_present: false
+      s2_note: "No canonical S2 paperId for the 1972 book itself (book-coverage gap). Spike + production both rely on citing-side paper/{citing}/references retrieval."
+    - seed_id: commoner_1971_closing_circle
+      role: active_balance
+      openalex_id: W2799049480
+      openalex_doi: null
+      openalex_mag: "2799049480"
+      openalex_type: book
+      openalex_year: 1971
+      openalex_cited_by_count: 470
+      openalex_method: title_search_then_get
+      openalex_alt_editions:
+        - {id: W2014540969, year: 2020, cited_by_count: 581}
+        - {id: W569826341,  year: 1972, cited_by_count: 110}
+      s2_paperId: null
+      s2_canonical_record_for_book_present: false
+    - seed_id: schumacher_1974_small_is_beautiful
+      role: active_scale
+      openalex_id: W2054104432
+      openalex_doi: null
+      openalex_mag: "2054104432"
+      openalex_type: book
+      openalex_year: 1974
+      openalex_cited_by_count: 1458
+      openalex_method: title_search_then_get
+      openalex_alt_editions: []
+      s2_paperId: "0469ce8956576976a40086ffe99a4fd0751b4ed8"
+      s2_canonical_record_for_book_present: true
+      s2_resolution_path: mag_lookup
+    - seed_id: goldsmith_1972_blueprint_for_survival
+      role: reserve_only
+      openalex_id: W1600853026
+      openalex_doi: null
+      openalex_mag: "1600853026"
+      openalex_type: book
+      openalex_year: 1972
+      openalex_cited_by_count: 360
+      openalex_method: title_search_then_get
+      openalex_alt_editions:
+        - {id: W3117732344, year: 1972, cited_by_count: 1}
+      s2_paperId: "fd7deaf6c575a3b54d4fffd63586df536c1957a7"
+      s2_canonical_record_for_book_present: true
+      s2_resolution_path: mag_lookup
+      build_action: "RESERVE — IDs captured, no census or context extraction run"
+
+step2_citing_works_census:
+  outputs:
+    - analysis/corpus_production/citing_census.csv
+    - analysis/corpus_production/citing_census_summary.csv
+    - analysis/corpus_production/citing_census_stats.json
+  openalex_query: "GET /works?filter=cites:{target_id}&select=id,doi,ids,title,..."
+  pagination: cursor=* (per-page=200)
+  union_logic: "union by citing OpenAlex Work ID across canonical + alt-edition target IDs"
+  per_seed_counts:
+    meadows_1972_limits_to_growth:
+      filter_ids: [W2079238586, W225706379, W3145345180]
+      per_target: {W2079238586: 4097, W225706379: 4730, W3145345180: 3088}
+      raw_sum: 11915
+      unioned_unique: 10478
+      overlap_dropped: 1437
+    commoner_1971_closing_circle:
+      filter_ids: [W2799049480, W2014540969, W569826341]
+      per_target: {W2799049480: 470, W2014540969: 581, W569826341: 110}
+      raw_sum: 1161
+      unioned_unique: 1116
+      overlap_dropped: 45
+    schumacher_1974_small_is_beautiful:
+      filter_ids: [W2054104432]
+      per_target: {W2054104432: 1460}
+      raw_sum: 1460
+      unioned_unique: 1460
+      overlap_dropped: 0
+  combined_unique_pairs: 13054
+  truncation: false
+  decade_totals_combined:
+    "1970s": 639
+    "1980s": 555
+    "1990s": 930
+    "2000s": 2417
+    "2010s": 5341
+    "2020s": 3163
+    "unknown": 9
+
+step3a_s2_context_extraction:
+  outputs:
+    - analysis/corpus_production/contexts_s2.csv
+    - analysis/corpus_production/contexts_s2_attempted.csv
+  raw_dir: analysis/corpus_production/raw/s2_refs/
+  s2_endpoint: "GET /paper/{DOI:doi|MAG:mag}/references?fields=contexts,intents,isInfluential,citedPaper..."
+  sampling:
+    random_seed: 20260624
+    method: "stratified by (seed_id, citing_decade) restricted to citing works with DOI or MAG"
+    decades_sampled: ["2010s", "2020s"]
+    n_per_stratum: 120
+    total_sampled: 720
+    rationale: "spike showed S2 ref-coverage is structurally ~0% pre-2010"
+  results:
+    sampled_n: 720
+    s2_resolved: 621
+    s2_unresolved: 21      # neither DOI nor MAG resolved
+    seed_ref_found: 126
+    context_yielding_works: 58
+    context_rows: 78
+    overall_rate_works: 0.0806
+    note: "Of S2-resolved papers, the majority have empty reference lists; this is the dominant constraint."
+  per_stratum:
+    - {seed: meadows_1972_limits_to_growth,         decade: "2010s", sampled: 120, resolved: 113, seed_ref_found: 15, context_works: 8,  rate_works: 0.0667}
+    - {seed: meadows_1972_limits_to_growth,         decade: "2020s", sampled: 120, resolved: 94,  seed_ref_found: 26, context_works: 8,  rate_works: 0.0667}
+    - {seed: commoner_1971_closing_circle,          decade: "2010s", sampled: 120, resolved: 118, seed_ref_found: 15, context_works: 4,  rate_works: 0.0333}
+    - {seed: commoner_1971_closing_circle,          decade: "2020s", sampled: 120, resolved: 87,  seed_ref_found: 28, context_works: 13, rate_works: 0.1083}
+    - {seed: schumacher_1974_small_is_beautiful,    decade: "2010s", sampled: 120, resolved: 115, seed_ref_found: 16, context_works: 10, rate_works: 0.0833}
+    - {seed: schumacher_1974_small_is_beautiful,    decade: "2020s", sampled: 120, resolved: 94,  seed_ref_found: 26, context_works: 15, rate_works: 0.1250}
+  reference_matcher:
+    canonical_dois: ["10.1349/ddlp.1", "10.9774/gleaf.978-1-907643-44-6_8", "10.4324/9780429493744-3"]
+    canonical_mags: ["2079238586", "225706379", "2487267993", "3145345180"]
+    canonical_corpus_ids: [131868204, 156978832, 155565742, 145613959, 270281048]
+    title_fallback: "title contains seed_title_re AND (author contains seed_author_re OR year in seed_window)"
+
+step3b_oa_fulltext_extraction:
+  outputs:
+    - analysis/corpus_production/contexts_oa.csv
+    - analysis/corpus_production/contexts_oa_attempted.csv
+  raw_dir: analysis/corpus_production/raw/oa_fulltext/
+  raw_dir_note: >
+    Raw OA PDFs/HTMLs (151 MB across 213 files) are intentionally EXCLUDED
+    from git (.gitignore) because they are re-fetchable from the recorded
+    citing_oa_url + verifiable via the doc_sha256_16 hash captured in
+    contexts_oa_attempted.csv. Re-running 04_extract_oa_pdf_contexts.py
+    repopulates the directory.
+  fetch_method:
+    timeout_s: 20
+    max_bytes: 8388608
+    user_agent: "meadows-1972-bibliometrics-corpus/2026.06 (mailto:gchism@arizona.edu)"
+  pdf_parser: pypdf 6.14.2
+  html_parser: "tag-strip regex (lib_corpus._TAG_RE)"
+  sampling:
+    random_seed: 20260624
+    method: "stratified by (seed_id, citing_decade), restricted to citing works with non-empty oa_url"
+    decades_sampled: ["1970s", "1980s", "1990s", "2000s", "2010s", "2020s"]
+    n_per_stratum_requested: 20
+    total_sampled_requested: 360
+    total_sampled_actual: 304   # smaller pools in pre-2000 strata
+  results:
+    fetched_with_match: 141    # citing works that yielded >=1 context
+    fetched_without_match: ~163  # PDFs parsed but no Meadows-class mention found
+    fetch_failed: ~63          # 403/timeout/connection errors
+    context_rows: 222
+    overall_rate_works: 0.1593   # 141 / 885 (union with S2 attempts)
+
+step3c_dedup_combine:
+  outputs:
+    - analysis/corpus_production/contexts_combined.csv
+    - analysis/corpus_production/context_coverage_summary.csv
+  dedup_key: "(seed_id, citing_openalex_id, normalize(context_text))  where normalize = lower + collapse_ws + first_240_chars"
+  result:
+    s2_rows_in: 78
+    oa_rows_in: 222
+    combined_dedup_rows: 284
+    contexts_found_via_both_routes: 16  # appearing in both Route A and Route B; recorded as routes=s2|oa
+  coverage_headline:
+    combined_attempted_pairs: 885   # union of S2 attempts and OA fetched attempts
+    combined_yielded_pairs: 141
+    rate: 0.1593
+    wilson95_lo: 0.1367
+    wilson95_hi: 0.1849
+
+step4_pre1990_diagnosis:
+  outputs:
+    - analysis/corpus_production/pre1990_diagnosis.csv
+    - analysis/corpus_production/pre1990_recovery_worklist.csv
+  diagnostic_rules:
+    - "COVERAGE_ARTIFACT: raw>=20 AND extraction_rate<5%"
+    - "REAL_TROUGH: raw<20"
+    - "MIXED_ARTIFACT_AND_TROUGH: raw>=20 AND 5%<=rate<25%"
+    - "EXTRACTION_OK_NOT_AN_ISSUE: rate>=25%"
+  per_seed_pre1990_findings:
+    meadows_1972_limits_to_growth:
+      "1970s": {raw: 500, sampled: 12, extracted: 9, rate: 0.7500, projected: 375.0, diagnosis: EXTRACTION_OK_NOT_AN_ISSUE}
+      "1980s": {raw: 400, sampled: 11, extracted: 5, rate: 0.4545, projected: 181.8, diagnosis: EXTRACTION_OK_NOT_AN_ISSUE}
+      "1990s": {raw: 699, sampled: 12, extracted: 2, rate: 0.1667, projected: 116.5, diagnosis: MIXED_ARTIFACT_AND_TROUGH}
+    commoner_1971_closing_circle:
+      "1970s": {raw: 112, sampled: 7,  extracted: 3, rate: 0.4286, projected: 48.0,  diagnosis: EXTRACTION_OK_NOT_AN_ISSUE}
+      "1980s": {raw: 101, sampled: 5,  extracted: 1, rate: 0.2000, projected: 20.2,  diagnosis: MIXED_ARTIFACT_AND_TROUGH}
+      "1990s": {raw: 134, sampled: 11, extracted: 2, rate: 0.1818, projected: 24.4,  diagnosis: MIXED_ARTIFACT_AND_TROUGH}
+    schumacher_1974_small_is_beautiful:
+      "1970s": {raw: 27,  sampled: 3,  extracted: 2, rate: 0.6667, projected: 18.0,  diagnosis: EXTRACTION_OK_NOT_AN_ISSUE, note: "raw=27 just over the trough threshold; effective TROUGH partial"}
+      "1980s": {raw: 54,  sampled: 5,  extracted: 1, rate: 0.2000, projected: 10.8,  diagnosis: MIXED_ARTIFACT_AND_TROUGH}
+      "1990s": {raw: 97,  sampled: 13, extracted: 6, rate: 0.4615, projected: 44.8,  diagnosis: EXTRACTION_OK_NOT_AN_ISSUE}
+  recovery_worklist_size: 1173
+  author_framing_flag: >
+    The framing decision (limitation vs candidate finding; fund manual recovery?) is
+    AUTHOR'S. No (seed × decade) stratum classified as pure COVERAGE_ARTIFACT —
+    all 9 pre-1990 strata are EXTRACTION_OK (5) or MIXED (4). The recovery
+    worklist is offered as raw material for that decision.
+
+raw_artifact_inventory:
+  base_dir: analysis/corpus_production/raw/
+  notes_on_storage: >
+    Two subdirs: raw/s2_refs/ holds S2 per-paper references JSON responses
+    (committed in full). raw/oa_fulltext/ holds fetched OA PDFs/HTMLs
+    (~151 MB across 213 files); these are .gitignored as the SHA-256 hash
+    + URL recorded in contexts_oa_attempted.csv provides reproducibility
+    without checking in re-fetchable binary blobs.
+  by_subdir:
+    raw/citing_meadows_1972_limits_to_growth/: 31 MB (cited_by census pages)
+    raw/citing_commoner_1971_closing_circle/: 2.9 MB
+    raw/citing_schumacher_1974_small_is_beautiful/: 3.8 MB
+    raw/s2_refs/: ~18 MB (720 reference-list responses)
+    raw/oa_fulltext/: 151 MB (gitignored; fetched bytes; sha256 + URL in CSV)
+    raw/seed_*.json: ~80 KB
+
+reproduce_locally:
+  prerequisites:
+    - "OPENALEX_EMAIL env var (already in .env / .Renviron)"
+    - "Optional: SEMANTIC_SCHOLAR_API_KEY for relaxed S2 limits"
+    - ".venv/bin/python3 with requests, pyyaml, pypdf installed"
+  commands:
+    - "/Users/gregchism/dev/meadows-1972-bibliometrics/.venv/bin/python3 scripts/corpus/01_resolve_seeds.py"
+    - "/Users/gregchism/dev/meadows-1972-bibliometrics/.venv/bin/python3 scripts/corpus/02_citing_census.py"
+    - "CORPUS_S2_DECADES='2010s,2020s' CORPUS_S2_N_PER=120 /Users/gregchism/dev/meadows-1972-bibliometrics/.venv/bin/python3 scripts/corpus/03_extract_s2_contexts.py"
+    - "CORPUS_OA_N_PER=20 /Users/gregchism/dev/meadows-1972-bibliometrics/.venv/bin/python3 scripts/corpus/04_extract_oa_pdf_contexts.py"
+    - "/Users/gregchism/dev/meadows-1972-bibliometrics/.venv/bin/python3 scripts/corpus/05_dedup_combine.py"
+    - "/Users/gregchism/dev/meadows-1972-bibliometrics/.venv/bin/python3 scripts/corpus/06_pre1990_diagnosis.py"
+  approximate_runtimes:
+    step1: "~5 min  (4 seeds, S2 rate-limit dominated)"
+    step2: "~3 min  (cursor pagination, OpenAlex polite pool)"
+    step3a: "~12 min (720 S2 calls under public rate limit)"
+    step3b: "~12 min (304 OA fetches incl. PDF parse)"
+    step3c: "<5 sec"
+    step4: "<5 sec"

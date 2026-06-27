@@ -1,0 +1,46 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+Rplots.pdf
+src/*.o
+src/*.so
+src/*.dll
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+.Renviron
+
+# Large/copyrighted or generated data artifacts
+analysis/data/pdf/
+analysis/data/pdf_text/
+analysis/data/pdf_hits/
+analysis/data/ntrl/
+analysis/data/external/api_cache/
+analysis/reports/*_files/
+.env
+.Renviron
+
+analysis/data/derived/cocitation_edges*analysis/data/derived/cocitation_edges.csv
+analysis/data/derived/*.csv
+
+# Derived data outputs
+analysis/data/derived/*.csv
+
+# Production corpus build — fetched OA full-text bytes are large and
+# re-fetchable from the OA URL + verifiable via doc_sha256_16 recorded
+# in analysis/corpus_production/contexts_oa_attempted.csv. The SHA hash
+# and URL provide reproducibility without checking in binary blobs.
+analysis/corpus_production/raw/oa_fulltext/
+
+docs/*.docx
+
+# Claude / prompting artifacts — never tracked. The OpenAI-based v2 method
+# lives in prompts/ and schemas/ (audit KEEP); those are explicitly NOT ignored.
+CLAUDE.md
+.claude/
+HANDOFF*.md
+**/HANDOFF*.md
+*.prompt
+/prompts.local/

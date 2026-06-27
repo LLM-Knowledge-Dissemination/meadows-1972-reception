@@ -1,0 +1,305 @@
+{
+  "id": "https://openalex.org/W1600853026",
+  "doi": null,
+  "title": "A Blueprint for Survival",
+  "display_name": "A Blueprint for Survival",
+  "publication_year": 1972,
+  "publication_date": "1972-01-01",
+  "ids": {
+    "openalex": "https://openalex.org/W1600853026",
+    "mag": "1600853026"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "pmh:oai:aleph.bib-bvb.de:BVB01-009598503",
+    "is_oa": false,
+    "landing_page_url": null,
+    "pdf_url": null,
+    "source": null,
+    "license": null,
+    "license_id": null,
+    "version": "submittedVersion",
+    "is_accepted": false,
+    "is_published": false,
+    "raw_source_name": null,
+    "raw_type": "text"
+  },
+  "type": "book",
+  "indexed_in": [],
+  "open_access": {
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null,
+    "any_repository_has_fulltext": false
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5109862169",
+        "display_name": "Edward Goldsmith",
+        "orcid": null
+      },
+      "institutions": [],
+      "countries": [],
+      "is_corresponding": true,
+      "raw_author_name": "Edward Goldsmith",
+      "raw_affiliation_strings": [],
+      "affiliations": []
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 0,
+  "institutions_distinct_count": 1,
+  "corresponding_author_ids": [
+    "https://openalex.org/A5109862169"
+  ],
+  "corresponding_institution_ids": [],
+  "apc_list": null,
+  "apc_paid": null,
+  "fwci": 24.2361,
+  "has_fulltext": false,
+  "cited_by_count": 360,
+  "citation_normalized_percentile": {
+    "value": 0.99430199,
+    "is_in_top_1_percent": true,
+    "is_in_top_10_percent": true
+  },
+  "cited_by_percentile_year": {
+    "min": 97,
+    "max": 100
+  },
+  "biblio": {
+    "volume": null,
+    "issue": null,
+    "first_page": null,
+    "last_page": null
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T11761",
+    "display_name": "Resilience and Mental Health",
+    "score": 0.05719999969005585,
+    "subfield": {
+      "id": "https://openalex.org/subfields/3203",
+      "display_name": "Clinical Psychology"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/32",
+      "display_name": "Psychology"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/2",
+      "display_name": "Social Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T11761",
+      "display_name": "Resilience and Mental Health",
+      "score": 0.05719999969005585,
+      "subfield": {
+        "id": "https://openalex.org/subfields/3203",
+        "display_name": "Clinical Psychology"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/32",
+        "display_name": "Psychology"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/2",
+        "display_name": "Social Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T14090",
+      "display_name": "Health and Conflict Studies",
+      "score": 0.04670000076293945,
+      "subfield": {
+        "id": "https://openalex.org/subfields/3600",
+        "display_name": "General Health Professions"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/36",
+        "display_name": "Health Professions"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/4",
+        "display_name": "Health Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/blueprint",
+      "display_name": "Blueprint",
+      "score": 0.7479233741760254
+    },
+    {
+      "id": "https://openalex.org/keywords/engineering",
+      "display_name": "Engineering",
+      "score": 0.14131450653076172
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C155911762",
+      "wikidata": "https://www.wikidata.org/wiki/Q422321",
+      "display_name": "Blueprint",
+      "level": 2,
+      "score": 0.7479233741760254
+    },
+    {
+      "id": "https://openalex.org/C127413603",
+      "wikidata": "https://www.wikidata.org/wiki/Q11023",
+      "display_name": "Engineering",
+      "level": 0,
+      "score": 0.14131450653076172
+    },
+    {
+      "id": "https://openalex.org/C78519656",
+      "wikidata": "https://www.wikidata.org/wiki/Q101333",
+      "display_name": "Mechanical engineering",
+      "level": 1,
+      "score": 0.0
+    }
+  ],
+  "mesh": [],
+  "locations_count": 2,
+  "locations": [
+    {
+      "id": "pmh:oai:aleph.bib-bvb.de:BVB01-009598503",
+      "is_oa": false,
+      "landing_page_url": null,
+      "pdf_url": null,
+      "source": null,
+      "license": null,
+      "license_id": null,
+      "version": "submittedVersion",
+      "is_accepted": false,
+      "is_published": false,
+      "raw_source_name": null,
+      "raw_type": "text"
+    },
+    {
+      "id": "mag:1600853026",
+      "is_oa": false,
+      "landing_page_url": "https://ci.nii.ac.jp/ncid/BA30686935",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S4210197683",
+        "display_name": "Medical Entomology and Zoology",
+        "issn_l": "0424-7086",
+        "issn": [
+          "0424-7086",
+          "2185-5609"
+        ],
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": true,
+        "host_organization": "https://openalex.org/P4310319750",
+        "host_organization_name": "Japan Society of Medical Entomology and Zoology",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310319750"
+        ],
+        "host_organization_lineage_names": [
+          "Japan Society of Medical Entomology and Zoology"
+        ],
+        "type": "journal"
+      },
+      "license": null,
+      "license_id": null,
+      "version": null,
+      "is_accepted": false,
+      "is_published": null,
+      "raw_source_name": null,
+      "raw_type": null
+    }
+  ],
+  "best_oa_location": null,
+  "sustainable_development_goals": [
+    {
+      "display_name": "Climate action",
+      "score": 0.4099999964237213,
+      "id": "https://metadata.un.org/sdg/13"
+    }
+  ],
+  "awards": [],
+  "funders": [],
+  "has_content": {
+    "grobid_xml": false,
+    "pdf": false
+  },
+  "content_urls": null,
+  "referenced_works_count": 0,
+  "referenced_works": [],
+  "related_works": [
+    "https://openalex.org/W49479346",
+    "https://openalex.org/W3145345180",
+    "https://openalex.org/W225706379",
+    "https://openalex.org/W1489934507",
+    "https://openalex.org/W2799049480",
+    "https://openalex.org/W1525652762",
+    "https://openalex.org/W1586469975",
+    "https://openalex.org/W1552113627",
+    "https://openalex.org/W2226396244",
+    "https://openalex.org/W2057931959",
+    "https://openalex.org/W1551322995",
+    "https://openalex.org/W2036219106",
+    "https://openalex.org/W1595229687",
+    "https://openalex.org/W652061993",
+    "https://openalex.org/W2066932297",
+    "https://openalex.org/W2054104432",
+    "https://openalex.org/W1535621476",
+    "https://openalex.org/W1589572802",
+    "https://openalex.org/W1508369527",
+    "https://openalex.org/W1492039495"
+  ],
+  "abstract_inverted_index": null,
+  "counts_by_year": [
+    {
+      "year": 2021,
+      "cited_by_count": 5
+    },
+    {
+      "year": 2020,
+      "cited_by_count": 12
+    },
+    {
+      "year": 2019,
+      "cited_by_count": 8
+    },
+    {
+      "year": 2018,
+      "cited_by_count": 9
+    },
+    {
+      "year": 2017,
+      "cited_by_count": 7
+    },
+    {
+      "year": 2016,
+      "cited_by_count": 13
+    },
+    {
+      "year": 2015,
+      "cited_by_count": 12
+    },
+    {
+      "year": 2014,
+      "cited_by_count": 15
+    },
+    {
+      "year": 2013,
+      "cited_by_count": 20
+    },
+    {
+      "year": 2012,
+      "cited_by_count": 12
+    }
+  ],
+  "updated_date": "2026-03-24T08:02:53.985720",
+  "created_date": "2025-10-10T00:00:00"
+}

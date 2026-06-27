@@ -1,0 +1,17 @@
+# Synthetic test fixture — annotator A. NOT real annotation data.
+# Used by tests/integration of scripts/annotation/03_reliability.R --fixture.
+# 12 items: 8 perfect agreement, 4 deliberate disagreements (1 per axis + 1 multi-axis).
+#
+item_id,seed,citing_year,work_type,context,function,stance,depth,flag,notes
+FIX_001,meadows_1972_limits_to_growth,2015,article,"We adopt the World3 model of Meadows et al. (1972) to simulate water demand.",Uses,Neutral,Substantive,,
+FIX_002,meadows_1972_limits_to_growth,2010,article,"Concerns about exponential growth have a long history (Meadows et al. 1972).",Background,Neutral,Perfunctory,,
+FIX_003,meadows_1972_limits_to_growth,2020,article,"Meadows et al. (1972) correctly identified the tension between growth and resources.",Background,Positive,Substantive,,
+FIX_004,meadows_1972_limits_to_growth,2018,article,"The collapse predictions of Meadows et al. (1972) rested on implausibly static assumptions.",CompareContrast,Negative,Substantive,,
+FIX_005,commoner_1971_closing_circle,2019,article,"Commoner (1971) argued for an ecological reorganization of industry.",Background,Neutral,Substantive,,
+FIX_006,commoner_1971_closing_circle,2021,article,"Like Meadows et al. (1972), Commoner (1971) emphasized planetary limits.",CompareContrast,Neutral,Substantive,,
+FIX_007,schumacher_1974_small_is_beautiful,2017,article,"Schumacher (1974) provided a normative critique of growth economics.",Background,Neutral,Substantive,,
+FIX_008,schumacher_1974_small_is_beautiful,2022,article,"We extend Schumacher's (1974) framework to include digital labor.",Extends,Neutral,Substantive,,
+FIX_009,meadows_1972_limits_to_growth,2019,book-chapter,"A natural next step is to revisit the scenarios of Meadows et al. (1972) with updated data.",Future,Neutral,Substantive,,
+FIX_010,commoner_1971_closing_circle,2018,article,"Several authors warned of ecological limits (e.g., Commoner 1971; Meadows et al. 1972).",Background,Neutral,Perfunctory,,
+FIX_011,schumacher_1974_small_is_beautiful,2020,article,"Schumacher's (1974) appropriate-technology argument has shaped development discourse.",Motivation,Positive,Substantive,,
+FIX_012,meadows_1972_limits_to_growth,2016,article,"The seminal Limits to Growth study (Meadows et al. 1972) initiated modern sustainability research.",Background,Positive,Substantive,,

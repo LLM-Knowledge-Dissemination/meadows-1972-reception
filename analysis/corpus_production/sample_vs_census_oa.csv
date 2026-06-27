@@ -1,0 +1,8 @@
+decade,census_N,census_OA_N,census_OA_fraction,sample_n,sample_OA_n,sample_OA_fraction,sample_OA_wilson95_lo,sample_OA_wilson95_hi,diff_sample_minus_census,representativeness_flag
+1970s,639,49,0.0767,22,22,1.0000,0.8513,1.0000,+0.9233,DIVERGENT — sample OA fraction Wilson 95% CI does not cover census OA share
+1980s,555,47,0.0847,21,21,1.0000,0.8454,1.0000,+0.9153,DIVERGENT — sample OA fraction Wilson 95% CI does not cover census OA share
+1990s,930,119,0.1280,36,36,1.0000,0.9036,1.0000,+0.8720,DIVERGENT — sample OA fraction Wilson 95% CI does not cover census OA share
+2000s,2417,641,0.2652,45,45,1.0000,0.9213,1.0000,+0.7348,DIVERGENT — sample OA fraction Wilson 95% CI does not cover census OA share
+2010s,5341,2200,0.4119,383,184,0.4804,0.4308,0.5304,+0.0685,DIVERGENT — sample OA fraction Wilson 95% CI does not cover census OA share
+2020s,3163,1927,0.6092,378,226,0.5979,0.5477,0.6461,-0.0113,OK
+unknown,9,3,0.3333,0,0,0.0000,0.0000,0.0000,-0.3333,EMPTY — no sample for this decade

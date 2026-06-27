@@ -1,0 +1,29 @@
+{
+  "title": "Evidence-Bounded Contextual Bibliometrics: Task-Specific Validation, Automation Boundaries, and Claims Governance in a Meadows 1972 Stress Test",
+  "version": "v2.0-paper1-freeze",
+  "publication_date": "2026-06-09",
+  "creators": [
+    {
+      "name": "Chism, Greg"
+    }
+  ],
+  "description": "Paper 1 release package for a methods-focused contextual bibliometrics study. The release contains the Scientometrics-targeted manuscript, final Paper 1 figures and tables, frozen v2.0 methodology artifacts, validation summaries, selected final validation records, and reproducibility documentation. Source PDFs are excluded from the minimum release package pending rights review.",
+  "license": "MIT",
+  "keywords": [
+    "contextual bibliometrics",
+    "scientometrics",
+    "validation",
+    "automation boundaries",
+    "claims governance",
+    "reproducibility"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "PENDING",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-article"
+    }
+  ],
+  "doi": "PENDING",
+  "repository": "PENDING"
+}

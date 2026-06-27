@@ -1,0 +1,1920 @@
+{
+  "meta": {
+    "count": 10,
+    "db_response_time_ms": 58,
+    "page": 1,
+    "per_page": 25,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where title has (A Blueprint for Survival)\n  and year >= 1972\n  and year <= 1973",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "display_name.search",
+            "value": "A Blueprint for Survival",
+            "operator": "has"
+          },
+          {
+            "column_id": "publication_year",
+            "value": 1972,
+            "operator": ">="
+          },
+          {
+            "column_id": "publication_year",
+            "value": 1973,
+            "operator": "<="
+          }
+        ],
+        "select": [
+          "id",
+          "doi",
+          "ids",
+          "title",
+          "display_name",
+          "publication_year",
+          "type",
+          "cited_by_count",
+          "authorships",
+          "primary_topic"
+        ],
+        "per_page": 25
+      },
+      "url": "/works?filter=display_name.search:A Blueprint for Survival,publication_year:1972-1973&select=id,doi,ids,title,display_name,publication_year,type,cited_by_count,authorships,primary_topic&per_page=25"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W1600853026",
+      "doi": null,
+      "ids": {
+        "openalex": "https://openalex.org/W1600853026",
+        "mag": "1600853026"
+      },
+      "title": "A Blueprint for Survival",
+      "display_name": "A Blueprint for Survival",
+      "publication_year": 1972,
+      "type": "book",
+      "cited_by_count": 360,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5109862169",
+            "display_name": "Edward Goldsmith",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": true,
+          "raw_author_name": "Edward Goldsmith",
+          "raw_affiliation_strings": [],
+          "affiliations": []
+        }
+      ],
+      "primary_topic": {
+        "id": "https://openalex.org/T11761",
+        "display_name": "Resilience and Mental Health",
+        "score": 0.05719999969005585,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3203",
+          "display_name": "Clinical Psychology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/32",
+          "display_name": "Psychology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      }
+    },
+    {
+      "id": "https://openalex.org/W1976250419",
+      "doi": "https://doi.org/10.1038/235233a0",
+      "ids": {
+        "openalex": "https://openalex.org/W1976250419",
+        "doi": "https://doi.org/10.1038/235233a0",
+        "mag": "1976250419"
+      },
+      "title": "“Blueprint for Survival”",
+      "display_name": "“Blueprint for Survival”",
+      "publication_year": 1972,
+      "type": "article",
+      "cited_by_count": 4,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5109250910",
+            "display_name": "C. H. Waddington",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": true,
+          "raw_author_name": "C. H. WADDINGTON",
+          "raw_affiliation_strings": [
+            "Institute of Animal Genetics, West Mains Road, Edinburgh",
+            "Institute of Animal Genetics, Edinburgh"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Institute of Animal Genetics, West Mains Road, Edinburgh",
+              "institution_ids": []
+            },
+            {
+              "raw_affiliation_string": "Institute of Animal Genetics, Edinburgh",
+              "institution_ids": []
+            }
+          ]
+        }
+      ],
+      "primary_topic": {
+        "id": "https://openalex.org/T14090",
+        "display_name": "Health and Conflict Studies",
+        "score": 0.057999998331069946,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3600",
+          "display_name": "General Health Professions"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/36",
+          "display_name": "Health Professions"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/4",
+          "display_name": "Health Sciences"
+        }
+      }
+    },
+    {
+      "id": "https://openalex.org/W1984906151",
+      "doi": "https://doi.org/10.1038/235179b0",
+      "ids": {
+        "openalex": "https://openalex.org/W1984906151",
+        "doi": "https://doi.org/10.1038/235179b0",
+        "mag": "1984906151"
+      },
+      "title": "Blueprint for Survival",
+      "display_name": "Blueprint for Survival",
+      "publication_year": 1972,
+      "type": "article",
+      "cited_by_count": 3,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5063531871",
+            "display_name": "S. R. J. Woodell",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": true,
+          "raw_author_name": "S. R. J. WOODELL",
+          "raw_affiliation_strings": [
+            "Botany School, South Parks Road, Oxford, OX1 3RA",
+            "Botany School, Oxford"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Botany School, South Parks Road, Oxford, OX1 3RA",
+              "institution_ids": []
+            },
+            {
+              "raw_affiliation_string": "Botany School, Oxford",
+              "institution_ids": []
+            }
+          ]
+        }
+      ],
+      "primary_topic": {
+        "id": "https://openalex.org/T11761",
+        "display_name": "Resilience and Mental Health",
+        "score": 0.010700000450015068,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3203",
+          "display_name": "Clinical Psychology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/32",
+          "display_name": "Psychology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      }
+    },
+    {
+      "id": "https://openalex.org/W3141447973",
+      "doi": "https://doi.org/10.1038/235405b0",
+      "ids": {
+        "openalex": "https://openalex.org/W3141447973",
+        "doi": "https://doi.org/10.1038/235405b0",
+        "mag": "3141447973"
+      },
+      "title": "“Blueprint for Survival”",
+      "display_name": "“Blueprint for Survival”",
+      "publication_year": 1972,
+      "type": "article",
+      "cited_by_count": 1,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5000818727",
+            "display_name": "Bob Abel",
+            "orcid": "https://orcid.org/0000-0001-8418-3083"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "BOB ABEL",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5103961519",
+            "display_name": "J. M. ANDERSON",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "J. M. ANDERSON",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5008836141",
+            "display_name": "H. R. Anderson",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "H. R. ANDERSON",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5027280375",
+            "display_name": "N. BAWDEN",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "N. BAWDEN",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5046844635",
+            "display_name": "Graham Bell",
+            "orcid": "https://orcid.org/0000-0001-5695-2463"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "GRAHAM BELL",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5101478350",
+            "display_name": "Ian Campbell",
+            "orcid": "https://orcid.org/0000-0003-0882-4138"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "IAN CAMPBELL",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5079332116",
+            "display_name": "Celia Cody",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "C. J. CODY",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5087941917",
+            "display_name": "L. CORNWALLIS",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "L. CORNWALLIS",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5018809275",
+            "display_name": "Marian Stamp Dawkins",
+            "orcid": "https://orcid.org/0000-0002-7909-5916"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "MARIAN DAWKINS",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5004023635",
+            "display_name": "Richard Dawkins",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "RICHARD DAWKINS",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5113695675",
+            "display_name": "D. G. Dawson",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "DAVID DAWSON",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5063598732",
+            "display_name": "A. W. DIAMOND",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "A. W. DIAMOND",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5056105992",
+            "display_name": "Iain Douglas‐Hamilton",
+            "orcid": "https://orcid.org/0000-0002-7942-7554"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "IAIN DOUGLAS-HAMILTON",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5111925349",
+            "display_name": "E. K. Dunn",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "E. K. DUNN",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5027329102",
+            "display_name": "Paul Grant",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "P. GRANT",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5003376305",
+            "display_name": "T. R. Halliday",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "T. R. HALLIDAY",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5081767802",
+            "display_name": "Paul Handford",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "PAUL HANDFORD",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5054820772",
+            "display_name": "M. P. Harris",
+            "orcid": "https://orcid.org/0000-0002-9559-5830"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "M. P. HARRIS",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5086715637",
+            "display_name": "Ann Kepler",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "A. K. KEPLER",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5085300011",
+            "display_name": "C. B. Kepler",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "C. B. KEPLER",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5073340353",
+            "display_name": "Clare M. Lloyd",
+            "orcid": "https://orcid.org/0000-0001-8977-6726"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "CLARE LLOYD",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5109862101",
+            "display_name": "Desmond Morris",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "DESMOND MORRIS",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5045188041",
+            "display_name": "Christopher M. Perrins",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "C. M. PERRINS",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5015199525",
+            "display_name": "Robert Prŷs‐Jones",
+            "orcid": "https://orcid.org/0000-0003-4844-245X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "R. P. PRYS-JONES",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5047694928",
+            "display_name": "B. A. C. SHAFFER",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "B. A. C. SHAFFER",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5044926906",
+            "display_name": "Larry Shaffer",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "L. C. SHAFFER",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5103961520",
+            "display_name": "J. N. M. SMITH",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "J. N. M. SMITH",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5041396390",
+            "display_name": "KATHY OATES",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "KATHY OATES",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5111069146",
+            "display_name": "John Mackinnon",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "JOHN MACKINNON",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5037331463",
+            "display_name": "D. Lees",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "DAVID LEES",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5002956828",
+            "display_name": "D. H. JANZEN",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "D. H. JANZEN",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5034265257",
+            "display_name": "G. J. M. Hirons",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "GRAHAM HIRONS",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5004525777",
+            "display_name": "J. C. PERNETTA",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "J. C. PERNETTA",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5005507988",
+            "display_name": "Tom O'Donnell",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40120149",
+              "display_name": "University of Oxford",
+              "ror": "https://ror.org/052gg0110",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "T. G. O'DONNELL",
+          "raw_affiliation_strings": [
+            "University of Oxford,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Oxford,",
+              "institution_ids": [
+                "https://openalex.org/I40120149"
+              ]
+            }
+          ]
+        }
+      ],
+      "primary_topic": {
+        "id": "https://openalex.org/T14090",
+        "display_name": "Health and Conflict Studies",
+        "score": 0.057999998331069946,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3600",
+          "display_name": "General Health Professions"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/36",
+          "display_name": "Health Professions"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/4",
+          "display_name": "Health Sciences"
+        }
+      }
+    },
+    {
+      "id": "https://openalex.org/W2985286696",
+      "doi": "https://doi.org/10.1038/235179a0",
+      "ids": {
+        "openalex": "https://openalex.org/W2985286696",
+        "doi": "https://doi.org/10.1038/235179a0",
+        "mag": "2985286696"
+      },
+      "title": "Blueprint for Survival",
+      "display_name": "Blueprint for Survival",
+      "publication_year": 1972,
+      "type": "article",
+      "cited_by_count": 1,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5111129645",
+            "display_name": "Aubrey Manning",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I98677209",
+              "display_name": "University of Edinburgh",
+              "ror": "https://ror.org/01nrxwf90",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I98677209"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "AUBREY MANNING",
+          "raw_affiliation_strings": [
+            "Department of Zoology, West Mains Road, Edinburgh, EH9 3JT"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Zoology, West Mains Road, Edinburgh, EH9 3JT",
+              "institution_ids": [
+                "https://openalex.org/I98677209"
+              ]
+            }
+          ]
+        }
+      ],
+      "primary_topic": {
+        "id": "https://openalex.org/T11761",
+        "display_name": "Resilience and Mental Health",
+        "score": 0.010700000450015068,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3203",
+          "display_name": "Clinical Psychology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/32",
+          "display_name": "Psychology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      }
+    },
+    {
+      "id": "https://openalex.org/W626893701",
+      "doi": null,
+      "ids": {
+        "openalex": "https://openalex.org/W626893701",
+        "mag": "626893701"
+      },
+      "title": "Environmental disasters demand more than a blueprint for survival",
+      "display_name": "Environmental disasters demand more than a blueprint for survival",
+      "publication_year": 1972,
+      "type": "article",
+      "cited_by_count": 1,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5017912230",
+            "display_name": "AG Wilson",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": true,
+          "raw_author_name": "Wilson, AG",
+          "raw_affiliation_strings": [],
+          "affiliations": []
+        }
+      ],
+      "primary_topic": {
+        "id": "https://openalex.org/T13497",
+        "display_name": "Hermeneutics and Narrative Identity",
+        "score": 0.9879000186920166,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1211",
+          "display_name": "Philosophy"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/12",
+          "display_name": "Arts and Humanities"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      }
+    },
+    {
+      "id": "https://openalex.org/W3117732344",
+      "doi": null,
+      "ids": {
+        "openalex": "https://openalex.org/W3117732344",
+        "mag": "3117732344"
+      },
+      "title": "Blueprint for survival. [Basic thesis that economic and population growth must be halted]",
+      "display_name": "Blueprint for survival. [Basic thesis that economic and population growth must be halted]",
+      "publication_year": 1972,
+      "type": "article",
+      "cited_by_count": 1,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5109862169",
+            "display_name": "Edward Goldsmith",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Edward Goldsmith",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5081863770",
+            "display_name": "Rebecca H. Allen",
+            "orcid": "https://orcid.org/0000-0002-6418-9426"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Rebecca H. Allen",
+          "raw_affiliation_strings": [],
+          "raw_orcid": "https://orcid.org/0000-0002-6418-9426",
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5112093716",
+            "display_name": "Martin Allaby",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Martin Allaby",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5072349283",
+            "display_name": "John Davoll",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "John Davoll",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5061549386",
+            "display_name": "SJ Lawrence",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "SJ Lawrence",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        }
+      ],
+      "primary_topic": {
+        "id": "https://openalex.org/T10393",
+        "display_name": "Economic Growth and Productivity",
+        "score": 0.038100000470876694,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2002",
+          "display_name": "Economics and Econometrics"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/20",
+          "display_name": "Economics, Econometrics and Finance"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      }
+    },
+    {
+      "id": "https://openalex.org/W1552157908",
+      "doi": null,
+      "ids": {
+        "openalex": "https://openalex.org/W1552157908",
+        "mag": "1552157908"
+      },
+      "title": "Blueprint for survival",
+      "display_name": "Blueprint for survival",
+      "publication_year": 1973,
+      "type": "article",
+      "cited_by_count": 0,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5054214216",
+            "display_name": "K.E.F. Watt",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "K.E.F. Watt",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5061017669",
+            "display_name": "Jong-Jae Lee",
+            "orcid": "https://orcid.org/0000-0001-6157-0419"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Jong-Jae Lee",
+          "raw_affiliation_strings": [],
+          "raw_orcid": "https://orcid.org/0000-0001-6157-0419",
+          "affiliations": []
+        }
+      ],
+      "primary_topic": {
+        "id": "https://openalex.org/T10698",
+        "display_name": "Transportation Planning and Optimization",
+        "score": 0.7623000144958496,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3313",
+          "display_name": "Transportation"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/33",
+          "display_name": "Social Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      }
+    },
+    {
+      "id": "https://openalex.org/W3210292496",
+      "doi": "https://doi.org/10.1126/science.180.4086.580",
+      "ids": {
+        "openalex": "https://openalex.org/W3210292496",
+        "doi": "https://doi.org/10.1126/science.180.4086.580",
+        "mag": "3210292496"
+      },
+      "title": "Movement for Survival: <i>This Endangered Planet</i> . Prospects and Proposals for Human Survival. Richard A. Falk. Random House, New York, 1971. xiv, 498 pp., illus. $8.95.; <i>Building the City of Man</i> . Outlines of a World Civilization. W. Warren Wagar. Grossman, New York, 1971. xii, 180 pp. $10.; <i>Blueprint for Survival</i> . Edward Goldsmith, Robert Allen, Michael Allaby, John Davoll, and Sam Lawrence. Houghton Mifflin, Boston, 1972. xiv, 190 pp., illus. $4.95.; <i>World without Borders</i> . Lester R. Brown. Random House, New York, 1972. xviii, 395 pp. $8.95.; <i>The Mature Society</i> . Dennis Gabor. Praeger, New York, 1972. viii, 208 pp. $7.50.",
+      "display_name": "Movement for Survival: <i>This Endangered Planet</i> . Prospects and Proposals for Human Survival. Richard A. Falk. Random House, New York, 1971. xiv, 498 pp., illus. $8.95.; <i>Building the City of Man</i> . Outlines of a World Civilization. W. Warren Wagar. Grossman, New York, 1971. xii, 180 pp. $10.; <i>Blueprint for Survival</i> . Edward Goldsmith, Robert Allen, Michael Allaby, John Davoll, and Sam Lawrence. Houghton Mifflin, Boston, 1972. xiv, 190 pp., illus. $4.95.; <i>World without Borders</i> . Lester R. Brown. Random House, New York, 1972. xviii, 395 pp. $8.95.; <i>The Mature Society</i> . Dennis Gabor. Praeger, New York, 1972. viii, 208 pp. $7.50.",
+      "publication_year": 1973,
+      "type": "article",
+      "cited_by_count": 3,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5110600167",
+            "display_name": "John R. Platt",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40036882",
+              "display_name": "Institute for Advanced Study",
+              "ror": "https://ror.org/00f809463",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I40036882"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "John Platt",
+          "raw_affiliation_strings": [
+            "Center for Advanced Study in the Behavioral Sciences, Stanford, California"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Center for Advanced Study in the Behavioral Sciences, Stanford, California",
+              "institution_ids": [
+                "https://openalex.org/I40036882"
+              ]
+            }
+          ]
+        }
+      ],
+      "primary_topic": {
+        "id": "https://openalex.org/T13469",
+        "display_name": "Environmental, Ecological, and Cultural Studies",
+        "score": 0.029899999499320984,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3312",
+          "display_name": "Sociology and Political Science"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/33",
+          "display_name": "Social Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      }
+    },
+    {
+      "id": "https://openalex.org/W587490531",
+      "doi": null,
+      "ids": {
+        "openalex": "https://openalex.org/W587490531",
+        "mag": "587490531"
+      },
+      "title": "Teach-in for survival : [a record of the teach-in on A Blueprint for survival, held at Imperial College, London, in May 1972]",
+      "display_name": "Teach-in for survival : [a record of the teach-in on A Blueprint for survival, held at Imperial College, London, in May 1972]",
+      "publication_year": 1972,
+      "type": "article",
+      "cited_by_count": 0,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5108090925",
+            "display_name": "Michael Schwab",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Michael Schwab",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5058082889",
+            "display_name": "Michael Allaby",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Michael Allaby",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        }
+      ],
+      "primary_topic": {
+        "id": "https://openalex.org/T14090",
+        "display_name": "Health and Conflict Studies",
+        "score": 0.08810000121593475,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3600",
+          "display_name": "General Health Professions"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/36",
+          "display_name": "Health Professions"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/4",
+          "display_name": "Health Sciences"
+        }
+      }
+    }
+  ],
+  "group_by": []
+}

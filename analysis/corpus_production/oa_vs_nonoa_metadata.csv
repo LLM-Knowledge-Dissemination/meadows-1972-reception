@@ -1,0 +1,55 @@
+dimension,level,OA_count,non_OA_count,OA_share_of_OA_subset,non_OA_share_of_non_OA_subset,diff_OA_minus_non_OA,absolute_diff_pp
+decade,1970s,49,590,0.0098,0.0731,-0.0633,6.33
+decade,1980s,47,508,0.0094,0.0630,-0.0535,5.35
+decade,1990s,119,811,0.0239,0.1005,-0.0767,7.67
+decade,2000s,641,1776,0.1286,0.2201,-0.0916,9.16
+decade,2010s,2200,3141,0.4412,0.3893,+0.0519,5.19
+decade,2020s,1927,1236,0.3865,0.1532,+0.2333,23.33
+decade,unknown,3,6,0.0006,0.0007,-0.0001,0.01
+type,article,3641,4912,0.7302,0.6088,+0.1214,12.14
+type,book-chapter,384,2541,0.0770,0.3149,-0.2379,23.79
+type,dissertation,452,138,0.0907,0.0171,+0.0735,7.35
+type,book,166,186,0.0333,0.0231,+0.0102,1.02
+type,preprint,161,58,0.0323,0.0072,+0.0251,2.51
+type,review,101,106,0.0203,0.0131,+0.0071,0.71
+type,other,19,106,0.0038,0.0131,-0.0093,0.93
+type,editorial,21,7,0.0042,0.0009,+0.0033,0.33
+type,report,16,6,0.0032,0.0007,+0.0025,0.25
+type,paratext,19,0,0.0038,0.0000,+0.0038,0.38
+primary_field,Environmental Science,1349,2151,0.2706,0.2666,+0.0039,0.39
+primary_field,Social Sciences,1114,1850,0.2234,0.2293,-0.0059,0.59
+primary_field,"Economics, Econometrics and Finance",567,892,0.1137,0.1106,+0.0032,0.32
+primary_field,"Business, Management and Accounting",495,617,0.0993,0.0765,+0.0228,2.28
+primary_field,Engineering,340,480,0.0682,0.0595,+0.0087,0.87
+primary_field,Decision Sciences,231,455,0.0463,0.0564,-0.0101,1.01
+primary_field,Energy,237,414,0.0475,0.0513,-0.0038,0.38
+primary_field,Arts and Humanities,139,316,0.0279,0.0392,-0.0113,1.13
+primary_field,Agricultural and Biological Sciences,160,249,0.0321,0.0309,+0.0012,0.12
+primary_field,Psychology,57,127,0.0114,0.0157,-0.0043,0.43
+primary_field,Computer Science,75,107,0.0150,0.0133,+0.0018,0.18
+primary_field,Health Professions,51,77,0.0102,0.0095,+0.0007,0.07
+primary_source_top10,unknown,458,1936,0.0919,0.2400,-0.1481,14.81
+primary_source_top10,Cambridge University Press eBooks,22,321,0.0044,0.0398,-0.0354,3.54
+primary_source_top10,Sustainability,200,0,0.0401,0.0000,+0.0401,4.01
+primary_source_top10,Ecological Economics,47,123,0.0094,0.0152,-0.0058,0.58
+primary_source_top10,Journal of Cleaner Production,42,116,0.0084,0.0144,-0.0060,0.60
+primary_source_top10,Futures,18,126,0.0036,0.0156,-0.0120,1.20
+primary_source_top10,SSRN Electronic Journal,124,0,0.0249,0.0000,+0.0249,2.49
+primary_source_top10,Elsevier eBooks,4,115,0.0008,0.0143,-0.0135,1.35
+primary_source_top10,Palgrave Macmillan UK eBooks,8,98,0.0016,0.0121,-0.0105,1.05
+primary_source_top10,RePEc: Research Papers in Economics,22,54,0.0044,0.0067,-0.0023,0.23
+seed_id,meadows_1972_limits_to_growth,4130,6348,0.8283,0.7868,+0.0415,4.15
+seed_id,commoner_1971_closing_circle,305,811,0.0612,0.1005,-0.0393,3.93
+seed_id,schumacher_1974_small_is_beautiful,551,909,0.1105,0.1127,-0.0022,0.22
+cited_by_count_bucket,0,1144,1968,0.2294,0.2439,-0.0145,1.45
+cited_by_count_bucket,1-4,1426,1995,0.2860,0.2473,+0.0387,3.87
+cited_by_count_bucket,5-24,1339,2091,0.2686,0.2592,+0.0094,0.94
+cited_by_count_bucket,25-99,726,1246,0.1456,0.1544,-0.0088,0.88
+cited_by_count_bucket,100-499,303,672,0.0608,0.0833,-0.0225,2.25
+cited_by_count_bucket,500+,48,96,0.0096,0.0119,-0.0023,0.23
+cited_by_count_bucket,unknown,0,0,0.0000,0.0000,+0.0000,0.00
+
+totals
+census_total,13054
+OA_total,4986,0.3820
+non_OA_total,8068,0.6180
