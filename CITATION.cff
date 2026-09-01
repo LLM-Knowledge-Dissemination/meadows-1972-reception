@@ -5,7 +5,7 @@ date-released: "2026-09-01"
 authors:
   - family-names: "Chism"
     given-names: "Greg"
-repository-code: "https://github.com/Gchism94/meadows-1972-reception"
+repository-code: "https://github.com/LLM-Knowledge-Dissemination/meadows-1972-reception"
 message: "Please cite this repository release. Add the archive DOI after the v0.2 deposit is minted."
 license: "MIT"
 keywords:

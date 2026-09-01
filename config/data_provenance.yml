@@ -96,7 +96,7 @@ downstream_counts:
   llm_or_fallback_classifications: 100
 
 repository:
-  url: "https://github.com/Gchism94/meadows-1972-bibliometrics"   # from `git remote get-url origin`
+  url: "https://github.com/LLM-Knowledge-Dissemination/meadows-1972-reception"   # from `git remote get-url origin`
   latest_release_tag: "v2.0-paper1-freeze"                        # from `git tag --sort=-v:refname`
   latest_release_tag_commit: "7add9258431111502284421acf357de80f40b44a"
   latest_release_tag_date: "2026-06-09T12:31:33-07:00"
