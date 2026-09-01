@@ -17,6 +17,10 @@ Parameters (env vars; defaults shown):
   ANNOT_INPUT=analysis/corpus_production/contexts_combined.csv
   ANNOT_OVERSAMPLE_NON_ARTICLE=1   if 1, fill each (seed,band) cell with
                                     non-article items first, then articles
+  ANNOT_REQUIRE_COMPLETE_WINDOW=1  if 1, exclude contexts without a verified
+                                    before/citing/after sentence window
+  ANNOT_GLOBAL_FILL=1             if 1, fill seed-cell shortfalls from the
+                                    remaining eligible pool up to N_TOTAL
 
 Outputs:
   analysis/annotation/pilot_sample.csv      — sampled items + full provenance
@@ -45,6 +49,8 @@ N_TOTAL = int(os.environ.get("ANNOT_N_TOTAL", "100"))
 PER_SEED = int(os.environ.get("ANNOT_PER_SEED", "33"))
 RNG_SEED = int(os.environ.get("ANNOT_SEED", "20260625"))
 OVERSAMPLE_NA = os.environ.get("ANNOT_OVERSAMPLE_NON_ARTICLE", "1") == "1"
+REQUIRE_COMPLETE_WINDOW = os.environ.get("ANNOT_REQUIRE_COMPLETE_WINDOW", "1") == "1"
+GLOBAL_FILL = os.environ.get("ANNOT_GLOBAL_FILL", "1") == "1"
 
 BANDS = ["pre2000", "2000s", "2010onward"]
 SEEDS = [
@@ -72,12 +78,24 @@ def sha256_short(b: bytes) -> str:
     return hashlib.sha256(b).hexdigest()[:16]
 
 
+def is_true(value: object) -> bool:
+    return str(value).strip().lower() in {"1", "true", "yes"}
+
+
 def main() -> None:
     if not INPUT.exists():
         raise SystemExit(f"missing input: {INPUT}")
     raw = INPUT.read_bytes()
     input_hash = sha256_short(raw)
     rows = list(csv.DictReader(raw.decode().splitlines()))
+    if REQUIRE_COMPLETE_WINDOW:
+        rows = [
+            row for row in rows
+            if is_true(row.get("annotation_eligible"))
+            and is_true(row.get("context_window_complete"))
+        ]
+    if not rows:
+        raise SystemExit("no annotation-eligible complete context windows in input")
     # Pool index: (seed, band) -> list of rows
     pool: dict[tuple, list[dict]] = defaultdict(list)
     for r in rows:
@@ -186,6 +204,45 @@ def main() -> None:
             "flag": "OK",
         })
 
+    # If thin seed/band cells prevent the per-seed design from reaching the
+    # pilot target, use remaining eligible contexts rather than weak contexts.
+    # The pilot is a codebook/reliability exercise, not an inferential sample;
+    # the manifest records the resulting imbalance explicitly.
+    current_n = sum(len(items) for items in realized.values())
+    if GLOBAL_FILL and current_n < N_TOTAL:
+        chosen_ids = {
+            (r["seed_id"], r["citing_openalex_id"], r.get("citing_sentence_normalized", ""))
+            for items in realized.values() for r in items
+        }
+        remaining = [
+            r for r in rows
+            if (r["seed_id"], r["citing_openalex_id"], r.get("citing_sentence_normalized", ""))
+            not in chosen_ids
+        ]
+        rng.shuffle(remaining)
+        for r in remaining[:N_TOTAL - current_n]:
+            realized[(r["seed_id"], band_of(r["citing_decade"]))].append(r)
+
+        # Refresh manifest realized counts after global fill.
+        for manifest in manifest_rows:
+            seed = manifest["seed_id"]
+            if manifest["band"] == "TOTAL":
+                selected = [r for b in BANDS for r in realized[(seed, b)]]
+            else:
+                selected = realized[(seed, manifest["band"])]
+            prior_n = manifest["realized_n"]
+            manifest["realized_n"] = len(selected)
+            manifest["realized_non_article"] = sum(
+                1 for r in selected if not is_article(r["citing_type"])
+            )
+            manifest["realized_article"] = sum(
+                1 for r in selected if is_article(r["citing_type"])
+            )
+            if len(selected) > prior_n:
+                manifest["flag"] = "GLOBAL_FILL_TO_N_TOTAL"
+            elif len(selected) < manifest["target"] and len(selected) == manifest["pool_size"]:
+                manifest["flag"] = "POOL_EXHAUSTED"
+
     # Flatten + assign stable item ids
     flat: list[dict] = []
     counter = 0
@@ -198,7 +255,7 @@ def main() -> None:
                 # re-runs with the same seed because the iteration order is
                 # deterministic by (seeds, bands, per-cell shuffle seeded by
                 # the rng).
-                stem = f"{r['seed_id']}|{r['citing_openalex_id']}|{r.get('context_text_normalized','')[:80]}"
+                stem = f"{r['seed_id']}|{r['citing_openalex_id']}|{r.get('citing_sentence_normalized','')[:80]}"
                 stable_hash = hashlib.sha256(stem.encode()).hexdigest()[:8]
                 item_id = f"PILOT_{counter:03d}_{stable_hash}"
                 flat.append({
@@ -212,8 +269,18 @@ def main() -> None:
                     "citing_type": r.get("citing_type", ""),
                     "routes": r.get("routes", ""),
                     "n_routes": r.get("n_routes", ""),
+                    "sentence_before": r.get("sentence_before", ""),
+                    "citing_sentence": r.get("citing_sentence", ""),
+                    "sentence_after": r.get("sentence_after", ""),
                     "context_text": r.get("context_text", ""),
                     "context_text_normalized": r.get("context_text_normalized", ""),
+                    "citing_sentence_normalized": r.get("citing_sentence_normalized", ""),
+                    "context_window_complete": r.get("context_window_complete", ""),
+                    "context_sentence_count": r.get("context_sentence_count", ""),
+                    "context_window_status": r.get("context_window_status", ""),
+                    "match_document_fraction": r.get("match_document_fraction", ""),
+                    "context_quality_flags": r.get("context_quality_flags", ""),
+                    "annotation_eligible": r.get("annotation_eligible", ""),
                     "s2_match_reason": r.get("s2_match_reason", ""),
                     "s2_intents": r.get("s2_intents", ""),
                     "s2_is_influential": r.get("s2_is_influential", ""),
@@ -226,7 +293,7 @@ def main() -> None:
     # Write pilot sample (internal — includes all provenance)
     fieldnames = list(flat[0].keys())
     with OUT_SAMPLE.open("w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=fieldnames)
+        w = csv.DictWriter(f, fieldnames=fieldnames, lineterminator="\n")
         w.writeheader()
         for r in flat:
             w.writerow(r)
@@ -234,7 +301,7 @@ def main() -> None:
 
     # Write manifest
     with OUT_MANIFEST.open("w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=list(manifest_rows[0].keys()))
+        w = csv.DictWriter(f, fieldnames=list(manifest_rows[0].keys()), lineterminator="\n")
         w.writeheader()
         for r in manifest_rows:
             w.writerow(r)

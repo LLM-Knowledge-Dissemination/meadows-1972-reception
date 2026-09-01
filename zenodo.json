@@ -1,13 +1,15 @@
 {
-  "title": "Evidence-Bounded Contextual Bibliometrics: Task-Specific Validation, Automation Boundaries, and Claims Governance in a Meadows 1972 Stress Test",
-  "version": "v2.0-paper1-freeze",
-  "publication_date": "2026-06-09",
+  "title": "Meadows 1972 Comparative Citation-Reception Corpus and Annotation Protocol",
+  "version": "v-public-0.2",
+  "publication_date": "2026-09-01",
   "creators": [
     {
       "name": "Chism, Greg"
     }
   ],
-  "description": "Paper 1 release package for a methods-focused contextual bibliometrics study. The release contains the Scientometrics-targeted manuscript, final Paper 1 figures and tables, frozen v2.0 methodology artifacts, validation summaries, selected final validation records, and reproducibility documentation. Source PDFs are excluded from the minimum release package pending rights review.",
+  "description": "Public reproducibility scaffold for a comparative citation-reception study of Meadows, Commoner, and Schumacher. The release contains citing-work identifiers, extraction and sentence-window code, aggregate provenance, a pre-pilot annotation codebook, and synthetic reliability fixtures. Source-derived citation text and human labels are not included.",
+  "upload_type": "dataset",
+  "access_right": "open",
   "license": "MIT",
   "keywords": [
     "contextual bibliometrics",
@@ -15,15 +17,8 @@
     "validation",
     "automation boundaries",
     "claims governance",
-    "reproducibility"
-  ],
-  "related_identifiers": [
-    {
-      "identifier": "PENDING",
-      "relation": "isSupplementTo",
-      "resource_type": "publication-article"
-    }
-  ],
-  "doi": "PENDING",
-  "repository": "PENDING"
+    "reproducibility",
+    "citation context",
+    "limits to growth"
+  ]
 }

@@ -48,6 +48,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import requests
 from lib_corpus import CORPUS_DIR, now_iso, USER_AGENT
+from context_windows import three_sentence_window
 
 CENSUS_CSV = CORPUS_DIR / "citing_census.csv"
 RAW_FT_DIR = CORPUS_DIR / "raw" / "oa_fulltext"
@@ -61,6 +62,8 @@ DECADES = [d.strip() for d in os.environ.get(
     "CORPUS_OA_DECADES", "1970s,1980s,1990s,2000s,2010s,2020s").split(",")]
 TIMEOUT = float(os.environ.get("CORPUS_OA_TIMEOUT", "25"))
 MAX_BYTES = int(os.environ.get("CORPUS_OA_MAX_BYTES", str(8 * 1024 * 1024)))
+CACHE_ONLY = os.environ.get("CORPUS_OA_CACHE_ONLY", "0") == "1"
+CACHE_PREFERRED = os.environ.get("CORPUS_OA_CACHE_PREFERRED", "0") == "1"
 
 # Seed-detection patterns. We use BOTH the canonical-title fragment AND the
 # author surname so we capture in-text citations like "(Meadows et al. 1972)"
@@ -96,9 +99,6 @@ SEED_PATTERNS = {
 
 _TAG_RE = re.compile(r"<[^>]+>")
 _WS_RE = re.compile(r"[\s\xa0]+")
-_SENT_SPLIT_RE = re.compile(r"(?<=[\.\!\?])\s+(?=[A-Z(])")
-
-
 def stratified_sample(rows: list[dict]) -> list[dict]:
     rng = random.Random(RNG_SEED)
     by_key: dict[tuple, list[dict]] = defaultdict(list)
@@ -184,9 +184,94 @@ def detect_text_format(content_type: str, blob: bytes) -> str:
     return "other"
 
 
+def load_cached_blob(seed_id: str, wid: str, sha16: str) -> tuple[bytes | None, str]:
+    """Load a previously frozen OA document by its recorded hash."""
+    if not sha16:
+        return None, ""
+    candidates = sorted(RAW_FT_DIR.glob(f"{seed_id}_{wid}_{sha16}.*"))
+    if not candidates:
+        return None, ""
+    path = candidates[0]
+    content_type = (
+        "application/pdf" if path.suffix.lower() == ".pdf"
+        else "text/html" if path.suffix.lower() == ".html"
+        else "application/octet-stream"
+    )
+    return path.read_bytes(), content_type
+
+
+def context_quality(text: str, seed_id: str, match: dict, window: dict) -> dict:
+    """Attach conservative, reviewable exclusion flags to a context."""
+    start = match["start"]
+    fraction = (start / len(text)) if text else 0.0
+    context_blob = window.get("context_text", "")
+    citing = window.get("citing_sentence", "")
+    preceding = text[max(0, start - 15000):start]
+    reference_heading = bool(re.search(
+        r"\b(?:references|bibliography|literature\s+cited)\b",
+        preceding,
+        re.IGNORECASE,
+    ))
+    seed_title = bool(SEED_PATTERNS[seed_id]["title"].search(context_blob))
+    seed_author = bool(SEED_PATTERNS[seed_id]["author_short"].search(context_blob))
+    citing_has_title = bool(SEED_PATTERNS[seed_id]["title"].search(citing))
+    citing_has_author = bool(SEED_PATTERNS[seed_id]["author_short"].search(citing))
+    citing_has_seed_year = bool(SEED_PATTERNS[seed_id]["year"].search(citing))
+    citing_attributed = (
+        (citing_has_author and citing_has_seed_year)
+        or (citing_has_title and (citing_has_author or citing_has_seed_year))
+    )
+    years = re.findall(r"\b(?:18|19|20)\d{2}[a-z]?\b", context_blob, re.IGNORECASE)
+    publisher_cue = bool(re.search(
+        r"\b(?:press|publisher|new\s+york|london|bantam|knopf|universe\s+books|"
+        r"harper|macmillan|routledge|springer|google\s+scholar|doi|https?://|vol\.?|pp?\.)\b",
+        context_blob,
+        re.IGNORECASE,
+    ))
+    numbered_entry = bool(re.match(r"\s*(?:\[?\d{1,3}\]?\s+)", citing))
+    short_title_or_name = len(citing.split()) <= 18 and (seed_title or seed_author)
+    neighbor_has_title = bool(SEED_PATTERNS[seed_id]["title"].search(
+        window.get("sentence_before", "") + " " + window.get("sentence_after", "")
+    ))
+    reference_score = sum((
+        fraction >= 0.75,
+        reference_heading,
+        publisher_cue,
+        len(years) >= 2,
+        numbered_entry,
+        short_title_or_name,
+    ))
+    structured_entry = short_title_or_name and (
+        publisher_cue or fraction >= 0.75 or (fraction >= 0.60 and neighbor_has_title)
+    )
+    bibliography_only = (seed_title or seed_author) and (
+        reference_score >= 3 or structured_entry
+    )
+    boilerplate = bool(re.search(
+        r"cloudflare|captcha|access\s+denied|verify\s+you\s+are\s+human|"
+        r"attention\s+required|security\s+challenge",
+        context_blob,
+        re.IGNORECASE,
+    ))
+    flags = []
+    if bibliography_only:
+        flags.append("likely_bibliography_only")
+    if match.get("match_kind") == "title_phrase_unattributed":
+        flags.append("seed_attribution_ambiguous")
+    if not citing_attributed:
+        flags.append("citing_sentence_missing_seed_attribution")
+    if boilerplate:
+        flags.append("network_or_antibot_boilerplate")
+    complete = bool(window.get("context_window_complete"))
+    return {
+        "match_document_fraction": f"{fraction:.6f}",
+        "context_quality_flags": "|".join(flags),
+        "annotation_eligible": complete and not flags,
+    }
+
+
 def find_seed_matches(text: str, seed_id: str) -> list[dict]:
-    """Return a list of {char_start, char_end, sentence, neighborhood,
-    match_kind} for each detected seed mention."""
+    """Return one explicit sentence window per detected citing sentence."""
     pat = SEED_PATTERNS[seed_id]
     matches = []
     # Strict matches first (author+year combos)
@@ -194,10 +279,15 @@ def find_seed_matches(text: str, seed_id: str) -> list[dict]:
         matches.append({"start": m.start(), "end": m.end(),
                          "match_kind": "author_year_combo",
                          "matched": m.group(0)})
-    # Title matches (capture cases of "Limits to Growth" without author)
+    # Title matches are retained for source audit, but an unaccompanied title
+    # phrase is not annotation-eligible because phrases such as "limits to
+    # growth" and "small is beautiful" can refer to other works or concepts.
     for m in pat["title"].finditer(text):
+        nearby = text[max(0, m.start() - 250):min(len(text), m.end() + 250)]
+        attributed = bool(pat["author_short"].search(nearby) or pat["year"].search(nearby))
         matches.append({"start": m.start(), "end": m.end(),
-                         "match_kind": "title_phrase",
+                         "match_kind": ("title_phrase_attributed" if attributed
+                                        else "title_phrase_unattributed"),
                          "matched": m.group(0)})
     # Coincidence filter: surname + year in same neighborhood (200 chars)
     short_hits = list(pat["author_short"].finditer(text))
@@ -212,31 +302,28 @@ def find_seed_matches(text: str, seed_id: str) -> list[dict]:
             matches.append({"start": hit.start(), "end": hit.end(),
                              "match_kind": "author_near_year",
                              "matched": hit.group(0)})
-    # Sort + dedupe by start position
+    # Sort matches, then dedupe multiple markers inside the same sentence.
     matches.sort(key=lambda m: m["start"])
     out = []
-    seen = set()
+    seen_sentence_spans = set()
     for m in matches:
-        if any(abs(m["start"] - s) < 40 for s in seen):
+        explicit_window = three_sentence_window(text, m["start"], m["end"])
+        citing_span = (
+            explicit_window.pop("_citing_span_start"),
+            explicit_window.pop("_citing_span_end"),
+        )
+        if citing_span in seen_sentence_spans:
             continue
-        seen.add(m["start"])
-        # Sentence: ±400 chars; trim to sentence boundary
+        seen_sentence_spans.add(citing_span)
+        # Retain the legacy character neighborhood for extraction audit only.
         s = max(0, m["start"] - 400)
         e = min(len(text), m["end"] + 400)
         window = text[s:e]
-        # Split into sentences, pick the one containing the match
-        sentences = _SENT_SPLIT_RE.split(window)
-        pos_in_window = m["start"] - s
-        running = 0
-        chosen_sentence = window
-        for sent in sentences:
-            running += len(sent) + 1
-            if running >= pos_in_window:
-                chosen_sentence = sent.strip()
-                break
         out.append({
             **m,
-            "sentence": chosen_sentence[:1000],
+            **explicit_window,
+            **context_quality(text, seed_id, m, explicit_window),
+            "sentence": explicit_window["citing_sentence"],
             "neighborhood": window[:1200],
         })
     return out
@@ -248,6 +335,10 @@ def main() -> None:
     print(f"[{now_iso()}] Step 3b — OA full-text/PDF context extraction")
     print(f"  decades: {DECADES}  n_per (seed x decade): {N_PER}")
     print(f"  timeout={TIMEOUT}s  max_bytes={MAX_BYTES}\n")
+    if CACHE_ONLY:
+        print("  source mode: frozen local OA cache only (no network requests)\n")
+    elif CACHE_PREFERRED:
+        print("  source mode: reuse frozen OA cache, fetch only uncached sample rows\n")
     with CENSUS_CSV.open() as f:
         rows = list(csv.DictReader(f))
     print(f"  loaded {len(rows)} census rows")
@@ -258,7 +349,11 @@ def main() -> None:
         "seed_id", "citing_openalex_id", "citing_doi", "citing_year",
         "citing_decade", "citing_type", "oa_url", "content_type",
         "match_index", "match_kind", "match_text",
-        "sentence", "neighborhood", "doc_sha256_16", "retrieval_route",
+        "sentence_before", "citing_sentence", "sentence_after",
+        "context_text", "context_window_complete", "context_sentence_count",
+        "context_window_status", "match_document_fraction",
+        "context_quality_flags", "annotation_eligible", "sentence", "neighborhood",
+        "doc_sha256_16", "retrieval_route",
         "retrieved_at_utc",
     ]
     attempted_fields = [
@@ -270,24 +365,43 @@ def main() -> None:
 
     contexts_rows: list[dict] = []
     attempted_rows: list[dict] = []
+    prior_attempts = {}
+    if (CACHE_ONLY or CACHE_PREFERRED) and OUT_ATTEMPTED.exists():
+        with OUT_ATTEMPTED.open() as f:
+            prior_attempts = {
+                (row["seed_id"], row["citing_openalex_id"]): row
+                for row in csv.DictReader(f)
+            }
 
     for i, r in enumerate(sample, 1):
         seed_id = r["seed_id"]
         url = r["citing_oa_url"]
         wid = r["citing_openalex_id"].split("/")[-1]
-        retrieved_at = now_iso()
-        blob, ct, err = safe_fetch(url)
+        prior = prior_attempts.get((seed_id, r["citing_openalex_id"]), {})
+        retrieved_at = prior.get("retrieved_at_utc") or now_iso()
+        from_cache = False
+        if CACHE_ONLY or CACHE_PREFERRED:
+            blob, inferred_ct = load_cached_blob(seed_id, wid, prior.get("doc_sha256_16", ""))
+            ct = prior.get("content_type") or inferred_ct
+            from_cache = blob is not None
+            err = None if from_cache else (prior.get("error") or "not present in frozen OA cache")
+            if CACHE_PREFERRED and not from_cache:
+                blob, ct, err = safe_fetch(url)
+                retrieved_at = now_iso()
+        else:
+            blob, ct, err = safe_fetch(url)
         if blob is None:
             attempted_rows.append({
                 "seed_id": seed_id, "citing_openalex_id": r["citing_openalex_id"],
                 "citing_doi": r["citing_doi"], "citing_year": r["citing_year"],
                 "citing_decade": r["citing_decade"], "citing_type": r["citing_type"],
-                "oa_url": url, "fetch_status": "fetch_failed",
+                "oa_url": url, "fetch_status": prior.get("fetch_status") or "fetch_failed",
                 "content_type": "", "bytes": 0, "text_format": "",
                 "n_matches": 0, "doc_sha256_16": "",
                 "error": err or "unknown", "retrieved_at_utc": retrieved_at,
             })
-            time.sleep(0.5)
+            if not CACHE_ONLY and not from_cache:
+                time.sleep(0.5)
             continue
         sha16 = hashlib.sha256(blob).hexdigest()[:16]
         fmt = detect_text_format(ct, blob)
@@ -322,6 +436,16 @@ def main() -> None:
                 "oa_url": url, "content_type": ct,
                 "match_index": j, "match_kind": m["match_kind"],
                 "match_text": m["matched"][:200],
+                "sentence_before": m["sentence_before"],
+                "citing_sentence": m["citing_sentence"],
+                "sentence_after": m["sentence_after"],
+                "context_text": m["context_text"],
+                "context_window_complete": m["context_window_complete"],
+                "context_sentence_count": m["context_sentence_count"],
+                "context_window_status": m["context_window_status"],
+                "match_document_fraction": m["match_document_fraction"],
+                "context_quality_flags": m["context_quality_flags"],
+                "annotation_eligible": m["annotation_eligible"],
                 "sentence": m["sentence"],
                 "neighborhood": m["neighborhood"],
                 "doc_sha256_16": sha16,
@@ -332,25 +456,26 @@ def main() -> None:
             print(f"  [{i}/{len(sample)}] contexts={len(contexts_rows)} "
                   f"fetched={sum(1 for x in attempted_rows if x['fetch_status']=='fetched')}")
             with OUT_CONTEXTS.open("w", newline="") as f:
-                w = csv.DictWriter(f, fieldnames=contexts_fields)
+                w = csv.DictWriter(f, fieldnames=contexts_fields, lineterminator="\n")
                 w.writeheader()
                 for cr in contexts_rows:
                     w.writerow({k: cr.get(k, "") for k in contexts_fields})
             with OUT_ATTEMPTED.open("w", newline="") as f:
-                w = csv.DictWriter(f, fieldnames=attempted_fields)
+                w = csv.DictWriter(f, fieldnames=attempted_fields, lineterminator="\n")
                 w.writeheader()
                 for ar in attempted_rows:
                     w.writerow({k: ar.get(k, "") for k in attempted_fields})
         # Be polite to upstream OA servers
-        time.sleep(0.3)
+        if not CACHE_ONLY and not from_cache:
+            time.sleep(0.3)
 
     with OUT_CONTEXTS.open("w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=contexts_fields)
+        w = csv.DictWriter(f, fieldnames=contexts_fields, lineterminator="\n")
         w.writeheader()
         for cr in contexts_rows:
             w.writerow({k: cr.get(k, "") for k in contexts_fields})
     with OUT_ATTEMPTED.open("w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=attempted_fields)
+        w = csv.DictWriter(f, fieldnames=attempted_fields, lineterminator="\n")
         w.writeheader()
         for ar in attempted_rows:
             w.writerow({k: ar.get(k, "") for k in attempted_fields})

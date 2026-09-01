@@ -1,13 +1,12 @@
 cff-version: 1.2.0
-title: "Evidence-Bounded Contextual Bibliometrics: Task-Specific Validation, Automation Boundaries, and Claims Governance in a Meadows 1972 Stress Test"
-version: "v2.0-paper1-freeze"
-date-released: "2026-06-09"
+title: "Meadows 1972 Comparative Citation-Reception Corpus and Annotation Protocol"
+version: "v-public-0.2"
+date-released: "2026-09-01"
 authors:
   - family-names: "Chism"
     given-names: "Greg"
-repository-code: "PENDING"
-doi: "PENDING"
-message: "If you use this repository, please cite the archived release. DOI and repository URL are pending."
+repository-code: "https://github.com/Gchism94/meadows-1972-reception"
+message: "Please cite this repository release. Add the archive DOI after the v0.2 deposit is minted."
 license: "MIT"
 keywords:
   - contextual bibliometrics
@@ -16,3 +15,5 @@ keywords:
   - automation boundaries
   - claims governance
   - reproducibility
+  - citation context
+  - limits to growth

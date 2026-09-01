@@ -38,6 +38,7 @@ inventory:
 	Rscript scripts/pipeline/12_write_data_inventory.R
 
 tests:
+	python3 tests/test_context_windows.py
 	Rscript scripts/pipeline/13_run_tests.R
 
 report:

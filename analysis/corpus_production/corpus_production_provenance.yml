@@ -201,15 +201,17 @@ step3b_oa_fulltext_extraction:
     random_seed: 20260624
     method: "stratified by (seed_id, citing_decade), restricted to citing works with non-empty oa_url"
     decades_sampled: ["1970s", "1980s", "1990s", "2000s", "2010s", "2020s"]
-    n_per_stratum_requested: 20
-    total_sampled_requested: 360
-    total_sampled_actual: 304   # smaller pools in pre-2000 strata
+    n_per_stratum_requested: 30
+    total_sampled_requested: 540
+    total_sampled_actual: 424   # smaller pools in pre-2000 strata
   results:
-    fetched_with_match: 141    # citing works that yielded >=1 context
-    fetched_without_match: ~163  # PDFs parsed but no Meadows-class mention found
-    fetch_failed: ~63          # 403/timeout/connection errors
-    context_rows: 222
-    overall_rate_works: 0.1593   # 141 / 885 (union with S2 attempts)
+    fetched_documents: 295
+    fetched_with_match: 126    # citing works that yielded >=1 detected source row
+    fetched_without_match: 169
+    fetch_failed: 129          # 403/timeout/connection errors
+    context_rows: 327
+    annotation_eligible_rows_before_cross_route_dedup: 89
+    extension_retrieved_at: "2026-09-01"
 
 step3c_dedup_combine:
   outputs:
@@ -218,15 +220,17 @@ step3c_dedup_combine:
   dedup_key: "(seed_id, citing_openalex_id, normalize(context_text))  where normalize = lower + collapse_ws + first_240_chars"
   result:
     s2_rows_in: 78
-    oa_rows_in: 222
-    combined_dedup_rows: 284
-    contexts_found_via_both_routes: 16  # appearing in both Route A and Route B; recorded as routes=s2|oa
+    oa_rows_in: 327
+    combined_dedup_rows: 399
+    rows_with_both_routes: 5
+    annotation_eligible_rows: 87
+    annotation_eligible_citing_works: 69
   coverage_headline:
-    combined_attempted_pairs: 885   # union of S2 attempts and OA fetched attempts
-    combined_yielded_pairs: 141
-    rate: 0.1593
-    wilson95_lo: 0.1367
-    wilson95_hi: 0.1849
+    combined_attempted_pairs: 967   # union of S2 attempts and OA fetched attempts
+    combined_yielded_pairs: 179
+    rate: 0.1851
+    wilson95_lo: 0.1619
+    wilson95_hi: 0.2108
 
 step4_pre1990_diagnosis:
   outputs:

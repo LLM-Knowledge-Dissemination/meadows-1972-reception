@@ -1,6 +1,6 @@
 # Pilot Annotation Codebook — Citation-Context Reception
 
-**Project:** Limits-to-Growth reception study (Papers A and B). **Stage:** pilot (~100 contexts). **Version:** 0.1 (pilot; revised after the pilot round, then pre-registered before the main round).
+**Project:** Limits-to-Growth reception study (Papers A and B). **Stage:** 87-item pilot prepared; human labeling not started. **Version:** 0.2 (pre-pilot; revised after the pilot round, then pre-registered before the main round).
 
 This codebook tells you how to label each citation context on three independent axes: **function**, **stance**, and **depth**. Read it once in full before starting. During the pilot, flag anything ambiguous and note where the rules are unclear — the pilot exists to find those gaps before we commit to the full set.
 
@@ -23,7 +23,19 @@ Only the relationship expressed in the passage in front of you matters.
 
 ## 2. The unit
 
-Each item shows you: the **citing sentence** plus a one-sentence window on each side, the **seed** being cited, and basic metadata (year, work type). If a citing work refers to the seed in several distinct places, each place is a separate item. Label only the seed named in the item, even if the passage cites other works too.
+Each item shows three explicit fields: the sentence immediately **before** the
+citation, the **citing sentence**, and the sentence immediately **after** the
+citation. The combined `context` column repeats those three sentences for
+convenient reading. Every pilot item has all three sentences; incomplete
+document-edge windows, S2-only pre-computed snippets, likely reference-list
+entries, and unattributed title-phrase matches were excluded before sampling.
+
+The item also shows the **seed**, publication year, and **work type**. Work type
+means the citing record's OpenAlex publication format, such as `article`,
+`book-chapter`, `dissertation`, `review`, or `preprint`; it is not a judgment
+about citation function or research method. If a citing work refers to the seed
+in several distinct body-text places, each place is a separate item. Label only
+the seed named in the item, even if the passage cites other works too.
 
 ---
 
@@ -101,6 +113,9 @@ Does the passage engage the seed's actual content, or only mention it? Assign on
 ## 8. Difficult cases and flags
 
 - **Too little context to judge.** If the window is truncated or uninformative, flag `insufficient_context` and leave labels blank.
+- **Reference-list or source-extraction artifact.** These were screened before
+  sampling, but if one remains, flag `not_a_citing_passage` and leave the three
+  labels blank.
 - **Two plausible classes.** Pick the better fit per the rules and record the alternative in notes. Do not leave it blank.
 - **Several seeds or several citations in one window.** Label only the item's named seed; ignore the others for labeling.
 - **Non-English passage.** Flag `non_english` and skip unless you read the language comfortably.
@@ -110,7 +125,14 @@ Does the passage engage the seed's actual content, or only mention it? Assign on
 
 ## 9. Pilot procedure
 
-Two annotators label the same ~100 contexts **independently**, without discussion. Do not confer on specific items during the round. Flag liberally and use the notes field whenever a rule felt forced — proposed wording fixes are welcome and expected. After the round we compute agreement, review every disagreement and flag together, revise this codebook, and (if needed) run a second short pilot before the main set.
+Two annotators label the same 87 contexts **independently**, without discussion.
+The pilot exhausts the eligible pool and is not seed-balanced (48 Meadows, 17
+Commoner, 22 Schumacher); it is for codebook and reliability testing, not
+cross-seed prevalence estimates. Do not confer on specific items during the
+round. Flag liberally and use the notes field whenever a rule felt forced —
+proposed wording fixes are welcome and expected. After the round we compute
+agreement, review every disagreement and flag together, revise this codebook,
+and (if needed) run a second short pilot before the main set.
 
 ---
 

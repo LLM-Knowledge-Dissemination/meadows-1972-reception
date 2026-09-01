@@ -12,7 +12,8 @@ For each annotator (A and B):
   - Row order is shuffled with a per-annotator RNG seed derived from
     BASE_SEED (env ANNOT_SEED) and the annotator letter.
   - Rows show the annotator: item_id, seed, citing_year, work_type,
-    context_text (citing sentence + ±1-sentence window), and BLANK
+    explicit sentence_before, citing_sentence, sentence_after fields, the
+    combined three-sentence context, and BLANK
     label fields.
   - Internal provenance (citing_openalex_id, doi, route, etc.) is kept
     out of the annotator sheets and lives in item_key.csv alongside.
@@ -55,6 +56,9 @@ ANNOTATOR_VISIBLE = [
     "seed",                # seed_id, but renamed for legibility
     "citing_year",
     "work_type",           # citing_type, renamed for legibility
+    "sentence_before",
+    "citing_sentence",
+    "sentence_after",
     "context",             # context_text, renamed for legibility
 ]
 
@@ -75,12 +79,15 @@ def main() -> None:
     key_fields = [
         "item_id", "seed_id", "band", "citing_openalex_id", "citing_doi",
         "citing_year", "citing_decade", "citing_type", "routes", "n_routes",
+        "context_window_complete", "context_sentence_count",
+        "context_window_status", "match_document_fraction",
+        "context_quality_flags", "annotation_eligible",
         "s2_match_reason", "s2_intents", "s2_is_influential",
         "oa_match_kind", "oa_url", "oa_doc_sha256_16",
         "first_retrieved_at_utc",
     ]
     with KEY_OUT.open("w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=key_fields)
+        w = csv.DictWriter(f, fieldnames=key_fields, lineterminator="\n")
         w.writeheader()
         for r in rows:
             w.writerow({k: r.get(k, "") for k in key_fields})
@@ -98,7 +105,7 @@ def main() -> None:
             # header. Spreadsheet apps usually display these as data rows; we
             # write them as cells in column A so the codebook reference and
             # quarantine reminder are visible when opened.
-            w = csv.writer(f)
+            w = csv.writer(f, lineterminator="\n")
             w.writerow([f"# Pilot annotation sheet — annotator {annot}"])
             w.writerow([f"# Codebook: {CODEBOOK_PATH}  (read first)"])
             w.writerow([f"# Label columns are BLANK. Fill in: function, stance, depth, flag (optional), notes (recommended on hesitations)."])
@@ -113,6 +120,9 @@ def main() -> None:
                     "seed": r["seed_id"],
                     "citing_year": r["citing_year"],
                     "work_type": r["citing_type"],
+                    "sentence_before": r["sentence_before"],
+                    "citing_sentence": r["citing_sentence"],
+                    "sentence_after": r["sentence_after"],
                     "context": r["context_text"],
                 }
                 # The QUARANTINE: every label column blank.

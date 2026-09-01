@@ -45,6 +45,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from lib_corpus import s2_get, CORPUS_DIR, now_iso, S2_API_KEY
+from context_windows import s2_snippet_fields
 
 CENSUS_CSV = CORPUS_DIR / "citing_census.csv"
 OUT_CONTEXTS = CORPUS_DIR / "contexts_s2.csv"
@@ -142,12 +143,12 @@ def write_checkpoint(contexts_rows: list[dict],
                       attempted_fields: list[str]) -> None:
     if contexts_rows:
         with OUT_CONTEXTS.open("w", newline="") as f:
-            w = csv.DictWriter(f, fieldnames=contexts_fields)
+            w = csv.DictWriter(f, fieldnames=contexts_fields, lineterminator="\n")
             w.writeheader()
             for r in contexts_rows:
                 w.writerow({k: r.get(k, "") for k in contexts_fields})
     with OUT_ATTEMPTED.open("w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=attempted_fields)
+        w = csv.DictWriter(f, fieldnames=attempted_fields, lineterminator="\n")
         w.writeheader()
         for r in attempted_rows:
             w.writerow({k: r.get(k, "") for k in attempted_fields})
@@ -176,7 +177,9 @@ def main() -> None:
         "seed_id", "citing_openalex_id", "citing_doi", "citing_year",
         "citing_decade", "citing_type", "match_reason",
         "ref_paperId", "ref_title", "ref_year", "ref_externalIds",
-        "n_contexts", "context_index", "context_text", "intents", "is_influential",
+        "n_contexts", "context_index", "sentence_before", "citing_sentence",
+        "sentence_after", "context_text", "context_window_complete",
+        "context_sentence_count", "context_window_status", "intents", "is_influential",
         "s2_lookup_path", "retrieval_route", "retrieved_at_utc",
     ]
     attempted_fields = [
@@ -279,7 +282,7 @@ def main() -> None:
                 for j, ctx in enumerate(matched.get("contexts") or []):
                     row = dict(base_row)
                     row["context_index"] = j
-                    row["context_text"] = (ctx or "").replace("\n", " ").replace("\r", " ").strip()
+                    row.update(s2_snippet_fields(ctx or ""))
                     contexts_rows.append(row)
 
         if i % CHECKPOINT_EVERY == 0:

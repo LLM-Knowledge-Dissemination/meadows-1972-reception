@@ -13,8 +13,9 @@ Companion machine-readable provenance: [`config/data_provenance.yml`](../../../c
 
 Five "Save to Excel — full record" exports from Web of Science (Clarivate),
 Microsoft Excel binary `.xls` (CDFV2 OLE compound document).
-Per-file record counts confirmed from the `source_file` column of
-[`analysis/data/interim/metadata_raw.csv`](../interim/metadata_raw.csv).
+Per-file record counts were confirmed from the `source_file` column of the
+restricted development artifact `analysis/data/interim/metadata_raw.csv`, which
+is not included in the public export.
 
 | File | Records | File-system mtime | Notes |
 |---|---:|---|---|
@@ -40,12 +41,12 @@ populated here.
 
 After ingest by
 [`scripts/pipeline/01_ingest_raw_metadata.R`](../../../scripts/pipeline/01_ingest_raw_metadata.R),
-the five exports are concatenated into
-[`analysis/data/interim/metadata_raw.csv`](../interim/metadata_raw.csv) with 81
+the five exports are concatenated into the restricted development artifact
+`analysis/data/interim/metadata_raw.csv` with 81
 columns preserving the original WoS field tags plus two ingest-trace fields
 (`source_file`, `source_path`). The harmonization step in
 [`scripts/R/metadata_utils.R`](../../../scripts/R/metadata_utils.R) then writes
-[`analysis/data/processed/works_harmonized.csv`](../processed/works_harmonized.csv)
+the restricted artifact `analysis/data/processed/works_harmonized.csv`
 with 20 normalized columns retained for downstream use.
 
 | Column | Source | Definition |
